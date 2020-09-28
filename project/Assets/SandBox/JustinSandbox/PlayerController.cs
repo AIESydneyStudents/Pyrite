@@ -5,22 +5,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController controller;
+    private CharacterController controller;
 
-    public float speed = 12f;
+    [SerializeField] float moveSpeed = 12f;
+    private Vector3 velocity;
+    [SerializeField] float gravity = -9.81f;
 
-    Vector3 velocity;
-    public float gravity = -9.81f;
-    public float jumpHeight = 3.0f;
+    [SerializeField] float jumpHeight = 3.0f;
+    public int jumpCount = 2;
+    private int jumpCounter;
+    private bool isJumping;
+    private bool canJump;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-    bool isGrounded;
-    public Controls controls;
-    private int extraJumpCount = 1;
-    private int jumpCount;
-    bool canJump;
+    [SerializeField] float slopeForce;
+    [SerializeField] float slopeForceRayLength;
+
+    private Controls controls;
 
 
     private void Start()
@@ -29,45 +29,65 @@ public class PlayerController : MonoBehaviour
         controls.Player.Jump.performed += Jump_performed;
         controls.Enable();
 
+        controller = GetComponent<CharacterController>();
     }
 
 
+    private bool OnSlope()
+    {
+        if (isJumping)
+            return false;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, controller.height / 2 * slopeForceRayLength))
+            if (hit.normal != Vector3.up)
+                return true;
+        return false;
+    }
+    
     private void Jump_performed(InputAction.CallbackContext obj)
     {
         if (canJump)
         {
-            jumpCount -= 1;
+            jumpCounter -= 1;
+            isJumping = true;
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
-
+  
     private void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if (isGrounded)
-            jumpCount = extraJumpCount;
-
-        if (jumpCount > 0)
+        if (jumpCounter > 0)
             canJump = true;
         else
             canJump = false;
 
 
-
-        if (isGrounded && velocity.y < 0)
+        if (controller.isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+            isJumping = false;
         }
 
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
 
         Vector3 move = transform.right * dirMove.x + transform.forward * dirMove.y;
 
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * moveSpeed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if ((dirMove.x != 0 || dirMove.y != 0) && OnSlope())
+        controller.Move(Vector3.down * controller.height / 2 * slopeForce * Time.deltaTime);
+    }
+
+     
+    private void LateUpdate()
+    { 
+        if (controller.isGrounded)
+            jumpCounter = jumpCount;
     }
 }
