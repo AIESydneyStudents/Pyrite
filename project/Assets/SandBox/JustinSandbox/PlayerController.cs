@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
     [SerializeField] float gravity = -9.81f;
 
+    public bool onBouncePad = false;
+
+    [SerializeField] float bouncePadHeight;
     [SerializeField] float jumpHeight = 3.0f;
     public int jumpCount = 2;
     private int jumpCounter;
@@ -55,6 +58,11 @@ public class PlayerController : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
+
+    private void BouncePad()
+    {
+        velocity.y = Mathf.Sqrt(bouncePadHeight * -2f * gravity);
+    }
   
     private void Update()
     {
@@ -63,6 +71,8 @@ public class PlayerController : MonoBehaviour
         else
             canJump = false;
 
+        if (onBouncePad)
+            BouncePad();
 
         if (controller.isGrounded && velocity.y < 0)
         {
@@ -71,10 +81,10 @@ public class PlayerController : MonoBehaviour
         }
 
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
+     
+        Vector3 move = transform.right * dirMove.x * moveSpeed + transform.forward * dirMove.y * moveSpeed + transform.up * velocity.y;
 
-        Vector3 move = transform.right * dirMove.x + transform.forward * dirMove.y;
-
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        controller.Move(move * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
 
