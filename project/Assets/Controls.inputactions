@@ -20,6 +20,22 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press"
+                },
+                {
+                    "name": "SlowFall",
+                    "type": "PassThrough",
+                    "id": "4747e39f-1bf6-417b-bcc1-a55d0a3cb63b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "SlowFallRelease",
+                    "type": "PassThrough",
+                    "id": "0bc2e009-2fb2-4b13-8995-913e8de85b8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)"
                 }
             ],
             "bindings": [
@@ -152,6 +168,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "830c2bfd-a602-4d24-ae35-c9f214224f37",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SlowFall",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b741269-397c-4704-b93c-85c89e1b99a6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SlowFallRelease",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

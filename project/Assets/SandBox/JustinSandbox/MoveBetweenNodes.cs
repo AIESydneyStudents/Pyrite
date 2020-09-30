@@ -39,8 +39,7 @@ public class MoveBetweenNodes : MonoBehaviour
            
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-        
+        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);       
     }
 
     private void OnDrawGizmos()

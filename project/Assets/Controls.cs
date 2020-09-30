@@ -33,6 +33,22 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""SlowFall"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""4747e39f-1bf6-417b-bcc1-a55d0a3cb63b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""SlowFallRelease"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""0bc2e009-2fb2-4b13-8995-913e8de85b8e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
                 }
             ],
             ""bindings"": [
@@ -167,6 +183,28 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""830c2bfd-a602-4d24-ae35-c9f214224f37"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SlowFall"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2b741269-397c-4704-b93c-85c89e1b99a6"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SlowFallRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -177,6 +215,8 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_SlowFall = m_Player.FindAction("SlowFall", throwIfNotFound: true);
+        m_Player_SlowFallRelease = m_Player.FindAction("SlowFallRelease", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -228,12 +268,16 @@ public class @Controls : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_SlowFall;
+    private readonly InputAction m_Player_SlowFallRelease;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
         public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @SlowFall => m_Wrapper.m_Player_SlowFall;
+        public InputAction @SlowFallRelease => m_Wrapper.m_Player_SlowFallRelease;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -249,6 +293,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @SlowFall.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFall;
+                @SlowFall.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFall;
+                @SlowFall.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFall;
+                @SlowFallRelease.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
+                @SlowFallRelease.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
+                @SlowFallRelease.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -259,6 +309,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @SlowFall.started += instance.OnSlowFall;
+                @SlowFall.performed += instance.OnSlowFall;
+                @SlowFall.canceled += instance.OnSlowFall;
+                @SlowFallRelease.started += instance.OnSlowFallRelease;
+                @SlowFallRelease.performed += instance.OnSlowFallRelease;
+                @SlowFallRelease.canceled += instance.OnSlowFallRelease;
             }
         }
     }
@@ -267,5 +323,7 @@ public class @Controls : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnSlowFall(InputAction.CallbackContext context);
+        void OnSlowFallRelease(InputAction.CallbackContext context);
     }
 }
