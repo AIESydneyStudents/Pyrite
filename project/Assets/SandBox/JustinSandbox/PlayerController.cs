@@ -16,12 +16,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float bouncePadHeight;
     [SerializeField] float jumpHeight = 3.0f;
     public int jumpCount = 2;
-    private int jumpCounter;
+    public int jumpCounter;
     private bool isJumping;
     private bool canJump;
 
     [SerializeField] float slopeForce;
     [SerializeField] float slopeForceRayLength;
+
+    public bool onLeftWallJump = false;
+    public bool onRightWallJump = false;
+
+    [SerializeField] float wallJumpForce;
 
     private Controls controls;
 
@@ -30,11 +35,23 @@ public class PlayerController : MonoBehaviour
     {
         controls = new Controls();
         controls.Player.Jump.performed += Jump_performed;
+        controls.Player.SlowFall.performed += SlowFall_performed;
+        controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
+
         controls.Enable();
 
         controller = GetComponent<CharacterController>();
     }
 
+    private void SlowFallRelease_performed(InputAction.CallbackContext obj)
+    {
+        gravity = -31.04f;
+    }
+
+    private void SlowFall_performed(InputAction.CallbackContext obj)
+    {
+        gravity = -3f;
+    }
 
     private bool OnSlope()
     {
@@ -48,7 +65,7 @@ public class PlayerController : MonoBehaviour
                 return true;
         return false;
     }
-    
+
     private void Jump_performed(InputAction.CallbackContext obj)
     {
         if (canJump)
@@ -57,13 +74,30 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+        if (onLeftWallJump)
+        {
+            if (jumpCounter <= 1)
+                jumpCounter += 1;
+
+            velocity.x = wallJumpForce;
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+        if (onRightWallJump)
+        {
+            if (jumpCounter <= 1)
+                jumpCounter += 1;
+
+            velocity.x = -wallJumpForce;
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
     }
 
     private void BouncePad()
     {
         velocity.y = Mathf.Sqrt(bouncePadHeight * -2f * gravity);
     }
-  
+
+
     private void Update()
     {
         if (jumpCounter > 0)
@@ -74,29 +108,34 @@ public class PlayerController : MonoBehaviour
         if (onBouncePad)
             BouncePad();
 
+
         if (controller.isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+            velocity.x = 0;
             isJumping = false;
+            gravity = -31.04f;
         }
 
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
-     
+
         Vector3 move = transform.right * dirMove.x * moveSpeed + transform.forward * dirMove.y * moveSpeed + transform.up * velocity.y;
-
-        controller.Move(move * Time.deltaTime);
-
+        if (!onLeftWallJump || !onRightWallJump)
+        {
+            controller.Move(move * Time.deltaTime);
+        }
         velocity.y += gravity * Time.deltaTime;
+
 
         controller.Move(velocity * Time.deltaTime);
 
         if ((dirMove.x != 0 || dirMove.y != 0) && OnSlope())
-        controller.Move(Vector3.down * controller.height / 2 * slopeForce * Time.deltaTime);
+            controller.Move(Vector3.down * controller.height / 2 * slopeForce * Time.deltaTime);
     }
 
-     
+
     private void LateUpdate()
-    { 
+    {
         if (controller.isGrounded)
             jumpCounter = jumpCount;
     }
