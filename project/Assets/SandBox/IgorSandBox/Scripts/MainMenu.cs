@@ -9,11 +9,11 @@ using UnityEngine.EventSystems;
 /// </summary>
 public class MainMenu : MonoBehaviour
 {
-    public string newGameScene;
+    //public string newGameScene;
 
     public GameObject playFirstButton;
 
-    public GameObject button;
+    //public GameObject button;
 
     private void Start()
     {
@@ -30,8 +30,13 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         FindObjectOfType<SceneLoader>().LoadNextScene();
-        SceneManager.LoadScene(newGameScene);
+        //SceneManager.LoadScene(newGameScene);
     }
+
+    //public void GoToMenu()
+    //{
+    //    FindObjectOfType<SceneLoader>().LoadNextScene();
+    //}
 
     public void QuitGame()
     {

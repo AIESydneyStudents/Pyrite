@@ -23,10 +23,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNextScene()
     {
-        var sceneIndex = SceneManager.GetSceneByName(scenes[currentScene]).buildIndex;
+        var sceneIndex = SceneManager.GetSceneByName(scenes[currentScene]).buildIndex+1;
+        
         StartCoroutine(LoadScene(sceneIndex));
         currentScene += 1;
-
+        
         if (currentScene == scenes.Count)
             currentScene = 0;
     }
