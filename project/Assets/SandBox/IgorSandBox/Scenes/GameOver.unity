@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 166718311}
   - component: {fileID: 166718310}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166718311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 589678813}
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &166718311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +552,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: scenes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: scenes.Array.data[0]
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: scenes.Array.data[1]
+      value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: scenes.Array.data[2]
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: currentScene
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81acff2757a95004eb47d502a4ee1fdc, type: 3}
 --- !u!1 &589678808
@@ -555,6 +591,7 @@ GameObject:
   - component: {fileID: 589678811}
   - component: {fileID: 589678810}
   - component: {fileID: 589678809}
+  - component: {fileID: 589678813}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -644,6 +681,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &589678813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589678808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c957b6b09d2e89344a3a1e201d028710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playFirstButton: {fileID: 1386247734}
 --- !u!1 &646420125
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +945,7 @@ GameObject:
   - component: {fileID: 869739960}
   - component: {fileID: 869739959}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +1013,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 869739960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 589678813}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &869739960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,7 +1074,7 @@ GameObject:
   - component: {fileID: 1386247737}
   - component: {fileID: 1386247736}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,7 +1142,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1386247737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 589678813}
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1386247737
 MonoBehaviour:
   m_ObjectHideFlags: 0
