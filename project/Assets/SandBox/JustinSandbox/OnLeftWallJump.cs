@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <OnLeftWall>
+/// Sets a bool to true if player enters TriggerCollider
+/// Sets a bool to false if player exits triggerCollider
 public class OnLeftWallJump : MonoBehaviour
 {
     public GameObject Player;

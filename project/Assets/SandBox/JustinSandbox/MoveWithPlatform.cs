@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <MoveWithPlatforms>
+/// attaches player to the gameObject so that the gameObject moves where the moveing object moves
 public class MoveWithPlatform : MonoBehaviour
 {
 

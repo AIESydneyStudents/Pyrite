@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <BouncePad>
+/// Sets a bool to true if player enters TriggerCollider
+/// Sets a bool to false if player exits triggerCollider
 public class BouncePad : MonoBehaviour
 {
     public GameObject Player;    
