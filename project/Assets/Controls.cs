@@ -49,6 +49,22 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=1)""
+                },
+                {
+                    ""name"": ""GrappleButtonDown"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""98680f87-1ba8-465c-afb4-a1f57f256b17"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""GrappleButtonUp"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""d11879b4-4285-495d-abe2-c6b4d1f6da9a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
                 }
             ],
             ""bindings"": [
@@ -227,6 +243,28 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""SlowFallRelease"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""613a95fe-938c-40c0-b68c-bfea1bb2fed3"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrappleButtonDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27697b2d-2307-4c4e-9356-58d2d1cd460f"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrappleButtonUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -239,6 +277,8 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_SlowFall = m_Player.FindAction("SlowFall", throwIfNotFound: true);
         m_Player_SlowFallRelease = m_Player.FindAction("SlowFallRelease", throwIfNotFound: true);
+        m_Player_GrappleButtonDown = m_Player.FindAction("GrappleButtonDown", throwIfNotFound: true);
+        m_Player_GrappleButtonUp = m_Player.FindAction("GrappleButtonUp", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -292,6 +332,8 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_SlowFall;
     private readonly InputAction m_Player_SlowFallRelease;
+    private readonly InputAction m_Player_GrappleButtonDown;
+    private readonly InputAction m_Player_GrappleButtonUp;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -300,6 +342,8 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @SlowFall => m_Wrapper.m_Player_SlowFall;
         public InputAction @SlowFallRelease => m_Wrapper.m_Player_SlowFallRelease;
+        public InputAction @GrappleButtonDown => m_Wrapper.m_Player_GrappleButtonDown;
+        public InputAction @GrappleButtonUp => m_Wrapper.m_Player_GrappleButtonUp;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -321,6 +365,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @SlowFallRelease.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
                 @SlowFallRelease.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
                 @SlowFallRelease.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSlowFallRelease;
+                @GrappleButtonDown.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonDown;
+                @GrappleButtonDown.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonDown;
+                @GrappleButtonDown.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonDown;
+                @GrappleButtonUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
+                @GrappleButtonUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
+                @GrappleButtonUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -337,6 +387,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @SlowFallRelease.started += instance.OnSlowFallRelease;
                 @SlowFallRelease.performed += instance.OnSlowFallRelease;
                 @SlowFallRelease.canceled += instance.OnSlowFallRelease;
+                @GrappleButtonDown.started += instance.OnGrappleButtonDown;
+                @GrappleButtonDown.performed += instance.OnGrappleButtonDown;
+                @GrappleButtonDown.canceled += instance.OnGrappleButtonDown;
+                @GrappleButtonUp.started += instance.OnGrappleButtonUp;
+                @GrappleButtonUp.performed += instance.OnGrappleButtonUp;
+                @GrappleButtonUp.canceled += instance.OnGrappleButtonUp;
             }
         }
     }
@@ -347,5 +403,7 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSlowFall(InputAction.CallbackContext context);
         void OnSlowFallRelease(InputAction.CallbackContext context);
+        void OnGrappleButtonDown(InputAction.CallbackContext context);
+        void OnGrappleButtonUp(InputAction.CallbackContext context);
     }
 }

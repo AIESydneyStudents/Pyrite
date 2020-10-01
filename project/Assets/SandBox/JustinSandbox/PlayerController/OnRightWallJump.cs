@@ -8,7 +8,7 @@ using UnityEngine;
 public class OnRightWallJump : MonoBehaviour
 {
     public GameObject Player;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == Player)

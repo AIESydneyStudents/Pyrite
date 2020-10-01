@@ -36,6 +36,22 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(behavior=1)"
+                },
+                {
+                    "name": "GrappleButtonDown",
+                    "type": "PassThrough",
+                    "id": "98680f87-1ba8-465c-afb4-a1f57f256b17",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "GrappleButtonUp",
+                    "type": "PassThrough",
+                    "id": "d11879b4-4285-495d-abe2-c6b4d1f6da9a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)"
                 }
             ],
             "bindings": [
@@ -212,6 +228,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "SlowFallRelease",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "613a95fe-938c-40c0-b68c-bfea1bb2fed3",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleButtonDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27697b2d-2307-4c4e-9356-58d2d1cd460f",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleButtonUp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

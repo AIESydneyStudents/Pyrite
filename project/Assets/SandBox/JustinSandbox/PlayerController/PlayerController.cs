@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController controller;
+    private CharacterController controller;
 
     [SerializeField] float moveSpeed;
     private Vector3 velocity;
@@ -31,6 +31,13 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float wallJumpForce;
 
+    private LineRenderer lr;
+    public Transform ropeStartPoint;
+    public Transform ropeEndPoint;
+    bool drawRope = false;
+    bool OnSwing = false;
+    public GameObject player;
+
     private Controls controls;
 
     /// <Start()>
@@ -44,11 +51,15 @@ public class PlayerController : MonoBehaviour
         controls.Player.Jump.performed += Jump_performed;
         controls.Player.SlowFall.performed += SlowFall_performed;
         controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
+        controls.Player.GrappleButtonDown.performed += GrappleButtonDown_performed;
+        controls.Player.GrappleButtonUp.performed += GrappleButtonUp_performed;
         //enable controls
         controls.Enable();
 
         //get access to characterController Componment
         controller = GetComponent<CharacterController>();
+
+        lr = GetComponent<LineRenderer>();
 
         //set value of initial gravity to value of gravity set in inspector
         initialGravity = gravity;
@@ -67,6 +78,22 @@ public class PlayerController : MonoBehaviour
     {
         gravity = slowFallGravity;
     }
+
+    private void GrappleButtonDown_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        drawRope = true;
+        lr.positionCount = 2;
+        OnSwing = true;
+    }
+
+    private void GrappleButtonUp_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        drawRope = false;
+        lr.positionCount = 0;
+        OnSwing = false;
+    }
+
+
 
     /// <OnSlopeBool()>
     /// Puts a raycast under the player to check if the ground below is a sloped surface
@@ -123,6 +150,11 @@ public class PlayerController : MonoBehaviour
         velocity.y = Mathf.Sqrt(bouncePadHeight * -2f * gravity);
     }
 
+    private void OnRope()
+    {
+        gravity = 2;
+    }
+
     /// <Update()>
     /// Player Movement logic
     private void Update()
@@ -137,15 +169,20 @@ public class PlayerController : MonoBehaviour
         if (onBouncePad)
             BouncePad();
 
+        if (OnSwing)
+        {
+            gravity = 8f;
+        }
         //if the player is on the ground and players y velocity is less then 0 
-        if (controller.isGrounded && velocity.y < 0)
+        else if (controller.isGrounded && velocity.y < 0)
         {
             //set values back to initial values
             velocity.y = -2f;           //-2 instead of 0 to force the player on the ground a bit more             
             velocity.x = 0;
             isJumping = false;
-            gravity = -31.04f;
+            gravity = initialGravity;
         }
+        else gravity = initialGravity;
 
         //read values from inputSystem to get players input
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
@@ -157,8 +194,8 @@ public class PlayerController : MonoBehaviour
             transform.up * velocity.y;
 
         //Move the player if player is not on the wall jump trigger
-        if (!onLeftWallJump || !onRightWallJump)        
-            controller.Move(move * Time.deltaTime);      
+        if (!onLeftWallJump || !onRightWallJump)
+            controller.Move(move * Time.deltaTime);
         //if player is on slope force the player down to stop jittering going down slopes
         if ((dirMove.x != 0 || dirMove.y != 0) && OnSlope())
             controller.Move(Vector3.down * controller.height / 2 * slopeForce * Time.deltaTime);
@@ -168,7 +205,6 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         //apply falling gravity to character controller
         controller.Move(velocity * Time.deltaTime);
-
 
     }
 
@@ -181,5 +217,16 @@ public class PlayerController : MonoBehaviour
         //calculated and reset at correct time.
         if (controller.isGrounded)
             jumpCounter = jumpCount;
+
+        if (drawRope == true)
+            DrawRope();
     }
+
+    private void DrawRope()
+    {
+        lr.SetPosition(0, ropeStartPoint.position);
+        lr.SetPosition(1, ropeEndPoint.position);
+    }
+
+
 }
