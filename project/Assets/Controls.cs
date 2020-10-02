@@ -247,7 +247,7 @@ public class @Controls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""613a95fe-938c-40c0-b68c-bfea1bb2fed3"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -258,7 +258,7 @@ public class @Controls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""27697b2d-2307-4c4e-9356-58d2d1cd460f"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

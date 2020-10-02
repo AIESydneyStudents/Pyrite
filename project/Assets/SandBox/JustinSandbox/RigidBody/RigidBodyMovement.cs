@@ -9,14 +9,12 @@ public class RigidBodyMovement : MonoBehaviour
     private Rigidbody rb;
     private Vector3 moveInput;
     private Vector3 moveVelocity;
-    public float gravity;
     public float slowFallSpeed;
 
 
-    [SerializeField] int jumpCount;
-    private int jumpCounter;
-    private bool canJump;
+    private bool canDoubleJump;
     bool isGrounded = false;
+
     [SerializeField] float bouncePadHeight;
     public bool onBouncePad;
 
@@ -25,8 +23,6 @@ public class RigidBodyMovement : MonoBehaviour
 
     public float wallJumpForce;
 
-
-
     public float jumpForce;
 
     private Controls controls;
@@ -34,7 +30,6 @@ public class RigidBodyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         rb = GetComponent<Rigidbody>();
         //get access to input manager
         controls = new Controls();
@@ -43,7 +38,6 @@ public class RigidBodyMovement : MonoBehaviour
         controls.Player.Jump.performed += Jump_performed;
         controls.Player.SlowFall.performed += SlowFall_performed;
         controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
-        //enable controls
         controls.Enable();
     }
 
@@ -59,22 +53,26 @@ public class RigidBodyMovement : MonoBehaviour
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!onLeftWallJump && !onRightWallJump && canJump)
+        if (!onLeftWallJump && !onRightWallJump)
         {
-            jumpCounter -= 1;
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            if (isGrounded)
+            {
+                canDoubleJump = true;
+                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            }
+            else if(canDoubleJump)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                canDoubleJump = false;
+            }      
         }
         if (onLeftWallJump)
         {
-            if (jumpCounter <= 1)
-                jumpCounter += 1;
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
         }
         if (onRightWallJump)
         {
-            if (jumpCounter <= 1)
-                jumpCounter += 1;
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
 
         }
     }
@@ -91,11 +89,6 @@ public class RigidBodyMovement : MonoBehaviour
         moveInput = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
         moveVelocity = moveInput;
 
-        //if jump counter is above 0 allow player to jump else cant jump
-        if (jumpCounter > 0)
-            canJump = true;
-        else
-            canJump = false;
 
         //if player is on bounce pad call bounce pad function()
         if (onBouncePad)
@@ -104,10 +97,7 @@ public class RigidBodyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Move the player if player is not on the wall jump trigger
         rb.velocity = moveVelocity;             //add velocity to player
-        
-
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -116,13 +106,5 @@ public class RigidBodyMovement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isGrounded = false;
-    }
-
-    private void LateUpdate()
-    {
-        if (isGrounded == true)
-        {
-            jumpCounter = jumpCount;
-        }
     }
 }
