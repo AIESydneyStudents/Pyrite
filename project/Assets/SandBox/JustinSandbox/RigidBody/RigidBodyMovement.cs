@@ -6,14 +6,15 @@ public class RigidBodyMovement : MonoBehaviour
 {
 
     public float moveSpeed;
+    private float defaultMoveSpeed;
     private Rigidbody rb;
     private Vector3 moveInput;
     private Vector3 moveVelocity;
     public float slowFallSpeed;
 
     public LayerMask groundMask;
-   
 
+    public GameObject grappleObj;
 
     private bool canDoubleJump;
     bool isGrounded = false;
@@ -26,6 +27,7 @@ public class RigidBodyMovement : MonoBehaviour
     public bool onLeftWallJump = false;
     public bool onRightWallJump = false;
 
+    public float grappleSpeed;
     public float wallJumpForce;
 
     public float jumpForce;
@@ -36,8 +38,11 @@ public class RigidBodyMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+
         //get access to input manager
         controls = new Controls();
+        defaultMoveSpeed = moveSpeed;
 
         // call back methods that are called when playerInput is used.
         controls.Player.Jump.performed += Jump_performed;
@@ -65,11 +70,11 @@ public class RigidBodyMovement : MonoBehaviour
                 canDoubleJump = true;
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
             }
-            else if(canDoubleJump)
+            else if (canDoubleJump)
             {
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
                 canDoubleJump = false;
-            }      
+            }
         }
         if (onLeftWallJump)
         {
@@ -78,7 +83,6 @@ public class RigidBodyMovement : MonoBehaviour
         if (onRightWallJump)
         {
             rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
-
         }
     }
 
@@ -89,19 +93,26 @@ public class RigidBodyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        
+
+        if (grappleObj.GetComponent<Grapple>().isSwinging == true)
+            moveSpeed = grappleSpeed;
+        else
+            moveSpeed = defaultMoveSpeed;
 
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
 
         moveInput = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
         moveVelocity = moveInput;
 
+        Vector3 playerDirection = Vector3.right * dirMove.x + Vector3.forward * dirMove.y;
+        if(playerDirection.sqrMagnitude > 0.0f)
+        transform.rotation = Quaternion.LookRotation(playerDirection);
 
         //if player is on bounce pad call bounce pad function()
         if (onBouncePad)
             BouncePad();
+
     }
 
     private void FixedUpdate()

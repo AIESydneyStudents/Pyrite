@@ -11,6 +11,14 @@ public class Grapple : MonoBehaviour
     private SpringJoint joint;
     private Vector3 grapplePoint;
     private Controls controls;
+    public float jointMaxDist;
+    public float jointMinDistance;
+    public float spring;
+    public float damper;
+    public float massScale;
+
+    public bool isSwinging;
+    
 
     void Awake()
     {
@@ -32,8 +40,7 @@ public class Grapple : MonoBehaviour
 
     private void GrappleButtonDown_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (ropeEndPoint != null)
-            StartGrapple();
+        StartGrapple();
     }
     void LateUpdate()
     {
@@ -44,27 +51,29 @@ public class Grapple : MonoBehaviour
     void StartGrapple()
     {
         RaycastHit hit;
-        if (Physics.Linecast(ropeStartPoint.position, ropeEndPoint.position, out hit))
-        {
-            grapplePoint = hit.point;
-            joint = player.gameObject.AddComponent<SpringJoint>();
-            joint.autoConfigureConnectedAnchor = false;
-            joint.connectedAnchor = grapplePoint;
+        if (ropeEndPoint != null)
+            if (Physics.Linecast(ropeStartPoint.position, ropeEndPoint.position, out hit))
+            {
+                isSwinging = true;
+                grapplePoint = hit.point;
+                joint = player.gameObject.AddComponent<SpringJoint>();
+                joint.autoConfigureConnectedAnchor = false;
+                joint.connectedAnchor = grapplePoint;
 
-            float distanceFromPoint = Vector3.Distance(ropeStartPoint.position, grapplePoint);
+                float distanceFromPoint = Vector3.Distance(ropeStartPoint.position, grapplePoint);
 
-            //The distance grapple will try to keep from grapple point. 
-            joint.maxDistance = distanceFromPoint * 0.8f;
-            joint.minDistance = distanceFromPoint * 0.25f;
+                //The distance grapple will try to keep from grapple point. 
+                joint.maxDistance = distanceFromPoint * jointMaxDist;    //0.8f default
+                joint.minDistance = distanceFromPoint * jointMinDistance;  //0.24f default
 
-            //Adjust these values to fit your game.
-            joint.spring = 4.5f;
-            joint.damper = 7f;
-            joint.massScale = 4.5f;
+                //Adjust these values to fit your game.
+                joint.spring = spring;    //4.5f default
+                joint.damper = damper;      //7f default
+                joint.massScale = massScale; //4.5f default
 
-            lr.positionCount = 2;
-            currentGrapplePosition = ropeStartPoint.position;
-        }
+                lr.positionCount = 2;
+                currentGrapplePosition = ropeStartPoint.position;
+            }
     }
 
 
@@ -75,6 +84,8 @@ public class Grapple : MonoBehaviour
     {
         lr.positionCount = 0;
         Destroy(joint);
+        isSwinging = false;
+
     }
 
     private Vector3 currentGrapplePosition;
@@ -93,7 +104,10 @@ public class Grapple : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Grapple")
+        {
             ropeEndPoint = other.transform;
+
+        }
     }
 
     private void OnTriggerExit(Collider other)
