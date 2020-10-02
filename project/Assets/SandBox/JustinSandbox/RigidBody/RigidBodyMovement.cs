@@ -106,8 +106,8 @@ public class RigidBodyMovement : MonoBehaviour
         moveVelocity = moveInput;
 
         Vector3 playerDirection = Vector3.right * dirMove.x + Vector3.forward * dirMove.y;
-        if(playerDirection.sqrMagnitude > 0.0f)
-        transform.rotation = Quaternion.LookRotation(playerDirection);
+        if (playerDirection.sqrMagnitude > 0.0f)
+            transform.rotation = Quaternion.LookRotation(playerDirection);
 
         //if player is on bounce pad call bounce pad function()
         if (onBouncePad)
