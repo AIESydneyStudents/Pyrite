@@ -11,9 +11,14 @@ public class RigidBodyMovement : MonoBehaviour
     private Vector3 moveVelocity;
     public float slowFallSpeed;
 
+    public LayerMask groundMask;
+   
+
 
     private bool canDoubleJump;
     bool isGrounded = false;
+    public Transform groundCheck;
+    public float groundDistance;
 
     [SerializeField] float bouncePadHeight;
     public bool onBouncePad;
@@ -84,6 +89,10 @@ public class RigidBodyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        
+
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
 
         moveInput = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
@@ -98,13 +107,5 @@ public class RigidBodyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = moveVelocity;             //add velocity to player
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        isGrounded = true;
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        isGrounded = false;
     }
 }

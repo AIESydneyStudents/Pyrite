@@ -56,7 +56,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""id"": ""98680f87-1ba8-465c-afb4-a1f57f256b17"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": ""Hold(duration=0.1,pressPoint=0.1)""
                 },
                 {
                     ""name"": ""GrappleButtonUp"",
