@@ -24,8 +24,14 @@ public class RigidBodyMovement : MonoBehaviour
     [SerializeField] float bouncePadHeight;
     public bool onBouncePad;
 
+    public bool onEnemyBounce;
+    [SerializeField] float onEnemyBounceHeight;
+
     public bool onLeftWallJump = false;
     public bool onRightWallJump = false;
+
+    bool canWallJumpLeft = false;
+    bool canWallJumpRight = false;
 
     public float grappleSpeed;
     public float wallJumpForce;
@@ -63,6 +69,11 @@ public class RigidBodyMovement : MonoBehaviour
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (isGrounded)
+        {
+            canWallJumpLeft = true;
+            canWallJumpRight = true;
+        }
         if (!onLeftWallJump && !onRightWallJump)
         {
             if (isGrounded)
@@ -78,11 +89,22 @@ public class RigidBodyMovement : MonoBehaviour
         }
         if (onLeftWallJump)
         {
-            rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+            if (canWallJumpLeft)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                canWallJumpLeft = false;
+                canWallJumpRight = true;
+            }
         }
         if (onRightWallJump)
         {
-            rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+            if (canWallJumpRight)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                canWallJumpRight = false;
+                canWallJumpLeft = true;
+            }
+
         }
     }
 
@@ -90,9 +112,16 @@ public class RigidBodyMovement : MonoBehaviour
     {
         rb.velocity = new Vector3(rb.velocity.x, bouncePadHeight, rb.velocity.z);
     }
+
+    private void OnEnemyBounce()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, onEnemyBounceHeight, rb.velocity.z);
+    }
     // Update is called once per frame
     void Update()
     {
+
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (grappleObj.GetComponent<Grapple>().isSwinging == true)
@@ -103,6 +132,7 @@ public class RigidBodyMovement : MonoBehaviour
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
 
         moveInput = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
+
         moveVelocity = moveInput;
 
         Vector3 playerDirection = Vector3.right * dirMove.x + Vector3.forward * dirMove.y;
@@ -112,6 +142,10 @@ public class RigidBodyMovement : MonoBehaviour
         //if player is on bounce pad call bounce pad function()
         if (onBouncePad)
             BouncePad();
+
+        if (onEnemyBounce)
+            OnEnemyBounce();
+
 
     }
 
