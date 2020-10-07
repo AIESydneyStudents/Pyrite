@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Loads the next scene
@@ -12,8 +13,22 @@ public class SceneLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
-    public List<string> scenes = new List<string>();
-    public int currentScene = 0;
+   // public List<string> scenes = new List<string>();
+    //public int currentScene = 0;
+
+    public GameObject playFirstButton;
+
+    public string previousScene;
+    public string currentScene;
+    public string nextScene;
+    public string mainMenu;
+
+    private void Start()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+
+        EventSystem.current.SetSelectedGameObject(playFirstButton);
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,23 +36,48 @@ public class SceneLoader : MonoBehaviour
         
     }
 
-    public void LoadNextScene()
+    public void LoadPreviousScene()
     {
-        var sceneIndex = SceneManager.GetSceneByName(scenes[currentScene]).buildIndex+1;
-        
-        StartCoroutine(LoadScene(sceneIndex));
-        currentScene += 1;
-        
-        if (currentScene == scenes.Count)
-            currentScene = 0;
+        StartCoroutine(LoadScene(previousScene));
     }
 
-    IEnumerator LoadScene(int sceneIndex)
+    public void LoadCurrentScene()
+    {
+        StartCoroutine(LoadScene(currentScene));
+    }
+
+    public void LoadNextScene()
+    {
+        StartCoroutine(LoadScene(nextScene));
+    }
+
+    public void LoadMainMenu()
+    {
+        StartCoroutine(LoadScene(mainMenu));
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+    //public void LoadNextScene()
+    //{
+    //    var sceneIndex = SceneManager.GetSceneByName(scenes[currentScene]).buildIndex;
+
+    //    StartCoroutine(LoadScene(sceneIndex));
+    //    currentScene += 1;
+
+    //    if (currentScene == scenes.Count)
+    //        currentScene = 0;
+    //}
+
+    IEnumerator LoadScene(string scene)
     {
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(scene);
     }
 }

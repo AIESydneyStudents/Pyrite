@@ -65,6 +65,14 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=1)""
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""37c8ea41-f0a5-474e-abac-ec8d5542b2fc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
                 }
             ],
             ""bindings"": [
@@ -265,6 +273,28 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""GrappleButtonUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""570a8b92-eea4-4ec7-a2c7-f5dcb2c40e9c"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8748bd94-a646-491f-9a95-ad2909bfb533"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -279,6 +309,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player_SlowFallRelease = m_Player.FindAction("SlowFallRelease", throwIfNotFound: true);
         m_Player_GrappleButtonDown = m_Player.FindAction("GrappleButtonDown", throwIfNotFound: true);
         m_Player_GrappleButtonUp = m_Player.FindAction("GrappleButtonUp", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -334,6 +365,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_SlowFallRelease;
     private readonly InputAction m_Player_GrappleButtonDown;
     private readonly InputAction m_Player_GrappleButtonUp;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -344,6 +376,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @SlowFallRelease => m_Wrapper.m_Player_SlowFallRelease;
         public InputAction @GrappleButtonDown => m_Wrapper.m_Player_GrappleButtonDown;
         public InputAction @GrappleButtonUp => m_Wrapper.m_Player_GrappleButtonUp;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -371,6 +404,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @GrappleButtonUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
                 @GrappleButtonUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
                 @GrappleButtonUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrappleButtonUp;
+                @Pause.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -393,6 +429,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @GrappleButtonUp.started += instance.OnGrappleButtonUp;
                 @GrappleButtonUp.performed += instance.OnGrappleButtonUp;
                 @GrappleButtonUp.canceled += instance.OnGrappleButtonUp;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -405,5 +444,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnSlowFallRelease(InputAction.CallbackContext context);
         void OnGrappleButtonDown(InputAction.CallbackContext context);
         void OnGrappleButtonUp(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

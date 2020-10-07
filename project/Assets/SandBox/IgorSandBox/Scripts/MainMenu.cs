@@ -17,7 +17,6 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(playFirstButton);
