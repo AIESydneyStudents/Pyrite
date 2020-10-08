@@ -35,16 +35,19 @@ public class Grapple : MonoBehaviour
 
     private void GrappleButtonUp_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        StopGrapple();
+        if (lr != null)
+            StopGrapple();
     }
 
     private void GrappleButtonDown_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        StartGrapple();
+        if (lr != null)
+            StartGrapple();
     }
     void LateUpdate()
     {
-        DrawRope();
+        if (lr != null)
+            DrawRope();
     }
 
 
@@ -103,7 +106,7 @@ public class Grapple : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Grapple")
+        if (other.gameObject.CompareTag("Grapple"))
         {
             ropeEndPoint = other.transform;
 
@@ -112,7 +115,7 @@ public class Grapple : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Grapple")
+        if (other.gameObject.CompareTag("Grapple"))
         {
             ropeEndPoint = null;
             StopGrapple();
