@@ -45,7 +45,6 @@ public class RigidBodyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-
         //get access to input manager
         controls = new Controls();
         defaultMoveSpeed = moveSpeed;
@@ -59,52 +58,57 @@ public class RigidBodyMovement : MonoBehaviour
 
     private void SlowFallRelease_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        rb.drag = 0f;
+        if (rb != null)
+            rb.drag = 0f;
     }
 
     private void SlowFall_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        rb.drag = slowFallSpeed;
+        if (rb != null)
+            rb.drag = slowFallSpeed;
     }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (isGrounded)
-        {
-            canWallJumpLeft = true;
-            canWallJumpRight = true;
-        }
-        if (!onLeftWallJump && !onRightWallJump)
+        if (rb != null)
         {
             if (isGrounded)
             {
-                canDoubleJump = true;
-                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-            }
-            else if (canDoubleJump)
-            {
-                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-                canDoubleJump = false;
-            }
-        }
-        if (onLeftWallJump)
-        {
-            if (canWallJumpLeft)
-            {
-                rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
-                canWallJumpLeft = false;
+                canWallJumpLeft = true;
                 canWallJumpRight = true;
             }
-        }
-        if (onRightWallJump)
-        {
-            if (canWallJumpRight)
+            if (!onLeftWallJump && !onRightWallJump)
             {
-                rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
-                canWallJumpRight = false;
-                canWallJumpLeft = true;
+                if (isGrounded)
+                {
+                    canDoubleJump = true;
+                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                }
+                else if (canDoubleJump)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                    canDoubleJump = false;
+                }
             }
+            if (onLeftWallJump)
+            {
+                if (canWallJumpLeft)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                    canWallJumpLeft = false;
+                    canWallJumpRight = true;
+                }
+            }
+            if (onRightWallJump)
+            {
+                if (canWallJumpRight)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                    canWallJumpRight = false;
+                    canWallJumpLeft = true;
+                }
 
+            }
         }
     }
 
