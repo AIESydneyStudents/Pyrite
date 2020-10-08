@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// Sets players position to gameMaster
+// Sets players position to lastCheck point pos
 public class PlayerPos : MonoBehaviour
 {
     private GameMaster gameMaster;

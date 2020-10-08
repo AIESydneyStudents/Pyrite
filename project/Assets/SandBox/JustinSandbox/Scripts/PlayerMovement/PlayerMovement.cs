@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float defaultMoveSpeed;
 
     //Adjustable player speeds
-    [SerializeField] float moveSpeed;
+    [SerializeField] float moveSpeed; 
     [SerializeField] float slowFallSpeed;
     [SerializeField] float bouncePadHeight;
     [SerializeField] float onEnemyBounceHeight;

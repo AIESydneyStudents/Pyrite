@@ -17,11 +17,11 @@ public class Grapple : MonoBehaviour
 
     private SpringJoint joint;
     //adjustable joint variable
-    [SerializeField] float jointMaxDist;
-    [SerializeField] float jointMinDistance;
-    [SerializeField] float spring;
-    [SerializeField] float damper;
-    [SerializeField] float massScale;
+    [SerializeField] float jointMaxDist = 0.8f;
+    [SerializeField] float jointMinDistance = 0.24f;
+    [SerializeField] float spring = 4.5f;
+    [SerializeField] float damper = 1.27f;
+    [SerializeField] float massScale = 10f;
 
     void Awake()
     {
