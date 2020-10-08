@@ -252,30 +252,8 @@
                 },
                 {
                     "name": "",
-                    "id": "d5294f30-8468-4a73-ba4f-82b5d7771f8a",
-                    "path": "<Keyboard>/rightShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "GrappleButtonDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "27697b2d-2307-4c4e-9356-58d2d1cd460f",
                     "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "GrappleButtonUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "41f7c9fd-a16c-478c-ae45-14863a665ba8",
-                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
