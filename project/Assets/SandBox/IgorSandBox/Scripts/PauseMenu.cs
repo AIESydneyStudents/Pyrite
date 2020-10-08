@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         controls = new Controls();
         controls.Enable();
         controls.Player.Pause.performed += Pause_performed;
-        
+
     }
 
     private void Pause_performed(InputAction.CallbackContext obj)
@@ -49,17 +49,11 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        // If using controller
-        if (controls.Player.Move.enabled.Equals(true))
-        {
-            EventSystem.current.SetSelectedGameObject(null);
 
-            EventSystem.current.SetSelectedGameObject(pauseFirstButton);
-        }
-        else
-        {
-            EventSystem.current.SetSelectedGameObject(null);
-        }
+        EventSystem.current.SetSelectedGameObject(null);
+
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+
 
 
         Time.timeScale = 0.0f;
