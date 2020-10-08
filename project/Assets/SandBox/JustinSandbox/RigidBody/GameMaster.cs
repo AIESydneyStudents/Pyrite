@@ -16,5 +16,6 @@ public class GameMaster : MonoBehaviour
         }
         else
             Destroy(gameObject);
+        Cursor.visible = false;
     }
 }
