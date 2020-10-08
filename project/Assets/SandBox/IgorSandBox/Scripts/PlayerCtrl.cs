@@ -19,6 +19,7 @@ public class PlayerCtrl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        controls = new Controls();
         controls.Enable();
 
     }
