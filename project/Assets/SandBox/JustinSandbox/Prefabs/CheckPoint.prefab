@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5750607901892659588}
   - component: {fileID: 5750607901892659591}
   - component: {fileID: 5750607901892659590}
+  - component: {fileID: 6762366346721687969}
   - component: {fileID: 5750607901892659585}
-  - component: {fileID: 5750607901892659589}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -81,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6762366346721687969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750607901892659584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b671dd01d5a4e14492beefd87513f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!65 &5750607901892659585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94,16 +107,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5750607901892659589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5750607901892659584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b671dd01d5a4e14492beefd87513f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}

@@ -5,7 +5,6 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private GameMaster gameMaster;
-    public GameObject player;
 
     private void Start()
     {
@@ -13,7 +12,7 @@ public class CheckPoint : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject.CompareTag("Player"))
         {
             gameMaster.lastCheckPointPos = transform.position;
         }

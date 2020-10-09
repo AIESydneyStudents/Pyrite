@@ -18,13 +18,10 @@ public class FallingPlatforms : MonoBehaviour
         startPos = transform.position;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void DropPlatforms()
     {
-        if (collision.gameObject == player)
-        {
-            Invoke("DropPlatform", fallDelay);
-            Invoke("RespawnPlatform", fallDelay + RespawnDelay);
-        }
+        Invoke("DropPlatform", fallDelay);
+        Invoke("RespawnPlatform", fallDelay + RespawnDelay);
     }
 
     private void DropPlatform()

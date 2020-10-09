@@ -6,28 +6,33 @@ public class PlayerMovement : MonoBehaviour
 {
     //RigidBody and positions for movements
     private Rigidbody rb;
-    private Vector3 moveInput;
     private Vector3 moveVelocity;
 
     //Starting values
     private float defaultMoveSpeed;
 
     //Adjustable player speeds
-    [SerializeField] float moveSpeed; 
+    [SerializeField] float moveSpeed;
     [SerializeField] float slowFallSpeed;
     [SerializeField] float bouncePadHeight;
     [SerializeField] float onEnemyBounceHeight;
     [SerializeField] float grappleSpeed;
     [SerializeField] float wallJumpForce;
     [SerializeField] float jumpForce;
-    
+    [SerializeField] float dashSpeed;
+    [SerializeField] float dashCooldown;
+
+    private float dashCurrentCooldown;
+    public float dashTime = 0;
+    private float currentDashTime;
+    private bool isDashing = false;
+    private bool StartDashCooldown = false;
+
     //GroundChecks
     [SerializeField] LayerMask groundMask;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundDistance;
     private bool isGrounded = false;
-
-    [SerializeField] GameObject grappleObj;
 
     //If Player is interacting with objects change values true. triggered on items collided with
     public bool onBouncePad = false;
@@ -35,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     public bool onLeftWallJump = false;
     public bool onRightWallJump = false;
     public bool OnGrapple = false;
-
 
     //Bools to switch which wallJump player can jump of
     private bool canWallJumpLeft = false;
@@ -56,11 +60,24 @@ public class PlayerMovement : MonoBehaviour
         //set default movespeed to moveSpeed value given in inspector
         defaultMoveSpeed = moveSpeed;
 
+        currentDashTime = dashTime;
+
         // call back methods that are called when playerInput is used.
         controls.Player.Jump.performed += Jump_performed;
         controls.Player.SlowFall.performed += SlowFall_performed;
         controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
+        controls.Player.Dash.performed += Dash_performed;
+
         controls.Enable();
+    }
+
+    private void Dash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        if (dashCurrentCooldown == dashCooldown)
+        {
+            isDashing = true;
+            StartDashCooldown = true;
+        }
     }
 
     /// < SlowFallInput>
@@ -124,6 +141,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void SetOnLeftWallTrue() => onLeftWallJump = true;
+    public void SetOnLeftWallFalse() => onLeftWallJump = false;
+    public void SetOnRightWallTrue() => onRightWallJump = true;
+    public void SetOnRightWallfalse() => onRightWallJump = false;
+    public void OnBouncePad() => rb.velocity = new Vector3(rb.velocity.x, bouncePadHeight, rb.velocity.z);
+    public void OnEnemyHead()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, onEnemyBounceHeight, rb.velocity.z);
+    }
+
     void Update()
     {
         //check if player is on ground
@@ -131,34 +158,47 @@ public class PlayerMovement : MonoBehaviour
 
         //get the players direction input
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
-        //put players input into a vector 3
-        moveInput = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
-        //set the moveVelocity to = the moveInput
-        moveVelocity = moveInput;
-
+        if (!isDashing)
+        {
+            //put players input into a vector 3
+            moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
+        }
         //gets players current direction they are heading
         Vector3 playerDirection = Vector3.right * dirMove.x + Vector3.forward * dirMove.y;
         //if player is moving change its rotation to direction moving
         if (playerDirection.sqrMagnitude > 0.0f)
             transform.rotation = Quaternion.LookRotation(playerDirection);
 
-        //If player is interecting with following objects change players moveing behaviours
-        if (onBouncePad)
-            rb.velocity = new Vector3(rb.velocity.x, bouncePadHeight, rb.velocity.z);
-
-        if (onEnemyBounce)
-            rb.velocity = new Vector3(rb.velocity.x, onEnemyBounceHeight, rb.velocity.z);
-
         if (OnGrapple)
             moveSpeed = grappleSpeed;
         else
             moveSpeed = defaultMoveSpeed;
 
+        ///If dashing is true keep dashing till dash time is less then 0
+        ///moves players transform forward
+        if (isDashing)
+        {
+            currentDashTime -= Time.deltaTime;
+            moveVelocity = transform.forward * dashSpeed;
+            if (currentDashTime <= 0)
+            {
+                isDashing = false;
+                currentDashTime = dashTime;
+            }
+        }
+        if (StartDashCooldown)
+            dashCurrentCooldown -= Time.deltaTime;
+
+        if (dashCurrentCooldown <= 0)
+        {
+            dashCurrentCooldown = dashCooldown;
+            StartDashCooldown = false;
+        }
     }
 
     private void FixedUpdate()
     {
         //add velocity to player
-        rb.velocity = moveVelocity;            
+        rb.velocity = moveVelocity;
     }
 }
