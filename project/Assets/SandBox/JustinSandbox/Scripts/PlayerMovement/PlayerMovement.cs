@@ -35,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false;
 
     //If Player is interacting with objects change values true. triggered on items collided with
-    public bool onBouncePad = false;
-    public bool onEnemyBounce = false;
     public bool onLeftWallJump = false;
     public bool onRightWallJump = false;
     public bool OnGrapple = false;
@@ -106,17 +104,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 canWallJumpLeft = true;
                 canWallJumpRight = true;
+                canDoubleJump = true;
             }
             if (!onLeftWallJump && !onRightWallJump)
             {
                 if (isGrounded)
                 {
-                    canDoubleJump = true;
-                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                    Jump(jumpForce);
                 }
                 else if (canDoubleJump)
                 {
-                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                    Jump(jumpForce);
                     canDoubleJump = false;
                 }
             }
@@ -124,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (canWallJumpLeft)
                 {
-                    rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                    Jump(wallJumpForce);
                     canWallJumpLeft = false;
                     canWallJumpRight = true;
                 }
@@ -133,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (canWallJumpRight)
                 {
-                    rb.velocity = new Vector3(rb.velocity.x, wallJumpForce, rb.velocity.z);
+                    Jump(wallJumpForce);
                     canWallJumpRight = false;
                     canWallJumpLeft = true;
                 }
@@ -141,28 +139,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void SetOnLeftWallTrue() => onLeftWallJump = true;
-    public void SetOnLeftWallFalse() => onLeftWallJump = false;
-    public void SetOnRightWallTrue() => onRightWallJump = true;
-    public void SetOnRightWallfalse() => onRightWallJump = false;
-    public void OnBouncePad() => rb.velocity = new Vector3(rb.velocity.x, bouncePadHeight, rb.velocity.z);
-    public void OnEnemyHead()
+    //gets players moveInput and rotation and stores in moveVelocity
+    public void MoveAndRotatePlayer()
     {
-        rb.velocity = new Vector3(rb.velocity.x, onEnemyBounceHeight, rb.velocity.z);
-    }
-
-    void Update()
-    {
-        //check if player is on ground
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
         //get the players direction input
         var dirMove = controls.Player.Move.ReadValue<Vector2>();
-        if (!isDashing)
-        {
-            //put players input into a vector 3
-            moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
-        }
+        //put players input into a vector 3
+        moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
+
         //gets players current direction they are heading
         Vector3 playerDirection = Vector3.right * dirMove.x + Vector3.forward * dirMove.y;
         //if player is moving change its rotation to direction moving
@@ -173,9 +157,13 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = grappleSpeed;
         else
             moveSpeed = defaultMoveSpeed;
+    }
 
-        ///If dashing is true keep dashing till dash time is less then 0
-        ///moves players transform forward
+    ///If dashing is true keep dashing till dash time is less then 0
+    ///moves players transform forward
+    public void Dash()
+    {
+
         if (isDashing)
         {
             currentDashTime -= Time.deltaTime;
@@ -194,6 +182,25 @@ public class PlayerMovement : MonoBehaviour
             dashCurrentCooldown = dashCooldown;
             StartDashCooldown = false;
         }
+    }
+
+    public void SetOnLeftWallTrue() => onLeftWallJump = true;       //sets OnLeftWall bool true
+    public void SetOnLeftWallFalse() => onLeftWallJump = false;     //sets OnLeftWall bool false
+    public void SetOnRightWallTrue() => onRightWallJump = true;     //sets OnRightWall bool true
+    public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
+
+    public void OnBouncePad() => Jump(bouncePadHeight); //player bounces if on bounce pad
+    public void OnEnemyHead() => Jump(onEnemyBounceHeight); //player bounces if on enemies head
+    public void Jump(float jumpHeight) => rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
+
+    void Update()
+    {
+        //check if player is on ground
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        //move and rotate player based on input
+        MoveAndRotatePlayer();
+        //if Dashing
+        Dash();
     }
 
     private void FixedUpdate()
