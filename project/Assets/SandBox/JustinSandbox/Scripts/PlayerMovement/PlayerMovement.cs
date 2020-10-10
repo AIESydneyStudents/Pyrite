@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private float dashCurrentCooldown;
     public float dashTime = 0;
     private float currentDashTime;
-    private bool isDashing = false;
+    public bool isDashing = false;
     private bool StartDashCooldown = false;
 
     //GroundChecks
