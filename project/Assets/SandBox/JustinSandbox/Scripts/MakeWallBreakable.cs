@@ -14,7 +14,7 @@ public class MakeWallBreakable : MonoBehaviour
     }
     public void WallBreakable()
     {
-        if (player.GetComponent<PlayerMovement>().isDashing == true)
+        if (player.GetComponent<PlayerMovement>().isDashing == true || player.GetComponent<PlayerMovement>().isGroundSlamming)
         {
             foreach (Rigidbody rb in rigidBodies)
             {

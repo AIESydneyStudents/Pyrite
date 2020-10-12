@@ -8,22 +8,32 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Vector3 moveVelocity;
 
+    private Vector3 initalGravity;
+    [SerializeField] float initialGravityValue = -30f;
+
+    private Vector3 groundSlamGravity;
+    [SerializeField] float groundSlamGravityValue = -200f;
+
+    private Vector3 levitateGravity;
+    [SerializeField] float levitateGravityValue = 5f;
+
     //Starting values
     private float defaultMoveSpeed;
 
     //Adjustable player speeds
-    [SerializeField] float moveSpeed;
-    [SerializeField] float slowFallSpeed;
-    [SerializeField] float bouncePadHeight;
-    [SerializeField] float onEnemyBounceHeight;
-    [SerializeField] float grappleSpeed;
-    [SerializeField] float wallJumpForce;
-    [SerializeField] float jumpForce;
-    [SerializeField] float dashSpeed;
-    [SerializeField] float dashCooldown;
+    [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float slowFallSpeed = 7f;
+    [SerializeField] float groundSlamSpeed = -4f;
+    [SerializeField] float bouncePadHeight = 30f;
+    [SerializeField] float onEnemyBounceHeight = 15f;
+    [SerializeField] float grappleSpeed = 15f;
+    [SerializeField] float wallJumpForce = 30f;
+    [SerializeField] float jumpForce = 15f;
+    [SerializeField] float dashSpeed = 100f;
+    [SerializeField] float dashCooldown = 3f;
+    [SerializeField] float dashTime = 0.1f;
 
     private float dashCurrentCooldown;
-    public float dashTime = 0;
     private float currentDashTime;
     public bool isDashing = false;
     private bool StartDashCooldown = false;
@@ -31,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     //GroundChecks
     [SerializeField] LayerMask groundMask;
     [SerializeField] Transform groundCheck;
-    [SerializeField] float groundDistance;
+    [SerializeField] float groundDistance = 0.4f;
     private bool isGrounded = false;
 
     //If Player is interacting with objects change values true. triggered on items collided with
@@ -43,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canWallJumpLeft = false;
     private bool canWallJumpRight = false;
 
+    public bool isGroundSlamming = false;
+
     //ability to double jump
     private bool canDoubleJump;
 
@@ -52,6 +64,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        initalGravity = new Vector3(0, initialGravityValue, 0);
+        groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
 
         //get access to input manager
         controls = new Controls();
@@ -65,8 +80,17 @@ public class PlayerMovement : MonoBehaviour
         controls.Player.SlowFall.performed += SlowFall_performed;
         controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
         controls.Player.Dash.performed += Dash_performed;
+        controls.Player.GroundSmash.performed += GroundSmash_performed;
 
         controls.Enable();
+
+        Physics.gravity = initalGravity;
+    }
+
+    private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        Physics.gravity = groundSlamGravity;
+        isGroundSlamming = true;
     }
 
     private void Dash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -163,7 +187,6 @@ public class PlayerMovement : MonoBehaviour
     ///moves players transform forward
     public void Dash()
     {
-
         if (isDashing)
         {
             currentDashTime -= Time.deltaTime;
@@ -189,14 +212,38 @@ public class PlayerMovement : MonoBehaviour
     public void SetOnRightWallTrue() => onRightWallJump = true;     //sets OnRightWall bool true
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
 
-    public void OnBouncePad() => Jump(bouncePadHeight); //player bounces if on bounce pad
+    public void OnFloatingObjEnter()
+    {
+        Physics.gravity = levitateGravity;
+    }
+    public void OnFloatingObjExit()
+    {
+        Physics.gravity = initalGravity;
+    }
+
+    public void OnBouncePad()
+    {
+        Jump(bouncePadHeight); //player bounces if on bounce pad
+        Physics.gravity = initalGravity;
+    }
     public void OnEnemyHead() => Jump(onEnemyBounceHeight); //player bounces if on enemies head
     public void Jump(float jumpHeight) => rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
+
 
     void Update()
     {
         //check if player is on ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGroundSlamming)
+        {
+            if (isGrounded)
+            {
+                Physics.gravity = initalGravity;
+            }
+            if (moveVelocity.y == 0)
+                isGroundSlamming = false;
+        }
         //move and rotate player based on input
         MoveAndRotatePlayer();
         //if Dashing

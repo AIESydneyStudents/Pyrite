@@ -81,6 +81,14 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""GroundSmash"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""ba0e2bb8-1b16-4c93-b3ce-b491b44d1e09"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -314,6 +322,17 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b24f2ff2-5eff-4094-8719-236b6d862ebe"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GroundSmash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -330,6 +349,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player_GrappleButtonUp = m_Player.FindAction("GrappleButtonUp", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        m_Player_GroundSmash = m_Player.FindAction("GroundSmash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -387,6 +407,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_GrappleButtonUp;
     private readonly InputAction m_Player_Pause;
     private readonly InputAction m_Player_Dash;
+    private readonly InputAction m_Player_GroundSmash;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -399,6 +420,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @GrappleButtonUp => m_Wrapper.m_Player_GrappleButtonUp;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
+        public InputAction @GroundSmash => m_Wrapper.m_Player_GroundSmash;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -432,6 +454,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @GroundSmash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGroundSmash;
+                @GroundSmash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGroundSmash;
+                @GroundSmash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGroundSmash;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -460,6 +485,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @GroundSmash.started += instance.OnGroundSmash;
+                @GroundSmash.performed += instance.OnGroundSmash;
+                @GroundSmash.canceled += instance.OnGroundSmash;
             }
         }
     }
@@ -474,5 +502,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnGrappleButtonUp(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnGroundSmash(InputAction.CallbackContext context);
     }
 }
