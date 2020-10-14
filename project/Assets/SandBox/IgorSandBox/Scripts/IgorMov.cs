@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IgorMov : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     //RigidBody and positions for movements
     private Rigidbody rb;
