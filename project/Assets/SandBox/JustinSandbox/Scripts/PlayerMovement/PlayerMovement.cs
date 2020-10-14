@@ -7,59 +7,78 @@ public class PlayerMovement : MonoBehaviour
     //RigidBody and positions for movements
     private Rigidbody rb;
     private Vector3 moveVelocity;
-
-    private Vector3 initalGravity;
-    [SerializeField] float initialGravityValue = -30f;
-
-    private Vector3 groundSlamGravity;
-    [SerializeField] float groundSlamGravityValue = -200f;
-
-    private Vector3 levitateGravity;
-    [SerializeField] float levitateGravityValue = 5f;
-
     //Starting values
     private float defaultMoveSpeed;
+    private Vector3 initalGravity;
 
-    //Adjustable player speeds
+    [Header("Gravity")]
+    [SerializeField] float initialGravityValue = -30f;
+
+
+    [Header("PLAYER MOVE SPEEDS")]
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float slowFallSpeed = 7f;
-    [SerializeField] float groundSlamSpeed = -4f;
-    [SerializeField] float bouncePadHeight = 30f;
-    [SerializeField] float onEnemyBounceHeight = 15f;
-    [SerializeField] float grappleSpeed = 15f;
-    [SerializeField] float wallJumpForce = 30f;
     [SerializeField] float jumpForce = 15f;
+
+    [Header("ON TRIGGER VARIABLES")]
+    [SerializeField] float onEnemyBounceHeight = 15f;
+    [SerializeField] float bouncePadHeight = 30f;
+    [SerializeField] float OnFloatPadSpeed = 15f;
+    [SerializeField] float wallJumpForce = 30f;
+
+    [Header("SLOW FALL SPEED")]
+    [SerializeField] float slowFallSpeed = 7f;
+
+
+    [Header("DASH VARIABLES")]
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashCooldown = 3f;
     [SerializeField] float dashTime = 0.1f;
-
     private float dashCurrentCooldown;
     private float currentDashTime;
-    public bool isDashing = false;
     private bool StartDashCooldown = false;
+    [HideInInspector]
+    public bool isDashing = false;
+
+    [Header("GROUND SLAM VARIABLES")]
+    [SerializeField] float groundSlamGravityValue = -200f;
+    private Vector3 groundSlamGravity;
+    [HideInInspector]
+    public bool isGroundSlamming = false;
 
     //GroundChecks
+    [Header("GROUND CHECKS")]
     [SerializeField] LayerMask groundMask;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundDistance = 0.4f;
     private bool isGrounded = false;
 
-    //If Player is interacting with objects change values true. triggered on items collided with
-    public bool onLeftWallJump = false;
-    public bool onRightWallJump = false;
+    [Header("GRAPPLES VARIABLES")]
+    [SerializeField] float grappleSpeed = 15f;
+    [HideInInspector]
     public bool OnGrapple = false;
 
+    [Header("POWER UP BOOLS")]
+    [SerializeField] bool canDoubleJump;
+    [SerializeField] bool canSlide;
+    [SerializeField] bool canGlide;
+    [SerializeField] bool canDash;
+    [SerializeField] bool canSpin;
+    [SerializeField] bool canWallJump;
+    [SerializeField] bool canGroundSlam;
+    public bool canGrapple;
+
+    //If Player is interacting with objects change values true. triggered on items collided with
+    private bool onLeftWallJump = false;
+    private bool onRightWallJump = false;
     //Bools to switch which wallJump player can jump of
     private bool canWallJumpLeft = false;
     private bool canWallJumpRight = false;
 
-    public bool isGroundSlamming = false;
-
-    //ability to double jump
-    private bool canDoubleJump;
+    private bool doubleJumpActive;
 
     //acess to input system
     private Controls controls;
+
 
     void Start()
     {
@@ -89,12 +108,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (!canGroundSlam)
+            return;
         Physics.gravity = groundSlamGravity;
         isGroundSlamming = true;
     }
 
     private void Dash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (!canDash)
+            return;
         if (dashCurrentCooldown == dashCooldown)
         {
             isDashing = true;
@@ -106,6 +129,8 @@ public class PlayerMovement : MonoBehaviour
     /// player falling speed is slower while input held down
     private void SlowFall_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (!canGlide)
+            return;
         if (rb != null)
             rb.drag = slowFallSpeed;
     }
@@ -114,6 +139,8 @@ public class PlayerMovement : MonoBehaviour
     /// Players falling speed gets set back to normal
     private void SlowFallRelease_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        if (!canGlide)
+            return;
         if (rb != null)
             rb.drag = 0f;
     }
@@ -124,25 +151,29 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb != null)
         {
-            if (isGrounded)
+            if (isGrounded && canWallJump)
             {
                 canWallJumpLeft = true;
                 canWallJumpRight = true;
-                canDoubleJump = true;
             }
+            if (isGrounded && canDoubleJump)
+            {
+                doubleJumpActive = true;
+            }
+
             if (!onLeftWallJump && !onRightWallJump)
             {
                 if (isGrounded)
                 {
                     Jump(jumpForce);
                 }
-                else if (canDoubleJump)
+                else if (doubleJumpActive && canDoubleJump)
                 {
                     Jump(jumpForce);
-                    canDoubleJump = false;
+                    doubleJumpActive = false;
                 }
             }
-            if (onLeftWallJump)
+            if (onLeftWallJump && canWallJump)
             {
                 if (canWallJumpLeft)
                 {
@@ -151,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
                     canWallJumpRight = true;
                 }
             }
-            if (onRightWallJump)
+            if (onRightWallJump && canWallJump)
             {
                 if (canWallJumpRight)
                 {
@@ -177,7 +208,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerDirection.sqrMagnitude > 0.0f)
             transform.rotation = Quaternion.LookRotation(playerDirection);
 
-        if (OnGrapple)
+        if (OnGrapple && canGrapple)
             moveSpeed = grappleSpeed;
         else
             moveSpeed = defaultMoveSpeed;
@@ -212,20 +243,15 @@ public class PlayerMovement : MonoBehaviour
     public void SetOnRightWallTrue() => onRightWallJump = true;     //sets OnRightWall bool true
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
 
-    public void OnFloatingObjEnter()
-    {
-        Physics.gravity = levitateGravity;
-    }
-    public void OnFloatingObjExit()
-    {
-        Physics.gravity = initalGravity;
-    }
+
 
     public void OnBouncePad()
     {
         Jump(bouncePadHeight); //player bounces if on bounce pad
         Physics.gravity = initalGravity;
     }
+
+    public void OnFloatPad() => Jump(OnFloatPadSpeed);
     public void OnEnemyHead() => Jump(onEnemyBounceHeight); //player bounces if on enemies head
     public void Jump(float jumpHeight) => rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
 

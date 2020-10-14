@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class OnTriggerStay : MonoBehaviour
+
+[System.Serializable]
+public class TriggerStay : UnityEvent { };
+public class InTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TriggerStay whileInTrigger;
+    public TriggerStay onTriggerExit;
 
-    // Update is called once per frame
-    void Update()
+    
+    private void OnTriggerStay(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            whileInTrigger.Invoke();
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            onTriggerExit.Invoke();
+        }
     }
 }

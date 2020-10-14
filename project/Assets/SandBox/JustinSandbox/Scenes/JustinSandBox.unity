@@ -3557,8 +3557,8 @@ GameObject:
   - component: {fileID: 1456962406}
   - component: {fileID: 1456962405}
   - component: {fileID: 1456962404}
-  - component: {fileID: 1456962403}
   - component: {fileID: 1456962402}
+  - component: {fileID: 1456962403}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -3588,20 +3588,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456962401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8350c1813a1d1db4b8b1a4d67e240443, type: 3}
+  m_Script: {fileID: 11500000, guid: ea6893479a29d1344bc9402badc7bc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whileInTrigger:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 790573809}
-        m_MethodName: Jump
-        m_Mode: 4
+        m_MethodName: OnFloatPad
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 15
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -6940,6 +6940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levitateGravityValue
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141325417956062685, guid: 6d4fbcf60104f4944bd3bee646fb67be,
+        type: 3}
+      propertyPath: canDoubleJump
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d4fbcf60104f4944bd3bee646fb67be, type: 3}

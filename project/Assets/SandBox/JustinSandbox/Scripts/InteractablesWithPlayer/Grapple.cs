@@ -23,12 +23,16 @@ public class Grapple : MonoBehaviour
     [SerializeField] float damper = 1.27f;
     [SerializeField] float massScale = 10f;
 
+    private PlayerMovement playerMovement;
+
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
     }
     private void Start()
     {
+        playerMovement = player.GetComponent<PlayerMovement>();
+
         controls = new Controls();
         controls.Player.GrappleButtonDown.performed += GrappleButtonDown_performed;
         controls.Player.GrappleButtonUp.performed += GrappleButtonUp_performed;
@@ -40,14 +44,14 @@ public class Grapple : MonoBehaviour
     /// Call StartGrapple function if GrappleInput is held down 
     private void GrappleButtonDown_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (lr != null)
+        if (lr != null && playerMovement.canGrapple == true)
             StartGrapple();
     }
     /// <GrappleInputRelease>
     /// Call StopGrapple function if GrappleHold input is released
     private void GrappleButtonUp_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (lr != null)
+        if (lr != null && playerMovement.canGrapple == true)
             StopGrapple();
     }
 
@@ -67,7 +71,7 @@ public class Grapple : MonoBehaviour
         if (ropeEndPoint != null)
             if (Physics.Linecast(ropeStartPoint.position, ropeEndPoint.position, out RaycastHit hit))
             {
-                player.GetComponent<PlayerMovement>().OnGrapple = true;
+                playerMovement.OnGrapple = true;
                 grapplePoint = hit.point;
                 joint = player.gameObject.AddComponent<SpringJoint>();
                 joint.autoConfigureConnectedAnchor = false;
@@ -95,7 +99,7 @@ public class Grapple : MonoBehaviour
     {
         lr.positionCount = 0;
         Destroy(joint);
-        player.GetComponent<PlayerMovement>().OnGrapple = false;
+        playerMovement.OnGrapple = false;
 
     }
 
