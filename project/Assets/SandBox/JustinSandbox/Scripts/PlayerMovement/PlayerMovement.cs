@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IgorMov : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     //RigidBody and positions for movements
     private Rigidbody rb;
@@ -58,13 +58,13 @@ public class IgorMov : MonoBehaviour
     public bool OnGrapple = false;
 
     [Header("POWER UP BOOLS")]
-    [SerializeField] bool canDoubleJump;
-    [SerializeField] bool canSlide;
-    [SerializeField] bool canGlide;
-    [SerializeField] bool canDash;
-    [SerializeField] bool canSpin;
-    [SerializeField] bool canWallJump;
-    [SerializeField] bool canGroundSlam;
+    public bool canDoubleJump;
+    public bool canSlide;
+    public bool canGlide;
+    public bool canDash;
+    public bool canSpin;
+    public bool canWallJump;
+    public bool canGroundSlam;
     public bool canGrapple;
 
     //If Player is interacting with objects change values true. triggered on items collided with
