@@ -22,8 +22,7 @@ public class PowerUp : MonoBehaviour
     }
 
     public void PowerUpPickUp()
-    {
-        Destroy(gameObject);
+    {        
         playerMovement.canDoubleJump = canDoubleJump;
         playerMovement.canDash = canDash;
         playerMovement.canSpin = canSpin;
