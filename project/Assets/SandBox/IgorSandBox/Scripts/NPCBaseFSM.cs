@@ -11,6 +11,7 @@ public class NPCBaseFSM : StateMachineBehaviour
     public NavMeshAgent agent;
     public float patrolSpeed;
     public float chaseSpeed;
+    public Material npcMaterial;
 
     //public float speed = 2.0f;
     //public float rotSpeed = 1.0f;
@@ -21,5 +22,6 @@ public class NPCBaseFSM : StateMachineBehaviour
         NPC = animator.gameObject;
         opponent = NPC.GetComponent<EnemyAI>().GetPlayer();
         agent = NPC.GetComponent<NavMeshAgent>();
+        npcMaterial = NPC.GetComponent<Renderer>().material;
     }
 }

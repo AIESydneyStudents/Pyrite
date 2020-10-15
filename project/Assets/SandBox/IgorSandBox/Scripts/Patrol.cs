@@ -7,10 +7,12 @@ public class Patrol : NPCBaseFSM
     
     GameObject[] waypoints;
     int currentWaypoint;
+    
 
     private void Awake()
     {
         waypoints = GameObject.FindGameObjectsWithTag("waypoint");
+        
     }
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -18,6 +20,7 @@ public class Patrol : NPCBaseFSM
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
         currentWaypoint = 0;
+        npcMaterial.color = Color.green;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
