@@ -21,5 +21,6 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         anim.SetFloat("distance", Vector3.Distance(transform.position, player.transform.position));
+
     }
 }
