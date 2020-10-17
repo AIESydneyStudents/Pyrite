@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5779126094117042365}
   - component: {fileID: 3197210219053018086}
   - component: {fileID: 5779126094117042362}
+  - component: {fileID: -2265030463152631391}
+  - component: {fileID: 7713459046464223981}
   m_Layer: 0
   m_Name: TeaPickup
   m_TagString: Untagged
@@ -147,3 +149,28 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2265030463152631391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779126094117042363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7713459046464223981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779126094117042363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibleItemSet: {fileID: 0}

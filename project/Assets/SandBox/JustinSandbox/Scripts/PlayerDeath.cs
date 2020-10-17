@@ -16,7 +16,7 @@ public class PlayerDeath : MonoBehaviour
         if (other.gameObject == player)
         {
             gameMaster.playerLives -= 1;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);      
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

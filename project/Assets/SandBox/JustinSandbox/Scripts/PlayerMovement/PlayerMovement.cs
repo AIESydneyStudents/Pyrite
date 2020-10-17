@@ -244,7 +244,6 @@ public class PlayerMovement : MonoBehaviour
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
 
 
-
     public void OnBouncePad()
     {
         Jump(bouncePadHeight); //player bounces if on bounce pad

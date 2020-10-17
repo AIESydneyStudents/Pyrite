@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7977965265215498023}
   - component: {fileID: 7977965265215498020}
   - component: {fileID: 7977965265215498021}
+  - component: {fileID: 1892864418205630920}
+  - component: {fileID: 5924855483124494467}
   - component: {fileID: 7977965265215498026}
   - component: {fileID: 8993527461128392416}
   m_Layer: 0
@@ -125,6 +127,31 @@ MonoBehaviour:
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1892864418205630920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977965265215498027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibleItemSet: {fileID: 0}
+--- !u!114 &5924855483124494467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977965265215498027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7977965265215498026
 MonoBehaviour:
   m_ObjectHideFlags: 0
