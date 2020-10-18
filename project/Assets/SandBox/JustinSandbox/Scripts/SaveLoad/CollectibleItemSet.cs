@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <CollectibleItemSet>
+/// Saves or loads all the items picked up that are in the collected items hash list.
 public class CollectibleItemSet : MonoBehaviour
 {
     private GameMaster gameMaster;
@@ -10,16 +12,15 @@ public class CollectibleItemSet : MonoBehaviour
     private void Awake()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
-        GameEvents.SaveInitiated += Save;
-    
+
 
         if (gameMaster.playerLives < 0)
             SaveLoad.SeriouslyDeleteAllSaveFiles();
+
+        GameEvents.SaveInitiated += Save;
         Load();
-        Debug.Log("LOAD");
     }
 
-    
 
     void Save()
     {
@@ -31,7 +32,6 @@ public class CollectibleItemSet : MonoBehaviour
         if (SaveLoad.SaveExists("CollectedItems"))
         {
             CollectedItems = SaveLoad.Load<HashSet<string>>("CollectedItems");
-            Debug.Log(CollectedItems.Count);
         }
         else
             CollectedItems.Clear();

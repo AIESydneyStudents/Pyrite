@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TeaCollected : MonoBehaviour
 {
-    public int teaCount;
+    public int teaCount = 0;
+
     public void TeaCounter()
     {
         teaCount += 1;

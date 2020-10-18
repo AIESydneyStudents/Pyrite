@@ -4,38 +4,45 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+
+
+/// <SaveLoad>
+/// Handles everything to do with saving and loading takes in a type and file name.
 public class SaveLoad : MonoBehaviour
 {
-    public static void Save<T>(T objectToSave, string key)
+    //saves file of given type into binary file
+    public static void Save<T>(T objectToSave, string fileName)
     {
         string path = Application.persistentDataPath + "/saves/";
         Directory.CreateDirectory(path);
         BinaryFormatter formatter = new BinaryFormatter();
-        using (FileStream fileStream = new FileStream(path + key + ".txt", FileMode.Create))
+        using (FileStream fileStream = new FileStream(path + fileName + ".txt", FileMode.Create))
         {
             formatter.Serialize(fileStream, objectToSave);
         }
-        Debug.Log("saved File");
     }
 
-    public static T Load<T>(string key)
+    //loads file of given type and returns its values
+    public static T Load<T>(string fileName)
     {
         string path = Application.persistentDataPath + "/saves/";
         BinaryFormatter formatter = new BinaryFormatter();
         T returnValue = default(T);
-        using (FileStream fileStream = new FileStream(path + key + ".txt", FileMode.Open))
+        using (FileStream fileStream = new FileStream(path + fileName + ".txt", FileMode.Open))
         {
             returnValue = (T)formatter.Deserialize(fileStream);
         }
         return returnValue;
     }
 
-    public static bool SaveExists(string key)
+    //checks if a file exists with given "fileName"
+    public static bool SaveExists(string fileName)
     {
-        string path = Application.persistentDataPath + "/saves/" + key + ".txt";
+        string path = Application.persistentDataPath + "/saves/" + fileName + ".txt";
         return File.Exists(path);
     }
 
+    //Deletes all files in saves file
     public static void SeriouslyDeleteAllSaveFiles()
     {
         string path = Application.persistentDataPath + "/saves/";

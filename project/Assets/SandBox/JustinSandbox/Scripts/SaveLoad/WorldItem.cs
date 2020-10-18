@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <WorldItem>
+/// checks if item exists in collectedItemSet(Saved bin file). if exists deletes the gameObject so it cannot be collected again.
 public class WorldItem : MonoBehaviour
 {
-    [SerializeField]
     private CollectibleItemSet collectibleItemSet;
     private UniqueID uniqueID;
 
-    // Start is called before the first frame update
     void Start()
     {
         uniqueID = GetComponent<UniqueID>();
@@ -21,12 +22,10 @@ public class WorldItem : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    /// <AddsItemToCollectedItemSet>
+    public void AddToCollectedItemSet()
     {
-        if (other.CompareTag("Player"))
-        {
-            collectibleItemSet.CollectedItems.Add(uniqueID.ID);
-            Destroy(gameObject);
-        }
+        collectibleItemSet.CollectedItems.Add(uniqueID.ID);
     }
+
 }

@@ -13,9 +13,6 @@ GameObject:
   - component: {fileID: 2247605022703917645}
   - component: {fileID: 2247605022703918002}
   - component: {fileID: 2247605022703918003}
-  - component: {fileID: 3229637484821997628}
-  - component: {fileID: 9115052510015600536}
-  - component: {fileID: 1585375374222199901}
   - component: {fileID: 2247605022703918000}
   m_Layer: 0
   m_Name: PowerUp3
@@ -127,43 +124,6 @@ MonoBehaviour:
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3229637484821997628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247605022703918001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectibleItemSet: {fileID: 0}
---- !u!114 &9115052510015600536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247605022703918001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1585375374222199901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247605022703918001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03037270d28bb1d468b401757abc5781, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2247605022703918000
 MonoBehaviour:
   m_ObjectHideFlags: 0
