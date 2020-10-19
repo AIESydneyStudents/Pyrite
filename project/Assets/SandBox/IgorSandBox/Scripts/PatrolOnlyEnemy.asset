@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 446a7fc3e0057a74e8df5259767e4b91, type: 3}
-  m_Name: PatrolAndChaseEnemy
+  m_Name: PatrolOnlyEnemy
   m_EditorClassIdentifier: 
-  enemyName: Patrol and Chase Enemy
-  description: This enemy patrols and chases
+  enemyName: Patrol Only Enemy
+  description: This enemy patrols only
   enemyModel: {fileID: 0}
   health: 1
   patrolSpeed: 3
   chaseSpeed: 6
-  detectRange: 15
+  detectRange: 10
   damage: 1
-  canChase: 1
+  canChase: 0
   canPatrol: 1
   canShoot: 0

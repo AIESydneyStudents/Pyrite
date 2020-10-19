@@ -38,6 +38,10 @@ public class EnemyPatrol : MonoBehaviour
         {
             Patrol();
         }
+        else
+        {
+            Guard();
+        }
     }
 
 
@@ -50,6 +54,12 @@ public class EnemyPatrol : MonoBehaviour
             Gizmos.DrawLine(waypoints[i].position, waypoints[i + 1].position);
         }
 
+    }
+
+    private void Guard()
+    {
+        myMaterial.color = Color.blue;
+        navAgent.SetDestination(transform.position);
     }
 
     private void Chase()
