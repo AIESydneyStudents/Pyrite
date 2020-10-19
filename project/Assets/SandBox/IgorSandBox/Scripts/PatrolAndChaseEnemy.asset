@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 446a7fc3e0057a74e8df5259767e4b91, type: 3}
-  m_Name: EnemyData
+  m_Name: PatrolAndChaseEnemy
   m_EditorClassIdentifier: 
   enemyName: 
   description: 
-  enemyModel: {fileID: 0}
+  enemyModel: {fileID: 5133019142896685573, guid: 8ccaea04133bb3d4189e0b5d38ac5a91,
+    type: 3}
   health: 1
-  speed: 2
+  patrolSpeed: 3
+  chaseSpeed: 5
   detectRange: 10
   damage: 1
