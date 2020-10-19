@@ -9,13 +9,16 @@ public class PlayerData
 {
     public int PlayerLives;
     public float[] respawnPos;
+    public int teaCollected;
 
-    public PlayerData(GameMaster gameMaster)
+    public PlayerData(GameMaster gameMaster, TeaTracker teaTracker)
     {
         PlayerLives = gameMaster.playerLives;
         respawnPos = new float[3];
         respawnPos[0] = gameMaster.lastCheckPointPos.x;
         respawnPos[1] = gameMaster.lastCheckPointPos.y;
         respawnPos[2] = gameMaster.lastCheckPointPos.z;
+
+        teaCollected = teaTracker.teaCollected;
     }
 }
