@@ -8,11 +8,13 @@ using UnityEngine;
 public class SavePlayerData : MonoBehaviour
 {
     private GameMaster gameMaster;
+    public TeaTracker teaTracker;
     public PlayerData data;
 
     private void Awake()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+        teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
         GameEvents.SaveInitiated += Save;
         Load();
     }
@@ -20,7 +22,7 @@ public class SavePlayerData : MonoBehaviour
 
     void Save()
     {
-        data = new PlayerData(gameMaster);
+        data = new PlayerData(gameMaster,teaTracker);
         SaveLoad.Save(data, "PlayerData");
     }
 
@@ -32,6 +34,7 @@ public class SavePlayerData : MonoBehaviour
             gameMaster.lastCheckPointPos.x = data.respawnPos[0];
             gameMaster.lastCheckPointPos.y = data.respawnPos[1];
             gameMaster.lastCheckPointPos.z = data.respawnPos[2];
+          
         }
     }
 }

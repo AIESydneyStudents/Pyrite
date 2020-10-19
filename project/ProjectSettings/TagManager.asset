@@ -7,6 +7,7 @@ TagManager:
   - Grapple
   - GameMaster
   - waypoint
+  - GameManager
   layers:
   - Default
   - TransparentFX

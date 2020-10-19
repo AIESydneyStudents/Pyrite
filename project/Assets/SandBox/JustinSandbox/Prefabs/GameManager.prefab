@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 107472363162059964}
   - component: {fileID: 107472363162059953}
   - component: {fileID: 107472363162059954}
-  - component: {fileID: 5581748570145880190}
+  - component: {fileID: 220311468}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107472363162059965}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.5, y: 0.45, z: -7.82}
   m_LocalScale: {x: 5, y: 1, z: 6}
   m_Children: []
@@ -58,9 +58,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9a91e7308069c458500f7784fe167b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teaTracker: {fileID: 0}
   data:
     PlayerLives: 0
     respawnPos: []
+    teaCollected: 0
 --- !u!114 &107472363162059954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157f73b2ec6a2cf4c901de8606d03754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5581748570145880190
+--- !u!114 &220311468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,7 +84,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 107472363162059965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a231e22e135094a48b99cebb78f08374, type: 3}
+  m_Script: {fileID: 11500000, guid: e37e1f60096ee4b4d811d2c5b02a29a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teaCount: 0
+  teaCollected: 0
+  data:
+    PlayerLives: 0
+    respawnPos: []
+    teaCollected: 0
