@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
     Animator anim;
     public GameObject player;
+    
 
     public GameObject GetPlayer()
     {
@@ -15,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
