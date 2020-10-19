@@ -13,6 +13,8 @@ public class NPCBaseFSM : StateMachineBehaviour
     //public float chaseSpeed;
     public Material npcMaterial;
     public EnemyData enemyData;
+    public ScriptableObject data;
+
 
     //public float speed = 2.0f;
     //public float rotSpeed = 1.0f;
@@ -25,5 +27,8 @@ public class NPCBaseFSM : StateMachineBehaviour
         opponent = NPC.GetComponent<EnemyAI>().GetPlayer();
         agent = NPC.GetComponent<NavMeshAgent>();
         npcMaterial = NPC.GetComponent<Renderer>().material;
+        //enemyData = NPC.GetComponent<Enemy>();
+        //enemyData = ScriptableObject.FindObjectOfType<EnemyData>();
+        
     }
 }

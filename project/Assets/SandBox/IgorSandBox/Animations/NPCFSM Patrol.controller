@@ -37,9 +37,14 @@ MonoBehaviour:
   NPC: {fileID: 0}
   opponent: {fileID: 0}
   agent: {fileID: 0}
-  patrolSpeed: 3
-  chaseSpeed: 0
+  npcMaterial: {fileID: 0}
+  enemyData: {fileID: 0}
+  data: {fileID: 11400000, guid: 13520c31ac56b2744900492ac6143269, type: 2}
   accuracy: 3
+  waypoints:
+  - {fileID: 8466077436087853605, guid: 8bd5a09324ab3e848888e8121bdeb528, type: 3}
+  - {fileID: 7782655592643884786, guid: abfd9361b48f1db43b1b6d6ff4f02f81, type: 3}
+  data: {fileID: 11400000, guid: 13520c31ac56b2744900492ac6143269, type: 2}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

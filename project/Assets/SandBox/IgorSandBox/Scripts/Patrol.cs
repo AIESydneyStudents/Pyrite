@@ -5,13 +5,13 @@ using UnityEngine;
 public class Patrol : NPCBaseFSM
 {
     
-    GameObject[] waypoints;
+    public GameObject[] waypoints;
     int currentWaypoint;
-    
+    public ScriptableObject data;
 
     private void Awake()
     {
-        waypoints = GameObject.FindGameObjectsWithTag("waypoint");
+        //waypoints = GameObject.FindGameObjectsWithTag("waypoint");
         
     }
 
@@ -26,7 +26,7 @@ public class Patrol : NPCBaseFSM
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        agent.speed = enemyData.patrolSpeed;
+        //agent.speed = data.
         if (waypoints.Length == 0) return;
         if(Vector3.Distance(waypoints[currentWaypoint].transform.position, NPC.transform.position) < accuracy)
         {
