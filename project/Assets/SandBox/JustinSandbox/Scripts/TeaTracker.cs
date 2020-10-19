@@ -19,8 +19,4 @@ public class TeaTracker : MonoBehaviour
             teaCollected = data.teaCollected;
         }
     }
-    //public void IncreaseTeaScore()
-    //{
-    //    teaCollected += 1;
-    //}
 }

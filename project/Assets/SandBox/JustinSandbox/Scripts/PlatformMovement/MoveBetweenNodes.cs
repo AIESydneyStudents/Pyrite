@@ -22,10 +22,8 @@ public class MoveBetweenNodes : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         if (transform.position == PlatformPoints[currentPoint].position)
         {
-
             if (currentPoint < numberOfPoints - 1)
             {
                 nextPos = PlatformPoints[currentPoint + 1].position;
@@ -38,7 +36,7 @@ public class MoveBetweenNodes : MonoBehaviour
             }
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);       
+        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }
 
 
@@ -46,10 +44,10 @@ public class MoveBetweenNodes : MonoBehaviour
     /// draws lines in scene view to show the path of the platforms
     private void OnDrawGizmos()
     {
-        for (int i = 0; i < PlatformPoints.Length -1; i++)
+        for (int i = 0; i < PlatformPoints.Length - 1; i++)
         {
-            Gizmos.DrawLine(PlatformPoints[i].position, PlatformPoints[i+1].position);
+            Gizmos.DrawLine(PlatformPoints[i].position, PlatformPoints[i + 1].position);
         }
-        
+
     }
 }
