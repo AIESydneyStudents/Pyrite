@@ -9,9 +9,10 @@ public class NPCBaseFSM : StateMachineBehaviour
     public GameObject NPC;
     public GameObject opponent;
     public NavMeshAgent agent;
-    public float patrolSpeed;
-    public float chaseSpeed;
+    //public float patrolSpeed;
+    //public float chaseSpeed;
     public Material npcMaterial;
+    public EnemyData enemyData;
 
     //public float speed = 2.0f;
     //public float rotSpeed = 1.0f;
@@ -19,6 +20,7 @@ public class NPCBaseFSM : StateMachineBehaviour
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        
         NPC = animator.gameObject;
         opponent = NPC.GetComponent<EnemyAI>().GetPlayer();
         agent = NPC.GetComponent<NavMeshAgent>();

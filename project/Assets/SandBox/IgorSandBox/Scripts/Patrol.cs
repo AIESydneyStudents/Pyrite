@@ -26,7 +26,7 @@ public class Patrol : NPCBaseFSM
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        agent.speed = patrolSpeed;
+        agent.speed = enemyData.patrolSpeed;
         if (waypoints.Length == 0) return;
         if(Vector3.Distance(waypoints[currentWaypoint].transform.position, NPC.transform.position) < accuracy)
         {
