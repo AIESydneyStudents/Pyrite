@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyPatrol : MonoBehaviour
 {
+    Animator anim;
+
     private NavMeshAgent navAgent;
    
     public Transform[] waypoints;
@@ -21,6 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         navAgent = GetComponent<NavMeshAgent>();
         myMaterial = GetComponent<Renderer>().material;
@@ -33,14 +36,17 @@ public class EnemyPatrol : MonoBehaviour
         if (distance < data.detectRange && data.canChase)
         {
             Chase();
+            anim.SetBool("isWalking", true);
         }
         else if(data.canPatrol)
         {
             Patrol();
+            anim.SetBool("isWalking", true);
         }
-        else
+        else if(data.canGuard)
         {
             Guard();
+            anim.SetBool("isWalking", false);
         }
     }
 
@@ -60,6 +66,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         myMaterial.color = Color.blue;
         navAgent.SetDestination(transform.position);
+        //navAgent.SetDestination(waypoints[currentPoint].transform.position);
     }
 
     private void Chase()
