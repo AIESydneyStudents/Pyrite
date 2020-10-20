@@ -10,6 +10,8 @@ public class EnemyPatrol : MonoBehaviour
     private NavMeshAgent navAgent;
    
     public Transform[] waypoints;
+
+    Vector3 startPos;
     
     private int currentPoint;
     public GameObject player;
@@ -28,6 +30,7 @@ public class EnemyPatrol : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
         myMaterial = GetComponent<Renderer>().material;
         currentPoint = 0;
+        startPos = transform.position;
     }
 
     private void FixedUpdate()
@@ -36,17 +39,17 @@ public class EnemyPatrol : MonoBehaviour
         if (distance < data.detectRange && data.canChase)
         {
             Chase();
-            anim.SetBool("isWalking", true);
+            
         }
         else if(data.canPatrol)
         {
             Patrol();
-            anim.SetBool("isWalking", true);
+            
         }
         else if(data.canGuard)
         {
             Guard();
-            anim.SetBool("isWalking", false);
+            
         }
     }
 
@@ -65,13 +68,25 @@ public class EnemyPatrol : MonoBehaviour
     private void Guard()
     {
         myMaterial.color = Color.blue;
-        navAgent.SetDestination(transform.position);
-        //navAgent.SetDestination(waypoints[currentPoint].transform.position);
+
+        if (Vector3.Distance(waypoints[currentPoint].transform.position, transform.position) > accuracy)
+        {
+            anim.SetBool("isWalking", true);
+            navAgent.SetDestination(waypoints[currentPoint].transform.position); 
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            navAgent.SetDestination(transform.position);
+        }
     }
 
     private void Chase()
     {
         myMaterial.color = Color.red;
+        anim.SetBool("isWalking", true);
+        
+
         navAgent.speed = data.chaseSpeed;
         navAgent.SetDestination(player.transform.position);
     }
@@ -89,7 +104,7 @@ public class EnemyPatrol : MonoBehaviour
                 currentPoint = 0;
             }
         }
-
+        anim.SetBool("isWalking", true);
         navAgent.SetDestination(waypoints[currentPoint].transform.position);
     }
 }
