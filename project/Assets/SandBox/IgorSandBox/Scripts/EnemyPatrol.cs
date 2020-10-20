@@ -84,11 +84,11 @@ public class EnemyPatrol : MonoBehaviour
     private void Chase()
     {
         myMaterial.color = Color.red;
-        anim.SetBool("isWalking", true);
+        anim.SetBool("isDancing", true);
         
 
-        navAgent.speed = data.chaseSpeed;
-        navAgent.SetDestination(player.transform.position);
+        //navAgent.speed = data.chaseSpeed;
+        //navAgent.SetDestination(player.transform.position);
     }
 
     private void Patrol()
