@@ -779,7 +779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef5b31e1103be64aaf85f721ec39eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: {fileID: 1784682048}
 --- !u!195 &500679779
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -904,13 +903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4011dfe310eacef45927bf39234e47ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolWaiting: 0
-  totalWaittime: 3
-  switchProbability: 0.2
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &500679786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21bdefa65cd1e6c408b2fb0c37090b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingState: {fileID: 11400000, guid: 2b25680eb5f94074f97171c0d703cfe3, type: 2}
 --- !u!1 &524648812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,11 +1888,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 970190189}
   - {fileID: 989385865}
+  - {fileID: 970190189}
   damping: 1
   player: {fileID: 1784682043}
-  accuracy: 1
+  accuracy: 2
   data: {fileID: 11400000, guid: 86f89fa23ee92bd45a56df3a79ccbc0d, type: 2}
 --- !u!95 &1205948282
 Animator:
@@ -3376,7 +3367,7 @@ PrefabInstance:
     - target: {fileID: 8466077436087853605, guid: 8bd5a09324ab3e848888e8121bdeb528,
         type: 3}
       propertyPath: m_Name
-      value: waypoint
+      value: start
       objectReference: {fileID: 0}
     - target: {fileID: 8466077436087853605, guid: 8bd5a09324ab3e848888e8121bdeb528,
         type: 3}
@@ -3406,7 +3397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983a82398924e4148846f9b0ccf831ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: d8198a1931c614449b1675eeb9a59f98, type: 2}
 --- !u!1 &1769321303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 922704481958339807, guid: 9ae71a370a678bf45bf6542548d50710,
@@ -3425,7 +3415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983a82398924e4148846f9b0ccf831ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 13520c31ac56b2744900492ac6143269, type: 2}
 --- !u!1 &1783964916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,7 +3665,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c58fea17beb8b884f8a1fe7923a103b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.4728012
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c58fea17beb8b884f8a1fe7923a103b4,
         type: 3}
@@ -3686,7 +3675,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c58fea17beb8b884f8a1fe7923a103b4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.362716
+      value: 11.58
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c58fea17beb8b884f8a1fe7923a103b4,
         type: 3}
@@ -4180,7 +4169,7 @@ PrefabInstance:
     - target: {fileID: 7782655592643884786, guid: abfd9361b48f1db43b1b6d6ff4f02f81,
         type: 3}
       propertyPath: m_Name
-      value: waypoint (1)
+      value: end
       objectReference: {fileID: 0}
     - target: {fileID: 7782655592643884786, guid: abfd9361b48f1db43b1b6d6ff4f02f81,
         type: 3}

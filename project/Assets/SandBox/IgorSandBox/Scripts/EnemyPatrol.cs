@@ -14,9 +14,12 @@ public class EnemyPatrol : MonoBehaviour
     Vector3 startPos;
     public float damping = 3f;
     private int currentPoint;
+    private int startPoint;
+    private int endPoint;
     public GameObject player;
     float distance;
     public float accuracy = 0f;
+    bool arrived = false;
 
     [SerializeField] EnemyData data;
     //private Material myMaterial;
@@ -31,7 +34,10 @@ public class EnemyPatrol : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
         //myMaterial = GetComponent<Renderer>().material;
         currentPoint = 0;
+        startPoint = 0;
+        endPoint = 1;
         startPos = transform.position;
+        arrived = false;
     }
 
     private void FixedUpdate()
@@ -80,19 +86,43 @@ public class EnemyPatrol : MonoBehaviour
             anim.SetBool("isWalking", false);
             //navAgent.SetDestination(transform.position);
 
-           
-            
-                var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
-                Debug.Log(rotation);
-                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
-            
+
+
+            var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
+            Debug.Log(rotation);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+
         }
+
+        //if (Vector3.Distance(waypoints[endPoint].transform.position, transform.position) > accuracy)
+        //{
+        //    anim.SetBool("isWalking", true);
+        //    navAgent.SetDestination(waypoints[startPoint].transform.position);
+        //    if (Vector3.Distance(waypoints[startPoint].transform.position, transform.position) < accuracy)
+        //    {
+        //        //navAgent.SetDestination(transform.position);
+        //        anim.SetBool("isWalking", false);
+        //        arrived = true;
+        //    }
+        //    if (arrived == true)
+        //    {
+        //        navAgent.SetDestination(waypoints[endPoint].transform.position);
+
+        //    }
+        //}
+        //else
+        //{
+        //    anim.SetBool("isWalking", false);
+        //    //navAgent.SetDestination(transform.position);
+        //    arrived = false;
+        //}
+
     }
 
     private void Chase()
     {
         //myMaterial.color = Color.red;
-        anim.SetBool("isDancing", true);
+        anim.SetBool("isWalking", true);
 
 
         navAgent.speed = data.chaseSpeed;

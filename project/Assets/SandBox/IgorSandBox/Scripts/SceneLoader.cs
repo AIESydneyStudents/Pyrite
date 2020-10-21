@@ -31,6 +31,11 @@ public class SceneLoader : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(playFirstButton);
+
+        if(SceneManager.GetActiveScene().name == splashScene )
+        {
+            StartCoroutine(LoadFromSplashScene(levelOneScene));
+        }
     }
 
    
@@ -98,6 +103,15 @@ public class SceneLoader : MonoBehaviour
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(scene);
+    }
+
+    IEnumerator LoadFromSplashScene(string scene)
+    {
+        yield return new WaitForSeconds(transitionTime);
+
+        transition.SetTrigger("Start");
 
         SceneManager.LoadScene(scene);
     }
