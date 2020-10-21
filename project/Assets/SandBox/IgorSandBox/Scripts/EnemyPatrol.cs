@@ -8,19 +8,20 @@ public class EnemyPatrol : MonoBehaviour
     Animator anim;
 
     private NavMeshAgent navAgent;
-   
+
     public Transform[] waypoints;
 
     Vector3 startPos;
-    
+    public float damping = 3f;
     private int currentPoint;
     public GameObject player;
     float distance;
     public float accuracy = 0f;
-    
+
     [SerializeField] EnemyData data;
-    private Material myMaterial;
-    
+    //private Material myMaterial;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class EnemyPatrol : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         navAgent = GetComponent<NavMeshAgent>();
-        myMaterial = GetComponent<Renderer>().material;
+        //myMaterial = GetComponent<Renderer>().material;
         currentPoint = 0;
         startPos = transform.position;
     }
@@ -39,17 +40,17 @@ public class EnemyPatrol : MonoBehaviour
         if (distance < data.detectRange && data.canChase)
         {
             Chase();
-            
+
         }
-        else if(data.canPatrol)
+        else if (data.canPatrol)
         {
             Patrol();
-            
+
         }
-        else if(data.canGuard)
+        else if (data.canGuard)
         {
             Guard();
-            
+
         }
     }
 
@@ -67,33 +68,40 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Guard()
     {
-        myMaterial.color = Color.blue;
+        //myMaterial.color = Color.blue;
 
-        if (Vector3.Distance(waypoints[currentPoint].transform.position, transform.position) > accuracy)
+        if (Vector3.Distance(startPos, transform.position) > accuracy)
         {
             anim.SetBool("isWalking", true);
-            navAgent.SetDestination(waypoints[currentPoint].transform.position); 
+            navAgent.SetDestination(startPos);
         }
         else
         {
             anim.SetBool("isWalking", false);
-            navAgent.SetDestination(transform.position);
+            //navAgent.SetDestination(transform.position);
+
+           
+            
+                var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
+                Debug.Log(rotation);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+            
         }
     }
 
     private void Chase()
     {
-        myMaterial.color = Color.red;
+        //myMaterial.color = Color.red;
         anim.SetBool("isDancing", true);
-        
 
-        //navAgent.speed = data.chaseSpeed;
-        //navAgent.SetDestination(player.transform.position);
+
+        navAgent.speed = data.chaseSpeed;
+        navAgent.SetDestination(player.transform.position);
     }
 
     private void Patrol()
     {
-        myMaterial.color = Color.green;
+       // myMaterial.color = Color.green;
         navAgent.speed = data.patrolSpeed;
         if (waypoints.Length == 0) return;
         if (Vector3.Distance(waypoints[currentPoint].transform.position, transform.position) < accuracy)
@@ -106,5 +114,10 @@ public class EnemyPatrol : MonoBehaviour
         }
         anim.SetBool("isWalking", true);
         navAgent.SetDestination(waypoints[currentPoint].transform.position);
+    }
+
+    void SmoothLookAt(Vector3 newDirection)
+    {
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(newDirection), Time.deltaTime);
     }
 }

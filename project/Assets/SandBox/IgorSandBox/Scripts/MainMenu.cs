@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        FindObjectOfType<SceneLoader>().LoadNextScene();
+        FindObjectOfType<SceneLoader>().LoadlevelOneScene();
         //SceneManager.LoadScene(newGameScene);
     }
 
