@@ -18,10 +18,13 @@ public class SceneLoader : MonoBehaviour
 
     public GameObject playFirstButton;
 
-    public string previousScene;
-    public string currentScene;
-    public string nextScene;
+    public string splashScene;
+    public string tutorialScene;
+    public string levelOneScene;
     public string mainMenu;
+    public string gameOverScene;
+    public string optionsScene;
+    public string creditsScene;
 
     private void Start()
     {
@@ -30,30 +33,48 @@ public class SceneLoader : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(playFirstButton);
     }
 
-    // Update is called once per frame
-    void Update()
+   
+
+    public void LoadSplashScene()
     {
-        
+        StartCoroutine(LoadScene(splashScene));
     }
 
-    public void LoadPreviousScene()
+    public void LoadTutorialScene()
     {
-        StartCoroutine(LoadScene(previousScene));
+        StartCoroutine(LoadScene(tutorialScene));
     }
 
-    public void LoadCurrentScene()
+    public void LoadlevelOneScene()
     {
-        StartCoroutine(LoadScene(currentScene));
+        StartCoroutine(LoadScene(levelOneScene));
+        Debug.Log("level1");
     }
 
-    public void LoadNextScene()
+    public void LoadContinueScene()
     {
-        StartCoroutine(LoadScene(nextScene));
+        StartCoroutine(LoadScene(levelOneScene));
+       
     }
 
     public void LoadMainMenu()
     {
         StartCoroutine(LoadScene(mainMenu));
+    }
+
+    public void LoadGameOverScene()
+    {
+        StartCoroutine(LoadScene(gameOverScene));
+    }
+
+    public void LoadOptionsScene()
+    {
+        StartCoroutine(LoadScene(optionsScene));
+    }
+
+    public void LoadCreditsScene()
+    {
+        StartCoroutine(LoadScene(creditsScene));
     }
 
     public void QuitGame()
