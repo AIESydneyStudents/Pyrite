@@ -58,14 +58,14 @@ public class PlayerMovement : MonoBehaviour
     public bool OnGrapple = false;
 
     [Header("POWER UP BOOLS")]
-    public bool canDoubleJump;
-    public bool canSlide;
-    public bool canGlide;
-    public bool canDash;
-    public bool canSpin;
-    public bool canWallJump;
-    public bool canGroundSlam;
-    public bool canGrapple;
+    public bool canDoubleJump = false;
+    public bool canSlide = false;
+    public bool canGlide = false;
+    public bool canDash = false;
+    public bool canSpin = false;
+    public bool canWallJump = false;
+    public bool canGroundSlam = false;
+    public bool canGrapple = false;
 
     //If Player is interacting with objects change values true. triggered on items collided with
     private bool onLeftWallJump = false;
@@ -104,11 +104,13 @@ public class PlayerMovement : MonoBehaviour
         controls.Enable();
 
         Physics.gravity = initalGravity;
+        
     }
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!canGroundSlam)
+
+        if (canGroundSlam == false)
             return;
         Physics.gravity = groundSlamGravity;
         isGroundSlamming = true;
@@ -267,7 +269,7 @@ public class PlayerMovement : MonoBehaviour
                 Physics.gravity = initalGravity;
             }
             if (moveVelocity.y == 0)
-                isGroundSlamming = false;
+                 isGroundSlamming = false;
         }
         //move and rotate player based on input
         MoveAndRotatePlayer();
@@ -275,6 +277,14 @@ public class PlayerMovement : MonoBehaviour
         Dash();
     }
 
+    private void OnDestroy()
+    {
+        controls.Player.Jump.performed -= Jump_performed;
+        controls.Player.SlowFall.performed -= SlowFall_performed;
+        controls.Player.SlowFallRelease.performed -= SlowFallRelease_performed;
+        controls.Player.Dash.performed -= Dash_performed;
+        controls.Player.GroundSmash.performed -= GroundSmash_performed;
+    }
     private void FixedUpdate()
     {
         //add velocity to player
