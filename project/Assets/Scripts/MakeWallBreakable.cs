@@ -5,16 +5,19 @@ using UnityEngine;
 public class MakeWallBreakable : MonoBehaviour
 {
     public Component[] rigidBodies;
-    public GameObject player;
+    //public GameObject player;
     public float breakForce;
+
+    private PlayerMovement playerMovement;
 
     void Start()
     {
         rigidBodies = GetComponentsInChildren<Rigidbody>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
     public void WallBreakable()
     {
-        if (player.GetComponent<PlayerMovement>().isDashing == true || player.GetComponent<PlayerMovement>().isGroundSlamming)
+        if (playerMovement.isDashing == true || playerMovement.isGroundSlamming)
         {
             foreach (Rigidbody rb in rigidBodies)
             {

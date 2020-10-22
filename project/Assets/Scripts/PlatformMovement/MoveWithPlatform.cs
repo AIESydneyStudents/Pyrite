@@ -8,17 +8,17 @@ using UnityEngine;
 public class MoveWithPlatform : MonoBehaviour
 {
 
-    public GameObject Player;
+   // public GameObject Player;
 
     private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == Player)
-            Player.transform.parent = transform;
+    {    
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
+            other.transform.parent = transform;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == Player)
-            Player.transform.parent = null;
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
+            other.transform.parent = null;
     }
 }

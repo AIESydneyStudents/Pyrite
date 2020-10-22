@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 8141325417956062685}
   - component: {fileID: 8141325417956062682}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
+  m_Name: Player 1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,23 +128,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a7fc92e7b262a478fb29e4b0b26d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialGravityValue: -30
   moveSpeed: 10
+  jumpForce: 17
+  onEnemyBounceHeight: 15
+  bouncePadHeight: 30
+  OnFloatPadSpeed: 15
+  wallJumpForce: 30
   slowFallSpeed: 7
+  dashSpeed: 100
+  dashCooldown: 3
+  dashTime: 0.1
+  isDashing: 0
+  groundSlamGravityValue: -200
+  isGroundSlamming: 0
   groundMask:
     serializedVersion: 2
     m_Bits: 512
-  grappleObj: {fileID: 8141325418322187385}
   groundCheck: {fileID: 8141325418889035736}
   groundDistance: 0.4
-  bouncePadHeight: 30
-  onBouncePad: 0
-  onEnemyBounce: 0
-  onEnemyBounceHeight: 15
-  onLeftWallJump: 0
-  onRightWallJump: 0
   grappleSpeed: 15
-  wallJumpForce: 30
-  jumpForce: 15
+  OnGrapple: 0
+  canDoubleJump: 0
+  canSlide: 0
+  canGlide: 0
+  canDash: 0
+  canSpin: 0
+  canWallJump: 0
+  canGroundSlam: 0
+  canGrapple: 0
 --- !u!114 &8141325417956062682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5f84f18dbf7b04ebf18b2bb2de54c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startpos: {fileID: 0}
+  teaTracker: {fileID: 0}
 --- !u!1 &8141325418322187385
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +320,6 @@ MonoBehaviour:
   spring: 4.5
   damper: 1.27
   massScale: 10
-  isSwinging: 0
 --- !u!136 &8141325418322187389
 CapsuleCollider:
   m_ObjectHideFlags: 0

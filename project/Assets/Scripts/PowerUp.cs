@@ -5,7 +5,6 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour
 {
     private PlayerMovement playerMovement;
-    public GameObject player;
 
     [Header("POWER UP BOOLS")]
     public bool canDoubleJump;
@@ -18,7 +17,7 @@ public class PowerUp : MonoBehaviour
 
     void Start()
     {
-        playerMovement = player.GetComponent<PlayerMovement>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     public void PowerUpPickUp()
