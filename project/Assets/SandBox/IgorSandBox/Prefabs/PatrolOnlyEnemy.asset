@@ -16,10 +16,11 @@ MonoBehaviour:
   description: 
   enemyModel: {fileID: 0}
   health: 1
-  patrolSpeed: 1
+  patrolSpeed: 3
   chaseSpeed: 5
   detectRange: 10
   damage: 1
-  canChase: 0
+  canGuard: 0
   canPatrol: 1
+  canChase: 0
   canShoot: 0

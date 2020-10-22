@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SandBox/JustinSandbox/Scenes/JustinSandBox.unity
     guid: 2b9d11e510b49eb448a8a8765a2f8381
+  - enabled: 1
+    path: Assets/SandBox/DianaSandBox/Scenes/LevelSandBox.unity
+    guid: aabaefec1b1e8754ca05c9ce008bcf1a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8db3e300e80e0794097397cef005647d,
       type: 2}
