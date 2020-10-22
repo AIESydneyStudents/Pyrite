@@ -92,31 +92,38 @@ public class EnemyPatrol : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
 
         }
-
-        //if (Vector3.Distance(waypoints[endPoint].transform.position, transform.position) > accuracy)
-        //{
-        //    anim.SetBool("isWalking", true);
-        //    navAgent.SetDestination(waypoints[startPoint].transform.position);
-        //    if (Vector3.Distance(waypoints[startPoint].transform.position, transform.position) < accuracy)
-        //    {
-        //        //navAgent.SetDestination(transform.position);
-        //        anim.SetBool("isWalking", false);
-        //        arrived = true;
-        //    }
-        //    if (arrived == true)
-        //    {
-        //        navAgent.SetDestination(waypoints[endPoint].transform.position);
-
-        //    }
-        //}
-        //else
-        //{
-        //    anim.SetBool("isWalking", false);
-        //    //navAgent.SetDestination(transform.position);
-        //    arrived = false;
-        //}
-
     }
+
+    public void GuardAndShoot()
+    {
+        var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
+    }
+
+    //if (Vector3.Distance(waypoints[endPoint].transform.position, transform.position) > accuracy)
+    //{
+    //    anim.SetBool("isWalking", true);
+    //    navAgent.SetDestination(waypoints[startPoint].transform.position);
+    //    if (Vector3.Distance(waypoints[startPoint].transform.position, transform.position) < accuracy)
+    //    {
+    //        //navAgent.SetDestination(transform.position);
+    //        anim.SetBool("isWalking", false);
+    //        arrived = true;
+    //    }
+    //    if (arrived == true)
+    //    {
+    //        navAgent.SetDestination(waypoints[endPoint].transform.position);
+
+    //    }
+    //}
+    //else
+    //{
+    //    anim.SetBool("isWalking", false);
+    //    //navAgent.SetDestination(transform.position);
+    //    arrived = false;
+    //}
+
+
 
     private void Chase()
     {
@@ -130,7 +137,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Patrol()
     {
-       // myMaterial.color = Color.green;
+        // myMaterial.color = Color.green;
         navAgent.speed = data.patrolSpeed;
         if (waypoints.Length == 0) return;
         if (Vector3.Distance(waypoints[currentPoint].transform.position, transform.position) < accuracy)
