@@ -89,7 +89,6 @@ public class EnemyPatrol : MonoBehaviour
 
 
             var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
-            Debug.Log(rotation);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
 
         }
