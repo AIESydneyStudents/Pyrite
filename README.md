@@ -1,15 +1,17 @@
 # PROJECT NAME
 
 ## About the Game
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Earl the Teabag is a 3D side scrolling platformer. The game includes puzzles, collectables and power ups. Power ups include a double jump, wall jumping, dashing to break through walls, and a spin attack. You must avoid or deal with the coffee beans, whose main goal is to stop any teabag they encounter. Your goal is to jump into a cup of hot water to create nice a cup of tea.  
 
 ### Contributors:
-Contributors to the project are strictly limated to AIE Students as part of their group work project.
+Contributors to the project are strictly limited to AIE Students as part of their group work project.
 
-Members (example):
- - John Doe: designer
- - John Smith: programmer
- - Sandra Dee: artist
+Members:
+ - Diana Mizdrak: designer
+ - Alex De Oliveira: designer
+ - Jordan Thomas: artist
+ - Justin Katic: programmer
+ - Igor Doslov: programmer
 
 
 ## Build Steps:
