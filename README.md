@@ -6,7 +6,7 @@ Earl the Teabag is a 3D side scrolling platformer. The game includes puzzles, co
 ### Contributors:
 Contributors to the project are strictly limited to AIE Students as part of their group work project.
 
-Members (example):
+Members:
  - Diana Mizdrak: designer
  - Alex De Oliveira: designer
  - Jordan Thomas: artist
