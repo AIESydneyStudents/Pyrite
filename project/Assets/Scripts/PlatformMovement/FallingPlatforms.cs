@@ -6,7 +6,6 @@ public class FallingPlatforms : MonoBehaviour
 {
     public float fallDelay = 1f;
     public float RespawnDelay = 5f;
-    public GameObject player;
 
     private Rigidbody rb;
     private Vector3 startPos;

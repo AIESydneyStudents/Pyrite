@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
-{
-    public GameObject player;
+{  
     private GameMaster gameMaster;
     private void Start()
     {
@@ -13,7 +12,7 @@ public class PlayerDeath : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
             gameMaster.playerLives -= 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
