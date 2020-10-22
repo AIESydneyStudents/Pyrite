@@ -34,7 +34,7 @@ public class SceneLoader : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name == splashScene )
         {
-            StartCoroutine(LoadFromSplashScene(levelOneScene));
+            StartCoroutine(LoadFromSplashScene(mainMenu));
         }
     }
 
