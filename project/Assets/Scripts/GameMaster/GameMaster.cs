@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public int playerLives;
     public PlayerData data;
+    public Transform playerStartPos;
 
 
     private void Awake()
@@ -22,6 +23,8 @@ public class GameMaster : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        lastCheckPointPos = playerStartPos.position;
 
         Load();
     }
