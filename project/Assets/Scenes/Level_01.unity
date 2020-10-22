@@ -1993,7 +1993,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-54788
+  m_Name: pb_Mesh29672
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2764,7 +2764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396209444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.245, y: 4.23, z: 0}
+  m_LocalPosition: {x: -46.94, y: 4.23, z: -0.18}
   m_LocalScale: {x: 1.9103, y: 2.8413804, z: 2.2193866}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2939,7 +2939,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18726
+  m_Name: pb_Mesh29638
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7871,7 +7871,6 @@ RectTransform:
   - {fileID: 2078256993}
   - {fileID: 1317996036}
   - {fileID: 1063651730}
-  - {fileID: 2086376613}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7894,8 +7893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuScene: MainMenu
   gameIsPaused: 0
-  pauseMenuUI: {fileID: 2086376612}
-  pauseFirstButton: {fileID: 993260263}
+  pauseMenuUI: {fileID: 0}
+  pauseFirstButton: {fileID: 0}
 --- !u!1 &1626856389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3295368320301612848, guid: 248076f50c5df7b48b63c4a186750d31,
@@ -10118,7 +10117,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-21178
+  m_Name: pb_Mesh29746
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
