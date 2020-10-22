@@ -21,7 +21,8 @@ public class PlayerPos : MonoBehaviour
 
         if (gameMaster.playerLives < 0)
         {
-            gameMaster.lastCheckPointPos = startpos.position;    
+            gameMaster.lastCheckPointPos = startpos.position;
+            transform.position = gameMaster.lastCheckPointPos;
             gameMaster.playerLives = 3;
             teaTracker.teaCollected = 0;
         }
