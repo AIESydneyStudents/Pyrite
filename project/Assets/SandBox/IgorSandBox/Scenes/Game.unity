@@ -723,12 +723,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: jump
-    clip: {fileID: 8300000, guid: aa805b907710c384392c0ecfe020dec9, type: 3}
-    volume: 0.485
-    pitch: 0.1
-    loop: 0
+  - name: Theme
+    clip: {fileID: 8300000, guid: 466e1e1d929e5fc4fa7265c5947a0ebb, type: 3}
+    volume: 0.445
+    loop: 1
     source: {fileID: 0}
+  mixer: {fileID: 0}
 --- !u!1 &883539322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1471,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386924900}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620,
     type: 2}
