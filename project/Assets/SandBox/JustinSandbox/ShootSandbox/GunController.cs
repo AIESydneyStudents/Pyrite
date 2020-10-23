@@ -21,7 +21,7 @@ public class GunController : MonoBehaviour
         shotCounter -= Time.deltaTime;
         if (shotCounter <= 0)
         {
-            Instantiate(bullet, firePoint.position, Quaternion.identity);
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
             shotCounter = timeBetweenShots;
         }
     }
