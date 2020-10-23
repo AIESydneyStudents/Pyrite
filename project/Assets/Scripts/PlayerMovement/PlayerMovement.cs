@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool doubleJumpActive;
 
+
     //acess to input system
     private Controls controls;
 
