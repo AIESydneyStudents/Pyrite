@@ -13,17 +13,16 @@ public class BulletController : MonoBehaviour
     }
 
     //If collision with enemy deal damage to enemy and destory bullet
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             //kill player
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Wall")
+        if (other.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }
     }
-
 }
