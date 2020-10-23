@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8141325417956062687}
   - component: {fileID: 8141325417956062685}
   - component: {fileID: 8141325417956062682}
+  - component: {fileID: 26765878}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -134,7 +135,7 @@ MonoBehaviour:
   onEnemyBounceHeight: 15
   bouncePadHeight: 30
   OnFloatPadSpeed: 15
-  wallJumpForce: 30
+  wallJumpForce: 15
   slowFallSpeed: 7
   dashSpeed: 100
   dashCooldown: 3
@@ -171,6 +172,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startpos: {fileID: 0}
   teaTracker: {fileID: 0}
+--- !u!114 &26765878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141325417956062661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbbb9fd140c26a4bbfee4fe4d686044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchingWall1: 0
+  touchingWall2: 0
 --- !u!1 &8141325418322187385
 GameObject:
   m_ObjectHideFlags: 0
