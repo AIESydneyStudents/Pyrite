@@ -58,14 +58,14 @@ public class IgorMov : MonoBehaviour
     public bool OnGrapple = false;
 
     [Header("POWER UP BOOLS")]
-    [SerializeField] bool canDoubleJump;
-    [SerializeField] bool canSlide;
-    [SerializeField] bool canGlide;
-    [SerializeField] bool canDash;
-    [SerializeField] bool canSpin;
-    [SerializeField] bool canWallJump;
-    [SerializeField] bool canGroundSlam;
-    public bool canGrapple;
+    public bool canDoubleJump = false;
+    public bool canSlide = false;
+    public bool canGlide = false;
+    public bool canDash = false;
+    public bool canSpin = false;
+    public bool canWallJump = false;
+    public bool canGroundSlam = false;
+    public bool canGrapple = false;
 
     //If Player is interacting with objects change values true. triggered on items collided with
     private bool onLeftWallJump = false;
@@ -104,11 +104,13 @@ public class IgorMov : MonoBehaviour
         controls.Enable();
 
         Physics.gravity = initalGravity;
+
     }
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!canGroundSlam)
+
+        if (canGroundSlam == false)
             return;
         Physics.gravity = groundSlamGravity;
         isGroundSlamming = true;
@@ -158,6 +160,7 @@ public class IgorMov : MonoBehaviour
             }
             if (isGrounded && canDoubleJump)
             {
+
                 doubleJumpActive = true;
             }
 
@@ -165,10 +168,12 @@ public class IgorMov : MonoBehaviour
             {
                 if (isGrounded)
                 {
+                    
                     Jump(jumpForce);
                 }
                 else if (doubleJumpActive && canDoubleJump)
                 {
+                    
                     Jump(jumpForce);
                     doubleJumpActive = false;
                 }
@@ -244,7 +249,6 @@ public class IgorMov : MonoBehaviour
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
 
 
-
     public void OnBouncePad()
     {
         Jump(bouncePadHeight); //player bounces if on bounce pad
@@ -276,6 +280,14 @@ public class IgorMov : MonoBehaviour
         Dash();
     }
 
+    private void OnDestroy()
+    {
+        controls.Player.Jump.performed -= Jump_performed;
+        controls.Player.SlowFall.performed -= SlowFall_performed;
+        controls.Player.SlowFallRelease.performed -= SlowFallRelease_performed;
+        controls.Player.Dash.performed -= Dash_performed;
+        controls.Player.GroundSmash.performed -= GroundSmash_performed;
+    }
     private void FixedUpdate()
     {
         //add velocity to player
