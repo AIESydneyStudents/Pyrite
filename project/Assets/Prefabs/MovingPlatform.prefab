@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868962886789927374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.33, y: 0, z: 0}
+  m_LocalPosition: {x: 4.3, y: 11.4, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 5868962886812670039}
@@ -85,7 +85,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868962886944531896}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8097534, y: 7.1, z: -1.4999543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -105,8 +105,10 @@ GameObject:
   - component: {fileID: 5868962887524380492}
   - component: {fileID: 5868962887524380502}
   - component: {fileID: 5868962887524380497}
+  - component: {fileID: 887447508168278121}
+  - component: {fileID: 7414823289912792368}
+  - component: {fileID: 6340747653108780314}
   - component: {fileID: 5868962887524380496}
-  - component: {fileID: 5868962887524380499}
   - component: {fileID: 5868962887524380498}
   - component: {fileID: 5868962887524380493}
   m_Layer: 9
@@ -124,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868962887524380495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.3, y: 0, z: 0}
+  m_LocalPosition: {x: 4.3, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 5868962886944531897}
@@ -156,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+  - {fileID: 2100000, guid: 510a56a16a545aa40a4f21fb995419bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,6 +179,103 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &887447508168278121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868962887524380495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276bda268f1638541bd68aa918974a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5868962887524380496}
+        m_MethodName: AttachPlayerToObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5868962887524380496}
+        m_MethodName: DetachPlayerFromObj
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7414823289912792368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868962887524380495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6893479a29d1344bc9402badc7bc51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whileInTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6340747653108780314}
+        m_MethodName: PlayerOnPlatform
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6340747653108780314}
+        m_MethodName: PlayerOffPlatform
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6340747653108780314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868962887524380495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca109ad7b316c046a1246fc9f0e0133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformPoints:
+  - {fileID: 5868962886789927375}
+  - {fileID: 5868962888839183157}
+  speed: 2
+  startPos: {fileID: 5868962886789927375}
 --- !u!114 &5868962887524380496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,23 +288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf12bde84ec85c43b10da038185ff50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5868962887524380499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5868962887524380495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f2bfda8f0835394089b9aa45500ce29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlatformPoints:
-  - {fileID: 5868962886789927375}
-  - {fileID: 5868962888839183157}
-  speed: 10
-  startPos: {fileID: 5868962886789927375}
 --- !u!65 &5868962887524380498
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -230,8 +312,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5, z: 1}
-  m_Center: {x: 0, y: 0.74, z: 0}
+  m_Size: {x: 1, y: 5, z: 1}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1 &5868962888839183156
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5868962888839183156}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.4, y: 9.01, z: 0}
+  m_LocalPosition: {x: 4.3, y: -19.2, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 5868962886812670039}

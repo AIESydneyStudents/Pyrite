@@ -9,6 +9,7 @@ TagManager:
   - waypoint
   - GameManager
   - Wall
+  - TeaCollectable
   layers:
   - Default
   - TransparentFX
