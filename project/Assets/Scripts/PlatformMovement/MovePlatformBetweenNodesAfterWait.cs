@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovePlatformBetweenNodesOnTrigger : MonoBehaviour
+public class MovePlatformBetweenNodesAfterWait : MonoBehaviour
 {
     public Transform[] PlatformPoints;
     public float speed;
@@ -10,7 +10,9 @@ public class MovePlatformBetweenNodesOnTrigger : MonoBehaviour
     Vector3 nextPos;
     private float numberOfPoints;
     private int currentPoint;
-    private bool playerOnPlatform;
+    bool platformCanMove = true;
+    public float platformWaitTime;
+    private float timer;
 
 
     void Start()
@@ -21,9 +23,21 @@ public class MovePlatformBetweenNodesOnTrigger : MonoBehaviour
         currentPoint = 0;
     }
 
+    private void Update()
+    {
+        if (platformCanMove == false)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                platformCanMove = true;
+                timer = platformWaitTime;
+            }
+        }
+    }
     private void FixedUpdate()
     {
-        if (playerOnPlatform == true)
+        if (platformCanMove == true)
         {
             if (transform.position == PlatformPoints[currentPoint].position)
             {
@@ -31,29 +45,17 @@ public class MovePlatformBetweenNodesOnTrigger : MonoBehaviour
                 {
                     nextPos = PlatformPoints[currentPoint + 1].position;
                     currentPoint += 1;
+                    platformCanMove = false;
                 }
                 else
                 {
                     nextPos = startPos.position;
                     currentPoint = 0;
+                    platformCanMove = false;
                 }
             }
+            transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
         }
-        else if (playerOnPlatform == false)
-        {
-            nextPos = startPos.position;
-            currentPoint = 0;
-        }
-        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-    }
-
-    public void PlayerOnPlatform()
-    {
-        playerOnPlatform = true;
-    }
-    public void PlayerOffPlatform()
-    {
-        playerOnPlatform = false;
     }
 
     /// <DrawingLinesDebug>

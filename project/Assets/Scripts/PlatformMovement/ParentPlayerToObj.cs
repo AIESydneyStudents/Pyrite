@@ -6,7 +6,7 @@ using UnityEngine;
 
 /// <MoveWithPlatforms>
 /// attaches player to the gameObject so that the gameObject moves where the moveing object moves
-public class PlatformTriggers : MonoBehaviour
+public class ParentPlayerToObj : MonoBehaviour
 {
     private GameObject player;
     private void Start()
