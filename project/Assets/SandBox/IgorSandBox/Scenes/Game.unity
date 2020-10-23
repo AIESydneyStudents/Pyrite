@@ -728,7 +728,7 @@ MonoBehaviour:
     volume: 0.445
     loop: 1
     source: {fileID: 0}
-  mixer: {fileID: 0}
+  mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}
 --- !u!1 &883539322
 GameObject:
   m_ObjectHideFlags: 0
