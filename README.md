@@ -1,7 +1,7 @@
 # PROJECT NAME
 
 ## About the Game
-Earl the Teabag is a 3D side scrolling platformer. The game includes puzzles, collectables and power ups. Power ups include a double jump, wall jumping, dashing to break through walls, and a spin attack. You must avoid or deal with the coffee beans, whose main goal is to stop any teabag they encounter. Your goal is to jump into a cup of hot water to create nice a cup of tea.  
+Earl the Teabag is a 3D side scrolling platformer. The game includes puzzles, collectables and power ups. Power ups include double jump, wall jump, dash, ground slam, and a spin attack. You must avoid or deal with the coffee beans, whose main goal is to stop any teabag they encounter. Your goal is to collect and fill yourself with tea leaves and then jump into a cup of hot water to create nice a cup of tea.  
 
 ### Contributors:
 Contributors to the project are strictly limited to AIE Students as part of their group work project.
