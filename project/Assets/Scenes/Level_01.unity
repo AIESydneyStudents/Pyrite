@@ -188,6 +188,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!114 &6409436 stripped
@@ -268,6 +298,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -452,6 +512,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &49974868 stripped
@@ -472,7 +562,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1051763926}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 822186542}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e37e1f60096ee4b4d811d2c5b02a29a7, type: 3}
@@ -1180,6 +1270,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &125962521
@@ -1347,6 +1467,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &137705099
@@ -1415,6 +1565,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -1807,6 +1987,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &165244465
@@ -1875,6 +2085,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -2517,6 +2757,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &261632167 stripped
@@ -2611,7 +2881,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230934
+  m_Name: pb_Mesh16242
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2774,7 +3044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230168
+  m_Name: pb_Mesh15476
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3504,6 +3774,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -4266,7 +4566,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230212
+  m_Name: pb_Mesh15520
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4745,7 +5045,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230154
+  m_Name: pb_Mesh15462
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4969,6 +5269,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &336642821
@@ -5037,6 +5367,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -5497,6 +5857,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -6201,6 +6591,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &392233893 stripped
@@ -6275,6 +6695,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -7575,6 +8025,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &402277247
@@ -8108,6 +8588,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &421057872
@@ -8177,6 +8687,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &424520338
@@ -8245,6 +8785,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -8715,6 +9285,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &449661641
@@ -8783,6 +9383,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -8864,6 +9494,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -9252,6 +9912,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &515855244
@@ -9288,7 +9978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 161.69995, y: -32.80005}
+  m_AnchoredPosition: {x: 245, y: -32.80005}
   m_SizeDelta: {x: 323.4, y: 65.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515855246
@@ -9476,6 +10166,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &534039476 stripped
@@ -9502,7 +10222,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230600
+  m_Name: pb_Mesh15908
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9726,6 +10446,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &560827963 stripped
@@ -9740,7 +10490,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230266
+  m_Name: pb_Mesh15574
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9903,7 +10653,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230536
+  m_Name: pb_Mesh15844
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10066,7 +10816,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230100
+  m_Name: pb_Mesh15408
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10549,6 +11299,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &603262755
@@ -10707,6 +11487,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &625095899
@@ -10845,8 +11655,111 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
+--- !u!1 &645163130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645163131}
+  - component: {fileID: 645163133}
+  - component: {fileID: 645163132}
+  m_Layer: 5
+  m_Name: TealeafImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &645163131
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645163130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1573575600}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -359, y: 143}
+  m_SizeDelta: {x: 25, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &645163132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645163130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.07450981, g: 0.227451, b: 0.1137255, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &645163133
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645163130}
+  m_CullTransparentMesh: 0
 --- !u!1001 &654454767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11242,7 +12155,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230828
+  m_Name: pb_Mesh16136
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11405,7 +12318,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230278
+  m_Name: pb_Mesh15586
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11721,6 +12634,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &700496890
@@ -11789,6 +12732,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -11954,6 +12927,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -12378,6 +13381,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &788306764
@@ -12446,6 +13479,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -12545,6 +13608,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1116757339}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &822186542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107472363162059965, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
+    type: 3}
+  m_PrefabInstance: {fileID: 1051763926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822186547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822186542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {fileID: 2020861989}
+  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
+  canvas: {fileID: 1573575596}
 --- !u!4 &830858813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
@@ -12629,6 +13713,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -12734,6 +13848,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &863139270 stripped
@@ -12809,6 +13953,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &881846433
@@ -12817,7 +13991,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230414
+  m_Name: pb_Mesh15722
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13041,6 +14215,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &889469907
@@ -13118,7 +14322,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230192
+  m_Name: pb_Mesh15500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13281,7 +14485,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230978
+  m_Name: pb_Mesh16286
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13815,6 +15019,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &922491196
@@ -13955,6 +15189,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -14427,6 +15691,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &991158545 stripped
@@ -14603,6 +15897,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1031028014
@@ -14671,6 +15995,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -14741,6 +16095,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1037078709
@@ -14810,6 +16194,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1041566841
@@ -14878,6 +16292,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -14975,7 +16419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230950
+  m_Name: pb_Mesh16258
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15198,6 +16642,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -15459,6 +16933,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &1102995832
@@ -15509,7 +17013,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh231070
+  m_Name: pb_Mesh16378
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15745,6 +17249,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1121695782
@@ -15813,6 +17347,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -16453,6 +18017,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1165200777 stripped
@@ -16534,6 +18128,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &1182075406
@@ -16592,7 +18216,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230734
+  m_Name: pb_Mesh16042
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16882,7 +18506,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230134
+  m_Name: pb_Mesh15442
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17112,6 +18736,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1232985904
@@ -17257,6 +18911,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1252641967
@@ -17326,6 +19010,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1261358921
@@ -17394,6 +19108,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -17727,7 +19471,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230010
+  m_Name: pb_Mesh15318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17890,7 +19634,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh231088
+  m_Name: pb_Mesh16396
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18149,7 +19893,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230068
+  m_Name: pb_Mesh15376
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18668,6 +20412,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &1338868759
@@ -18676,7 +20450,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230860
+  m_Name: pb_Mesh16168
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19081,6 +20855,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1360722020 stripped
@@ -19161,6 +20965,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -19667,6 +21501,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1413177383
@@ -19735,6 +21599,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -20173,6 +22067,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -20894,7 +22818,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230796
+  m_Name: pb_Mesh16104
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21057,7 +22981,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230234
+  m_Name: pb_Mesh15542
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21280,6 +23204,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -22039,6 +23993,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1534395330 stripped
@@ -22436,6 +24420,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &1573575596
@@ -22532,6 +24546,8 @@ RectTransform:
   - {fileID: 2078256993}
   - {fileID: 1317996036}
   - {fileID: 515855245}
+  - {fileID: 2020861989}
+  - {fileID: 645163131}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22697,6 +24713,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -23101,6 +25147,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1650952605
@@ -23329,6 +25405,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1687327656
@@ -23398,6 +25504,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &1692432713
@@ -23406,7 +25542,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230770
+  m_Name: pb_Mesh16078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23630,6 +25766,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1695822422 stripped
@@ -23711,6 +25877,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &1742931291
@@ -23719,7 +25915,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230298
+  m_Name: pb_Mesh15606
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24173,7 +26369,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230320
+  m_Name: pb_Mesh15628
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24414,6 +26610,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -25441,6 +27667,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1828244719
@@ -25595,6 +27851,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1838000700
@@ -25663,6 +27949,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -25982,7 +28298,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230504
+  m_Name: pb_Mesh15812
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26212,6 +28528,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1847339953
@@ -26280,6 +28626,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -26356,6 +28732,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1855574315
@@ -26425,6 +28831,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1867218861 stripped
@@ -26445,7 +28881,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230672
+  m_Name: pb_Mesh15980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26669,6 +29105,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1880290641
@@ -26737,6 +29203,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -26831,6 +29327,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1908333209
@@ -26900,6 +29426,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1916652165
@@ -26968,6 +29524,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -27082,6 +29668,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1948305748
@@ -27150,6 +29766,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -27486,6 +30132,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &1979347261
@@ -27555,6 +30231,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &1982981193
@@ -27563,7 +30269,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230808
+  m_Name: pb_Mesh16116
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27878,6 +30584,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -28203,6 +30939,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013904046}
   m_Mesh: {fileID: 1104713416}
+--- !u!1 &2020861988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020861989}
+  m_Layer: 5
+  m_Name: TeaAnimSpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2020861989
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020861988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1573575600}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2021548428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28359,6 +31130,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -29343,6 +32144,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &2057785370
@@ -29485,6 +32316,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -29766,6 +32627,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &2079106950
@@ -30012,6 +32903,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &2095876160 stripped
@@ -30092,6 +33013,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 822186547}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
