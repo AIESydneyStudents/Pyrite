@@ -168,7 +168,7 @@ public class IgorMov : MonoBehaviour
             {
                 if (isGrounded)
                 {
-                    
+                    FindObjectOfType<AudioManager>().Play("jump");
                     Jump(jumpForce);
                 }
                 else if (doubleJumpActive && canDoubleJump)
