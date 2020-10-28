@@ -10,6 +10,8 @@ public class GameMaster : MonoBehaviour
     public PlayerData data;
     public Transform playerStartPos;
 
+    public int numberOfTeaLeaves;
+
 
     private void Awake()
     {      
@@ -25,6 +27,9 @@ public class GameMaster : MonoBehaviour
             Destroy(gameObject);
 
         lastCheckPointPos = playerStartPos.position;
+
+        numberOfTeaLeaves = GameObject.FindGameObjectsWithTag("TeaCollectable").Length;
+        Debug.Log(numberOfTeaLeaves);
 
         Load();
     }

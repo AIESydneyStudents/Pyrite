@@ -12,6 +12,7 @@ public class IncreaseTeaScore : MonoBehaviour
 
     public void IncreaseTeaScoreOnPickup()
     {
+        if(teaTracker != null)
         teaTracker.teaCollected += 1;
     }
 

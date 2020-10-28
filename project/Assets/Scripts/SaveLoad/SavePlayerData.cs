@@ -48,7 +48,6 @@ public class SavePlayerData : MonoBehaviour
             playerMovement.canWallJump = data.canWallJump;
             playerMovement.canGroundSlam = data.canGroundSlam;
             playerMovement.canGrapple = data.canGrapple;
-
         }
     }
 }
