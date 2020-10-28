@@ -56,6 +56,7 @@ public class OptionsMenu : MonoBehaviour
     {
         //qualityIndex = qualityDropdown.value;
         QualitySettings.SetQualityLevel(qualityIndex);
+        //qualityDropdown.value = qualityIndex;
     }
 
 
