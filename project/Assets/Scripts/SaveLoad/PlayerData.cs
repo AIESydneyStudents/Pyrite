@@ -11,7 +11,17 @@ public class PlayerData
     public float[] respawnPos;
     public int teaCollected;
 
-    public PlayerData(GameMaster gameMaster, TeaTracker teaTracker)
+    public bool canDoubleJump;
+    public bool canSlide;
+    public bool canGlide;
+    public bool canDash;
+    public bool canSpin;
+    public bool canWallJump;
+    public bool canGroundSlam;
+    public bool canGrapple;
+
+
+    public PlayerData(GameMaster gameMaster, TeaTracker teaTracker, PlayerMovement playerMovement)
     {
         PlayerLives = gameMaster.playerLives;
         respawnPos = new float[3];
@@ -20,5 +30,15 @@ public class PlayerData
         respawnPos[2] = gameMaster.lastCheckPointPos.z;
 
         teaCollected = teaTracker.teaCollected;
+
+        canDoubleJump = playerMovement.canDoubleJump;
+        canSlide = playerMovement.canSlide;
+        canGlide = playerMovement.canGlide;
+        canDash = playerMovement.canDash;
+        canSpin = playerMovement.canSpin;
+        canWallJump = playerMovement.canWallJump;
+        canGroundSlam = playerMovement.canGroundSlam;
+        canGrapple = playerMovement.canGrapple;
+
     }
 }

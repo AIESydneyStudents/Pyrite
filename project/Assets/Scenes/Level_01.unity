@@ -16346,6 +16346,11 @@ PrefabInstance:
       propertyPath: teaTracker
       value: 
       objectReference: {fileID: 62689079}
+    - target: {fileID: 107472363162059953, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 6409436}
     - target: {fileID: 107472363162059955, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21798,7 +21803,7 @@ PrefabInstance:
     - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
         type: 3}
@@ -21820,6 +21825,26 @@ PrefabInstance:
       propertyPath: sounds.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 3026fc4406c8db34aafb3da91a4a0499, type: 3}
+    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: aa805b907710c384392c0ecfe020dec9, type: 3}
+    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
+        type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4673083248745779343, guid: b479cab1985c2ae45a75549646c443d5,
         type: 3}
       propertyPath: m_Name
