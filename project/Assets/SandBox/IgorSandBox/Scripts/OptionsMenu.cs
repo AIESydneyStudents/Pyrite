@@ -1,21 +1,27 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+
 
 public class OptionsMenu : MonoBehaviour
 {
     //public AudioMixer AudioMixer;
     Resolution[] resolutions;
     public TMP_Dropdown resolutionDropdown;
-    //public TMP_Dropdown qualityDropdown;
+    public Dropdown qualityDropdown;
+    public GameObject firstButton;
 
 
     private void Start()
     {
-        int CurrentResolutionIndex = 0;
+
+        int currentResolutionIndex = 0;
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
@@ -31,19 +37,22 @@ public class OptionsMenu : MonoBehaviour
                 resolutions[i].height == Screen.height && 
                 resolutions[i].refreshRate == Screen.currentResolution.refreshRate)
             {
-                CurrentResolutionIndex = i;
+                currentResolutionIndex = i;
             }
         }
 
         resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = CurrentResolutionIndex;
+        resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        LoadSettings(currentResolutionIndex);
     }
 
     public void SetResolution(int ResolutionIndex)
     {
         Resolution resolution = resolutions[ResolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("ResolutionPreference",
+                   resolutionDropdown.value);
     }
 
     //public void SetVolume(float volume)
@@ -56,11 +65,57 @@ public class OptionsMenu : MonoBehaviour
     {
         //qualityIndex = qualityDropdown.value;
         QualitySettings.SetQualityLevel(qualityIndex);
+        //qualityDropdown.value = qualityIndex;
+        PlayerPrefs.SetInt("QualitySettingPreference",
+                   qualityDropdown.value);
     }
 
 
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
+
     }
+
+    //public void SaveSettings()
+    //{
+    //    PlayerPrefs.SetInt("QualitySettingPreference",
+    //               qualityDropdown.value);
+
+    //    PlayerPrefs.SetInt("ResolutionPreference",
+    //               resolutionDropdown.value);
+        
+        
+    //    PlayerPrefs.SetInt("FullscreenPreference",
+    //               Convert.ToInt32(Screen.fullScreen));
+        
+    //}
+
+    public void LoadSettings(int currentResIndex)
+    {
+        if (PlayerPrefs.HasKey("QualitySettingPreference"))
+            qualityDropdown.value = PlayerPrefs.GetInt("QualitySettingPreference");
+        else
+            qualityDropdown.value = 5;
+
+        if (PlayerPrefs.HasKey("ResolutionPreference"))
+            resolutionDropdown.value = PlayerPrefs.GetInt("ResolutionPreference");
+        else
+            resolutionDropdown.value = currentResIndex;
+        
+        if (PlayerPrefs.HasKey("FullscreenPreference"))
+            Screen.fullScreen = Convert.ToBoolean(PlayerPrefs.GetInt("FullscreenPreference"));
+        else
+            Screen.fullScreen = true;
+      
+    }
+
+    public void SetButton()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+
+        EventSystem.current.SetSelectedGameObject(firstButton);
+    }
+
 }
