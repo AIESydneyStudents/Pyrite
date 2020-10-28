@@ -173,7 +173,7 @@ MonoBehaviour:
   PlatformPoints:
   - {fileID: 1288964545982954276}
   - {fileID: 1288964546413025850}
-  speed: 3
+  speed: 5
   startPos: {fileID: 1288964545982954276}
   platformWaitTime: 2
 --- !u!1 &1288964545982954277
