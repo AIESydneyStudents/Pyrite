@@ -43,5 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2574cf9036496b4d9f8e551c79dc7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 3026fc4406c8db34aafb3da91a4a0499, type: 3}
+    volume: 0.474
+    loop: 1
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: aa805b907710c384392c0ecfe020dec9, type: 3}
+    volume: 0.474
+    loop: 0
+    source: {fileID: 0}
   mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}

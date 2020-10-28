@@ -60145,51 +60145,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[0].name
-      value: Theme
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.474
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[0].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3026fc4406c8db34aafb3da91a4a0499, type: 3}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[1].name
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: aa805b907710c384392c0ecfe020dec9, type: 3}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.474
-      objectReference: {fileID: 0}
-    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
-        type: 3}
-      propertyPath: sounds.Array.data[1].loop
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4673083248745779343, guid: b479cab1985c2ae45a75549646c443d5,
         type: 3}
       propertyPath: m_Name
@@ -69667,7 +69622,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh167706
+  m_Name: pb_Mesh16368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -75267,7 +75222,7 @@ PrefabInstance:
     - target: {fileID: 6086282870176242546, guid: 1e5ebf3089508f84aa29c4056ed7f86d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.6
+      value: 17.29
       objectReference: {fileID: 0}
     - target: {fileID: 6086282870176242546, guid: 1e5ebf3089508f84aa29c4056ed7f86d,
         type: 3}
@@ -75329,11 +75284,6 @@ PrefabInstance:
       propertyPath: whileInTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6409436}
-    - target: {fileID: 6086282870176242550, guid: 1e5ebf3089508f84aa29c4056ed7f86d,
-        type: 3}
-      propertyPath: whileInTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnFloatPad
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e5ebf3089508f84aa29c4056ed7f86d, type: 3}
 --- !u!1001 &1791769628
