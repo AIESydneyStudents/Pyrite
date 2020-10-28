@@ -90,4 +90,11 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
+
+    public void SetButton()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+    }
 }

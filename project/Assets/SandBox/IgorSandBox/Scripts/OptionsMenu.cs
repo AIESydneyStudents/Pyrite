@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+
 
 public class OptionsMenu : MonoBehaviour
 {
@@ -12,10 +15,12 @@ public class OptionsMenu : MonoBehaviour
     Resolution[] resolutions;
     public TMP_Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
+    public GameObject firstButton;
 
 
     private void Start()
     {
+
         int currentResolutionIndex = 0;
         resolutions = Screen.resolutions;
 
@@ -69,8 +74,7 @@ public class OptionsMenu : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        PlayerPrefs.SetInt("FullscreenPreference",
-                   Convert.ToInt32(Screen.fullScreen));
+        PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
 
     }
 
@@ -105,6 +109,13 @@ public class OptionsMenu : MonoBehaviour
         else
             Screen.fullScreen = true;
       
+    }
+
+    public void SetButton()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+
+        EventSystem.current.SetSelectedGameObject(firstButton);
     }
 
 }
