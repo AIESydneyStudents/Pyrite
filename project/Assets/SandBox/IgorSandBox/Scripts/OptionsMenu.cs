@@ -13,6 +13,7 @@ public class OptionsMenu : MonoBehaviour
 {
     //public AudioMixer AudioMixer;
     Resolution[] resolutions;
+    public Toggle fullScreenToggleBtn;
     public TMP_Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
     public GameObject firstButton;
@@ -45,6 +46,8 @@ public class OptionsMenu : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
         LoadSettings(currentResolutionIndex);
+
+        fullScreenToggleBtn.isOn = GamePrefs.IsFullscreen;
     }
 
     public void SetResolution(int ResolutionIndex)
@@ -66,16 +69,19 @@ public class OptionsMenu : MonoBehaviour
         //qualityIndex = qualityDropdown.value;
         QualitySettings.SetQualityLevel(qualityIndex);
         //qualityDropdown.value = qualityIndex;
-        PlayerPrefs.SetInt("QualitySettingPreference",
-                   qualityDropdown.value);
+        PlayerPrefs.SetInt("QualitySettingPreference", qualityDropdown.value);
     }
 
 
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
+        GamePrefs.IsFullscreen = isFullscreen;
 
+        //PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(isFullscreen));
+
+
+        //Debug.Log(Convert.ToInt32(isFullscreen));
     }
 
     //public void SaveSettings()
