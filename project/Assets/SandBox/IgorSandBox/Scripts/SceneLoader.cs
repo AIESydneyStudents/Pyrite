@@ -26,6 +26,7 @@ public class SceneLoader : MonoBehaviour
     public string optionsScene;
     public string creditsScene;
 
+
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(null);
@@ -36,6 +37,7 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
+
     }
 
    
