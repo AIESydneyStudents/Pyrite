@@ -9,15 +9,19 @@ public class TeaTracker : MonoBehaviour
     public PlayerData data;
     public TextMeshProUGUI teaCountTxt;
     private GameMaster gameMaster;
+
+    public int numberOfTeaLeaves;
+
     private void Start()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         Load();
         teaCountTxt.text = "Tea Collected : " + teaCollected.ToString();
+        numberOfTeaLeaves = GameObject.FindGameObjectsWithTag("TeaCollectable").Length;
     }
     private void Update()
     {
-        teaCountTxt.text = "Tea : " + teaCollected.ToString() + "/" + gameMaster.numberOfTeaLeaves;
+        teaCountTxt.text = "Tea : " + teaCollected.ToString() + "/" + numberOfTeaLeaves;
     }
     void Load()
     {

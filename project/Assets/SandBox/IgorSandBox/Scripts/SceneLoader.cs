@@ -26,6 +26,7 @@ public class SceneLoader : MonoBehaviour
     public string optionsScene;
     public string creditsScene;
 
+
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(null);
@@ -36,6 +37,7 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
+
     }
 
    
@@ -47,11 +49,14 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadTutorialScene()
     {
+        SaveLoad.SeriouslyDeleteAllSaveFiles();
         StartCoroutine(LoadScene(tutorialScene));
     }
 
     public void LoadlevelOneScene()
     {
+        SaveLoad.SeriouslyDeleteAllSaveFiles();
+
         StartCoroutine(LoadScene(levelOneScene));
         Debug.Log("level1");
     }

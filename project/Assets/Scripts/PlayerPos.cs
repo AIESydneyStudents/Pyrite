@@ -14,6 +14,13 @@ public class PlayerPos : MonoBehaviour
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
+
+        if (!SaveLoad.SaveExists("PlayerData"))
+        {
+            gameMaster.lastCheckPointPos = startpos.position;
+            transform.position = gameMaster.lastCheckPointPos;
+        }
+
         if (gameMaster.playerLives >= 0)
         {
             transform.position = gameMaster.lastCheckPointPos;
@@ -26,7 +33,7 @@ public class PlayerPos : MonoBehaviour
             gameMaster.playerLives = 3;
             teaTracker.teaCollected = 0;
         }
-            
+
     }
 
 
