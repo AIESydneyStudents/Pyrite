@@ -13,10 +13,8 @@ public class DisplayLivesUi : MonoBehaviour
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
 
-        if (gameMaster.playerLives < 0)
-            playerLivesTxt.text = "Lives:" + 3;
-        else
-            playerLivesTxt.text = "Lives:" + gameMaster.playerLives.ToString();
+
+        playerLivesTxt.text = "Lives:" + gameMaster.playerLives.ToString();
 
 
 

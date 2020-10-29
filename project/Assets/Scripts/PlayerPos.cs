@@ -26,7 +26,7 @@ public class PlayerPos : MonoBehaviour
             transform.position = gameMaster.lastCheckPointPos;
         }
 
-        else if (gameMaster.playerLives < 0)
+         if (gameMaster.playerLives < 0)
         {
             gameMaster.lastCheckPointPos = startpos.position;
             transform.position = gameMaster.lastCheckPointPos;

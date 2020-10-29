@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 107472363162059953}
   - component: {fileID: 5145518656214620036}
   - component: {fileID: 220311468}
+  - component: {fileID: 822186547}
+  - component: {fileID: 822186548}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 107472363162059965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 37.5, y: 0.45, z: -7.82}
-  m_LocalScale: {x: 5, y: 1, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9a91e7308069c458500f7784fe167b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teaTracker: {fileID: 0}
+  teaTracker: {fileID: 220311468}
   data:
     PlayerLives: 0
     respawnPos: []
@@ -111,3 +113,31 @@ MonoBehaviour:
     canGrapple: 0
   teaCountTxt: {fileID: 0}
   numberOfTeaLeaves: 0
+--- !u!114 &822186547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107472363162059965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {fileID: 0}
+  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
+  canvas: {fileID: 0}
+--- !u!114 &822186548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107472363162059965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97829b40e481265478d3e6e77c13f7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLivesTxt: {fileID: 0}
