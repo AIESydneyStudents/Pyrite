@@ -55,8 +55,6 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadlevelOneScene()
     {
-        SaveLoad.SeriouslyDeleteAllSaveFiles();
-
         StartCoroutine(LoadScene(levelOneScene));
         Debug.Log("level1");
     }

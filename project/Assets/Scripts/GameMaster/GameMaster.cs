@@ -28,7 +28,6 @@ public class GameMaster : MonoBehaviour
         lastCheckPointPos = playerStartPos.position;
 
 
-
         Load();
     }
 

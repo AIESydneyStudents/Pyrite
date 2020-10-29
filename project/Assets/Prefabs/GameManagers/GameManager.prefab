@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 107472363162059955}
   - component: {fileID: 107472363162059964}
   - component: {fileID: 107472363162059953}
-  - component: {fileID: 107472363162059954}
+  - component: {fileID: 5145518656214620036}
   - component: {fileID: 220311468}
   m_Layer: 0
   m_Name: GameManager
@@ -63,7 +63,16 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
---- !u!114 &107472363162059954
+    canDoubleJump: 0
+    canSlide: 0
+    canGlide: 0
+    canDash: 0
+    canSpin: 0
+    canWallJump: 0
+    canGroundSlam: 0
+    canGrapple: 0
+  playerMovement: {fileID: 0}
+--- !u!114 &5145518656214620036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,3 +101,13 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
+    canDoubleJump: 0
+    canSlide: 0
+    canGlide: 0
+    canDash: 0
+    canSpin: 0
+    canWallJump: 0
+    canGroundSlam: 0
+    canGrapple: 0
+  teaCountTxt: {fileID: 0}
+  numberOfTeaLeaves: 0

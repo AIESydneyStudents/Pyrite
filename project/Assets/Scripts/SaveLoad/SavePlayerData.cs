@@ -21,9 +21,7 @@ public class SavePlayerData : MonoBehaviour
         Load();
         
     }
-    private void Start()
-    {
-    }
+  
 
     void Save()
     {
@@ -49,5 +47,9 @@ public class SavePlayerData : MonoBehaviour
             playerMovement.canGroundSlam = data.canGroundSlam;
             playerMovement.canGrapple = data.canGrapple;
         }
+    }
+    public void DeleteFiles()
+    {
+        SaveLoad.SeriouslyDeleteAllSaveFiles();
     }
 }
