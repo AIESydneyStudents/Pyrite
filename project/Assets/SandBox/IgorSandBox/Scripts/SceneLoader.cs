@@ -47,11 +47,14 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadTutorialScene()
     {
+        SaveLoad.SeriouslyDeleteAllSaveFiles();
         StartCoroutine(LoadScene(tutorialScene));
     }
 
     public void LoadlevelOneScene()
     {
+        SaveLoad.SeriouslyDeleteAllSaveFiles();
+
         StartCoroutine(LoadScene(levelOneScene));
         Debug.Log("level1");
     }
