@@ -18,11 +18,11 @@ public class SavePlayerData : MonoBehaviour
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         GameEvents.SaveInitiated += Save;
+        Load();
         
     }
     private void Start()
     {
-        Load();
     }
 
     void Save()
