@@ -853,7 +853,7 @@ PrefabInstance:
     - target: {fileID: 1985419190287863553, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3488560677399476154, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
@@ -933,7 +933,7 @@ PrefabInstance:
     - target: {fileID: 5112680637002025283, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5762196590002196275, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
@@ -1045,6 +1045,26 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
       objectReference: {fileID: 1831706911}
+    - target: {fileID: 5956941100773563036, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956941100773563036, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -73.90001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956941100773563036, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -722.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956941100773563036, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -433.32
+      objectReference: {fileID: 0}
     - target: {fileID: 5956941100773563039, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1218,7 +1238,7 @@ PrefabInstance:
     - target: {fileID: 5956941101696943387, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7817135795104175487, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
@@ -2014,7 +2034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1314792631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2350,6 +2370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e99ac190aa51c544a1e95f082576aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullScreenToggleBtn: {fileID: 1775869990}
   resolutionDropdown: {fileID: 660482487}
   qualityDropdown: {fileID: 417937113}
   firstButton: {fileID: 755696072}
