@@ -19,9 +19,6 @@ public class DisplayLivesUi : MonoBehaviour
 
 
     }
-    private void Update()
-    {
-    }
 
 
 
