@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
+    //public Text nameText;
+    public TextMeshProUGUI dialogueText;
 
     public Animator anim;
 
@@ -22,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpen", true);
        
-        nameText.text = dialogue.name;
+        //nameText.text = dialogue.name;
 
         sentences.Clear();
 
