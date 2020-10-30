@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class IgorMov : MonoBehaviour
 {
+    Controls Controls
+    {
+        get { return ControlsManager.instance; }
+    }
+
     //RigidBody and positions for movements
     private Rigidbody rb;
     private Vector3 moveVelocity;
@@ -77,7 +82,7 @@ public class IgorMov : MonoBehaviour
     private bool doubleJumpActive;
 
     //acess to input system
-    private Controls controls;
+    //private Controls controls;
 
 
     void Start()
@@ -88,20 +93,20 @@ public class IgorMov : MonoBehaviour
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
 
         //get access to input manager
-        controls = new Controls();
+       // controls = new Controls(); // ControlsManager.Instance;
         //set default movespeed to moveSpeed value given in inspector
         defaultMoveSpeed = moveSpeed;
 
         currentDashTime = dashTime;
 
         // call back methods that are called when playerInput is used.
-        controls.Player.Jump.performed += Jump_performed;
-        controls.Player.SlowFall.performed += SlowFall_performed;
-        controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
-        controls.Player.Dash.performed += Dash_performed;
-        controls.Player.GroundSmash.performed += GroundSmash_performed;
+        Controls.Player.Jump.performed += Jump_performed;
+        Controls.Player.SlowFall.performed += SlowFall_performed;
+        Controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
+        Controls.Player.Dash.performed += Dash_performed;
+        Controls.Player.GroundSmash.performed += GroundSmash_performed;
 
-        controls.Enable();
+        Controls.Enable();
 
         Physics.gravity = initalGravity;
 
@@ -203,7 +208,7 @@ public class IgorMov : MonoBehaviour
     public void MoveAndRotatePlayer()
     {
         //get the players direction input
-        var dirMove = controls.Player.Move.ReadValue<Vector2>();
+        var dirMove = Controls.Player.Move.ReadValue<Vector2>();
         //put players input into a vector 3
         moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
 
@@ -288,11 +293,11 @@ public class IgorMov : MonoBehaviour
 
     private void OnDestroy()
     {
-        controls.Player.Jump.performed -= Jump_performed;
-        controls.Player.SlowFall.performed -= SlowFall_performed;
-        controls.Player.SlowFallRelease.performed -= SlowFallRelease_performed;
-        controls.Player.Dash.performed -= Dash_performed;
-        controls.Player.GroundSmash.performed -= GroundSmash_performed;
+        Controls.Player.Jump.performed -= Jump_performed;
+        Controls.Player.SlowFall.performed -= SlowFall_performed;
+        Controls.Player.SlowFallRelease.performed -= SlowFallRelease_performed;
+        Controls.Player.Dash.performed -= Dash_performed;
+        Controls.Player.GroundSmash.performed -= GroundSmash_performed;
     }
     private void FixedUpdate()
     {

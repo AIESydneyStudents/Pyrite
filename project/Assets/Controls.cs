@@ -335,6 +335,33 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Dialogue"",
+            ""id"": ""34427871-7c65-4a0f-bad0-39844bfd1e19"",
+            ""actions"": [
+                {
+                    ""name"": ""Continue"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""7c00a2e4-bc6b-4c66-9a4a-4c95375934eb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""af304a14-8c2a-48ce-a0f7-c1599e8d2350"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Continue"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -350,6 +377,9 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_GroundSmash = m_Player.FindAction("GroundSmash", throwIfNotFound: true);
+        // Dialogue
+        m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
+        m_Dialogue_Continue = m_Dialogue.FindAction("Continue", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -492,6 +522,39 @@ public class @Controls : IInputActionCollection, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Dialogue
+    private readonly InputActionMap m_Dialogue;
+    private IDialogueActions m_DialogueActionsCallbackInterface;
+    private readonly InputAction m_Dialogue_Continue;
+    public struct DialogueActions
+    {
+        private @Controls m_Wrapper;
+        public DialogueActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Continue => m_Wrapper.m_Dialogue_Continue;
+        public InputActionMap Get() { return m_Wrapper.m_Dialogue; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DialogueActions set) { return set.Get(); }
+        public void SetCallbacks(IDialogueActions instance)
+        {
+            if (m_Wrapper.m_DialogueActionsCallbackInterface != null)
+            {
+                @Continue.started -= m_Wrapper.m_DialogueActionsCallbackInterface.OnContinue;
+                @Continue.performed -= m_Wrapper.m_DialogueActionsCallbackInterface.OnContinue;
+                @Continue.canceled -= m_Wrapper.m_DialogueActionsCallbackInterface.OnContinue;
+            }
+            m_Wrapper.m_DialogueActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Continue.started += instance.OnContinue;
+                @Continue.performed += instance.OnContinue;
+                @Continue.canceled += instance.OnContinue;
+            }
+        }
+    }
+    public DialogueActions @Dialogue => new DialogueActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -503,5 +566,9 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnPause(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnGroundSmash(InputAction.CallbackContext context);
+    }
+    public interface IDialogueActions
+    {
+        void OnContinue(InputAction.CallbackContext context);
     }
 }

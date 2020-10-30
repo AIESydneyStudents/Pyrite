@@ -322,6 +322,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Dialogue",
+            "id": "34427871-7c65-4a0f-bad0-39844bfd1e19",
+            "actions": [
+                {
+                    "name": "Continue",
+                    "type": "PassThrough",
+                    "id": "7c00a2e4-bc6b-4c66-9a4a-4c95375934eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "af304a14-8c2a-48ce-a0f7-c1599e8d2350",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
