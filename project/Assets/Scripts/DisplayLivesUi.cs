@@ -16,8 +16,6 @@ public class DisplayLivesUi : MonoBehaviour
 
         playerLivesTxt.text = "Lives:" + gameMaster.playerLives.ToString();
 
-
-
     }
 
 

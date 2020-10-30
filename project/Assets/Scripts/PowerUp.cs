@@ -21,7 +21,8 @@ public class PowerUp : MonoBehaviour
     }
 
     public void PowerUpPickUp()
-    {        
+    {
+        AudioManager.instance.Play("PowerUpCollected");
         playerMovement.canDoubleJump = canDoubleJump;
         playerMovement.canDash = canDash;
         playerMovement.canSpin = canSpin;

@@ -168,12 +168,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (isGrounded)
                 {
-                    FindObjectOfType<AudioManager>().Play("Jump");
+                    AudioManager.instance.Play("Jump");
                     Jump(jumpForce);
                 }
                 else if (doubleJumpActive && canDoubleJump)
                 {
-                    FindObjectOfType<AudioManager>().Play("Jump");
+                    AudioManager.instance.Play("Jump");
                     Jump(jumpForce);
                     doubleJumpActive = false;
                 }
@@ -182,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (canWallJumpLeft)
                 {
-                    FindObjectOfType<AudioManager>().Play("Jump");
+                    AudioManager.instance.Play("Jump");
                     Jump(wallJumpForce);
                     canWallJumpLeft = false;
                     canWallJumpRight = true;
@@ -192,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (canWallJumpRight)
                 {
-                    FindObjectOfType<AudioManager>().Play("Jump");
+                    AudioManager.instance.Play("Jump");
                     Jump(wallJumpForce);
                     canWallJumpRight = false;
                     canWallJumpLeft = true;
@@ -253,6 +253,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnBouncePad()
     {
+        AudioManager.instance.Play("MarshmellowPad");
         Jump(bouncePadHeight); //player bounces if on bounce pad
         Physics.gravity = initalGravity;
     }
