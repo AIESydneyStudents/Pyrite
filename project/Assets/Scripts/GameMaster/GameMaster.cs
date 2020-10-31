@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
@@ -9,9 +10,11 @@ public class GameMaster : MonoBehaviour
     public int playerLives;
     public PlayerData data;
     public Transform playerStartPos;
+    public string savedScene;
 
     private void Awake()
     {
+        if(GameObject.FindGameObjectWithTag("StartPos") != null)
         playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
         if (playerLives < 0)
             SaveLoad.SeriouslyDeleteAllSaveFiles();
@@ -26,6 +29,7 @@ public class GameMaster : MonoBehaviour
 
         if (playerStartPos != null)
         lastCheckPointPos = playerStartPos.position;
+                    
 
 
         Load();

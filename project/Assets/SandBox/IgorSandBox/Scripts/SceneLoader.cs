@@ -13,14 +13,16 @@ public class SceneLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
-   // public List<string> scenes = new List<string>();
+    // public List<string> scenes = new List<string>();
     //public int currentScene = 0;
 
     public GameObject playFirstButton;
 
+    public PlayerData data;
+
     public string splashScene;
     public string tutorialScene;
-    public string levelOneScene;
+    public string Level_01;
     public string mainMenu;
     public string gameOverScene;
     public string optionsScene;
@@ -29,14 +31,18 @@ public class SceneLoader : MonoBehaviour
 
     private void Start()
     {
+        if (SaveLoad.SaveExists("PlayerData"))
+            data = SaveLoad.Load<PlayerData>("PlayerData");
+
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(playFirstButton);
 
-        if(SceneManager.GetActiveScene().name == splashScene )
+        if (SceneManager.GetActiveScene().name == splashScene)
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
+
     }
 
     public void LoadSplashScene()
@@ -52,14 +58,15 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadlevelOneScene()
     {
-        StartCoroutine(LoadScene(levelOneScene));
-        Debug.Log("level1");
+        StartCoroutine(LoadScene(Level_01));
     }
 
     public void LoadContinueScene()
     {
-        StartCoroutine(LoadScene(levelOneScene));
-        Debug.Log("level1");
+        if (SaveLoad.SaveExists("PlayerData"))
+            StartCoroutine(LoadScene(data.savedScene));
+        else
+            StartCoroutine(LoadScene(tutorialScene));
     }
 
     public void LoadMainMenu()

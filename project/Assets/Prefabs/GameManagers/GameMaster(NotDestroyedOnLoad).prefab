@@ -57,4 +57,6 @@ MonoBehaviour:
     canWallJump: 0
     canGroundSlam: 0
     canGrapple: 0
+    savedScene: 
   playerStartPos: {fileID: 0}
+  savedScene: 

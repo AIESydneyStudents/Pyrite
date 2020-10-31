@@ -133,12 +133,25 @@ MonoBehaviour:
   transition: {fileID: 6597106253067062}
   transitionTime: 1
   playFirstButton: {fileID: 0}
+  data:
+    PlayerLives: 0
+    respawnPos: []
+    teaCollected: 0
+    canDoubleJump: 0
+    canSlide: 0
+    canGlide: 0
+    canDash: 0
+    canSpin: 0
+    canWallJump: 0
+    canGroundSlam: 0
+    canGrapple: 0
+    savedScene: 
   splashScene: Splash
-  tutorialScene: Tutorial
-  levelOneScene: Level_01
+  tutorialScene: DianaSandBox
+  Level_01: Level_01
   mainMenu: MainMenu
   gameOverScene: GameOver
-  optionsScene: Options
+  optionsScene: Gallery
   creditsScene: Credits
 --- !u!1 &6597106253067056
 GameObject:

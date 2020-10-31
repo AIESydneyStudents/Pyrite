@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 /// <SavePlayerData>
@@ -20,6 +21,8 @@ public class SaveLoadGameData : MonoBehaviour
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         player = GameObject.FindGameObjectWithTag("Player");
+       
+
         GameEvents.SaveInitiated += Save;
         Load();
 
@@ -61,6 +64,8 @@ public class SaveLoadGameData : MonoBehaviour
             gameMaster.lastCheckPointPos.x = data.respawnPos[0];
             gameMaster.lastCheckPointPos.y = data.respawnPos[1];
             gameMaster.lastCheckPointPos.z = data.respawnPos[2];
+
+            gameMaster.savedScene = SceneManager.GetActiveScene().name;
 
             playerMovement.canDoubleJump = data.canDoubleJump;
             playerMovement.canSlide = data.canSlide;

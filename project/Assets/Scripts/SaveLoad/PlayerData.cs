@@ -19,6 +19,7 @@ public class PlayerData
     public bool canWallJump;
     public bool canGroundSlam;
     public bool canGrapple;
+    public string savedScene;
 
 
     public PlayerData(GameMaster gameMaster, TeaTracker teaTracker, PlayerMovement playerMovement)
@@ -28,6 +29,8 @@ public class PlayerData
         respawnPos[0] = gameMaster.lastCheckPointPos.x;
         respawnPos[1] = gameMaster.lastCheckPointPos.y;
         respawnPos[2] = gameMaster.lastCheckPointPos.z;
+
+        savedScene = gameMaster.savedScene;
 
         teaCollected = teaTracker.teaCollected;
 
@@ -39,6 +42,7 @@ public class PlayerData
         canWallJump = playerMovement.canWallJump;
         canGroundSlam = playerMovement.canGroundSlam;
         canGrapple = playerMovement.canGrapple;
+
 
     }
 }
