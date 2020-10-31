@@ -10,7 +10,7 @@ public class SaveLoadGameData : MonoBehaviour
     private GameMaster gameMaster;
     public TeaTracker teaTracker;
     public PlayerData data;
-    public PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
     private GameObject player;
     public Transform startpos;
 

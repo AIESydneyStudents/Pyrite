@@ -49,3 +49,12 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
+    canDoubleJump: 0
+    canSlide: 0
+    canGlide: 0
+    canDash: 0
+    canSpin: 0
+    canWallJump: 0
+    canGroundSlam: 0
+    canGrapple: 0
+  playerStartPos: {fileID: 0}

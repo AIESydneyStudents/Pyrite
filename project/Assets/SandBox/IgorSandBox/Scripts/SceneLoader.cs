@@ -37,10 +37,7 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
-
     }
-
-   
 
     public void LoadSplashScene()
     {
@@ -62,7 +59,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadContinueScene()
     {
         StartCoroutine(LoadScene(levelOneScene));
-       
+        Debug.Log("level1");
     }
 
     public void LoadMainMenu()
