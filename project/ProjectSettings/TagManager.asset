@@ -10,6 +10,7 @@ TagManager:
   - GameManager
   - Wall
   - TeaCollectable
+  - StartPos
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,8 @@ public class GameMaster : MonoBehaviour
     public Transform playerStartPos;
 
     private void Awake()
-    {      
+    {
+        playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
         if (playerLives < 0)
             SaveLoad.SeriouslyDeleteAllSaveFiles();
 
@@ -23,6 +24,7 @@ public class GameMaster : MonoBehaviour
         else
             Destroy(gameObject);
 
+        if (playerStartPos != null)
         lastCheckPointPos = playerStartPos.position;
 
 
@@ -36,6 +38,7 @@ public class GameMaster : MonoBehaviour
         {
             data = SaveLoad.Load<PlayerData>("PlayerData");
             playerLives = data.PlayerLives;
+
         }
     }
 
