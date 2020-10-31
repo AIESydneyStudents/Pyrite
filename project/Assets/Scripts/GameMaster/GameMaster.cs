@@ -31,10 +31,10 @@ public class GameMaster : MonoBehaviour
 
         if (playerStartPos != null)
         lastCheckPointPos = playerStartPos.position;
-                    
 
-
+        savedScene = "Tutorial";
         Load();
+       
     }
 
     //loads playerData file and passes its value into player lives
@@ -44,7 +44,7 @@ public class GameMaster : MonoBehaviour
         {
             data = SaveLoad.Load<PlayerData>("PlayerData");
             playerLives = data.PlayerLives;
-
+            savedScene = data.savedScene;           
         }
     }
 

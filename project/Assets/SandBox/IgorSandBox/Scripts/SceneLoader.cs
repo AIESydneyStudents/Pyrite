@@ -66,10 +66,8 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadContinueScene()
     {
-        if (SaveLoad.SaveExists("PlayerData"))
-            StartCoroutine(LoadScene(data.savedScene));
-        else
-            StartCoroutine(LoadScene(tutorialScene));
+        Debug.Log(gameMaster.savedScene);
+        StartCoroutine(LoadScene(gameMaster.savedScene));
     }
 
     public void LoadMainMenu()

@@ -65,7 +65,7 @@ public class SaveLoadGameData : MonoBehaviour
             gameMaster.lastCheckPointPos.y = data.respawnPos[1];
             gameMaster.lastCheckPointPos.z = data.respawnPos[2];
 
-            gameMaster.savedScene = SceneManager.GetActiveScene().name;
+            gameMaster.savedScene = data.savedScene;
 
             playerMovement.canDoubleJump = data.canDoubleJump;
             playerMovement.canSlide = data.canSlide;

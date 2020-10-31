@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckPoint : MonoBehaviour
 {
     private GameMaster gameMaster;
+    public PlayerData data;
 
     private void Start()
     {
@@ -14,8 +16,10 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            gameMaster.savedScene = SceneManager.GetActiveScene().name;
             gameMaster.lastCheckPointPos = transform.position;
             GameEvents.OnSaveInitiated();
+            data = SaveLoad.Load<PlayerData>("PlayerData");
             AudioManager.instance.Play("CheckPoint");
         }
     }

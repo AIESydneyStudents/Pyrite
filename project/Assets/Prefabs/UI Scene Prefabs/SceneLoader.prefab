@@ -147,7 +147,7 @@ MonoBehaviour:
     canGrapple: 0
     savedScene: 
   splashScene: Splash
-  tutorialScene: DianaSandBox
+  tutorialScene: Tutorial
   Level_01: Level_01
   mainMenu: MainMenu
   gameOverScene: GameOver
