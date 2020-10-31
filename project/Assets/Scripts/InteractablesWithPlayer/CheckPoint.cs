@@ -16,7 +16,7 @@ public class CheckPoint : MonoBehaviour
         {
             gameMaster.lastCheckPointPos = transform.position;
             GameEvents.OnSaveInitiated();
-
+            AudioManager.instance.Play("CheckPoint");
         }
     }
 }

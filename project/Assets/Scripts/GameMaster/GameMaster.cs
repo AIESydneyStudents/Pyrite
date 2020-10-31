@@ -12,12 +12,14 @@ public class GameMaster : MonoBehaviour
     public Transform playerStartPos;
     public string savedScene;
 
+
     private void Awake()
     {
         if(GameObject.FindGameObjectWithTag("StartPos") != null)
         playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
         if (playerLives < 0)
             SaveLoad.SeriouslyDeleteAllSaveFiles();
+
 
         if (instance == null)
         {

@@ -28,6 +28,8 @@ public class SceneLoader : MonoBehaviour
     public string optionsScene;
     public string creditsScene;
 
+    private GameMaster gameMaster;
+
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
-
+        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     public void LoadSplashScene()
@@ -53,6 +55,7 @@ public class SceneLoader : MonoBehaviour
     public void LoadTutorialScene()
     {
         SaveLoad.SeriouslyDeleteAllSaveFiles();
+        gameMaster.playerLives = 3;
         StartCoroutine(LoadScene(tutorialScene));
     }
 
