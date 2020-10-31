@@ -170,7 +170,6 @@ GameObject:
   - component: {fileID: 6094275127816083591}
   - component: {fileID: 6094275127816083588}
   - component: {fileID: 6094275127816083590}
-  - component: {fileID: 6094275127816083608}
   m_Layer: 9
   m_Name: FallingPlatform 1
   m_TagString: Untagged
@@ -187,7 +186,7 @@ Transform:
   m_GameObject: {fileID: 6094275127816083587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -85.47, y: 39.35, z: -3.71}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 26.173882, y: 26.173899, z: 10.453246}
   m_Children:
   - {fileID: 2394560404737623290}
   m_Father: {fileID: 0}
@@ -278,22 +277,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallDelay: 1
   RespawnDelay: 5
---- !u!95 &6094275127816083608
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6094275127816083587}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
