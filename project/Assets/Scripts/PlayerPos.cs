@@ -15,17 +15,24 @@ public class PlayerPos : MonoBehaviour
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
 
-    }
-
-    void Start()
-    {
         if (gameMaster.playerLives < 0)
         {
-            gameMaster.lastCheckPointPos = startpos.position;
-            transform.position = gameMaster.lastCheckPointPos;
+            //gameMaster.lastCheckPointPos = startpos.position;
+            //transform.position = gameMaster.lastCheckPointPos;
             gameMaster.playerLives = 3;
             teaTracker.teaCollected = 0;
         }
+    }
+    
+    void Start()
+    {
+        //if (gameMaster.playerLives < 0)
+        //{
+        //    //gameMaster.lastCheckPointPos = startpos.position;
+        //    //transform.position = gameMaster.lastCheckPointPos;
+        //    gameMaster.playerLives = 3;
+        //    teaTracker.teaCollected = 0;
+        //}
 
         if (!SaveLoad.SaveExists("PlayerData"))
         {
