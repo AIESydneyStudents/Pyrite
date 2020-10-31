@@ -2037,6 +2037,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
+--- !u!114 &331497224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5976052406941383519, guid: 56a6b10070451304797eb411feb2ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 1553588009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &368619971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5662,7 +5674,7 @@ PrefabInstance:
     - target: {fileID: 220311468, guid: 0b0d9c4afd9f1504981b3ba0a4b21390, type: 3}
       propertyPath: teaCountTxt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 331497224}
     - target: {fileID: 822186547, guid: 0b0d9c4afd9f1504981b3ba0a4b21390, type: 3}
       propertyPath: canvas
       value: 
@@ -5670,7 +5682,7 @@ PrefabInstance:
     - target: {fileID: 822186548, guid: 0b0d9c4afd9f1504981b3ba0a4b21390, type: 3}
       propertyPath: playerLivesTxt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1887890764}
     - target: {fileID: 107472363162059953, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
         type: 3}
       propertyPath: teaTracker
@@ -10236,6 +10248,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1013572091}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1887890764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5976052406901994133, guid: 56a6b10070451304797eb411feb2ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 1553588009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1918258138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1907152947601332668, guid: b579706b6d809cf459fec38ddf82b308,
