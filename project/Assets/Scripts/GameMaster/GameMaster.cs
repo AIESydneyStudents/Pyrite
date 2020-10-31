@@ -10,8 +10,6 @@ public class GameMaster : MonoBehaviour
     public PlayerData data;
     public Transform playerStartPos;
 
-
-
     private void Awake()
     {      
         if (playerLives < 0)
