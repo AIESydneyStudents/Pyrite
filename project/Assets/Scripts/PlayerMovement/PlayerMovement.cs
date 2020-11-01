@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         controls.Enable();
 
         Physics.gravity = initalGravity;
-        
+
     }
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -258,10 +258,19 @@ public class PlayerMovement : MonoBehaviour
         Physics.gravity = initalGravity;
     }
 
-    public void OnFloatPad() => Jump(OnFloatPadSpeed);
-    public void OnEnemyHead() => Jump(onEnemyBounceHeight); //player bounces if on enemies head
-    public void Jump(float jumpHeight) => rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
-
+    public void OnFloatPad()
+    {
+        Jump(OnFloatPadSpeed);
+    }
+    public void OnEnemyHead()
+    {
+        Jump(onEnemyBounceHeight); //player bounces if on enemies head
+        AudioManager.instance.Play("JumpOnEnemyHead");
+    }
+    public void Jump(float jumpHeight)
+    {
+        rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
+    }
 
     void Update()
     {
@@ -275,7 +284,7 @@ public class PlayerMovement : MonoBehaviour
                 Physics.gravity = initalGravity;
             }
             if (moveVelocity.y == 0)
-                 isGroundSlamming = false;
+                isGroundSlamming = false;
         }
         //move and rotate player based on input
         MoveAndRotatePlayer();

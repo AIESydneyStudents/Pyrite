@@ -50,7 +50,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: Jump
-    clip: {fileID: 8300000, guid: aa805b907710c384392c0ecfe020dec9, type: 3}
+    clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
     volume: 0.474
     loop: 0
     source: {fileID: 0}
@@ -76,6 +76,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CheckPoint
     clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
+    volume: 0.474
+    loop: 0
+    source: {fileID: 0}
+  - name: FallingPlatform
+    clip: {fileID: 8300000, guid: bec309ce7b6e2a4438f660d08d60c088, type: 3}
+    volume: 0.474
+    loop: 0
+    source: {fileID: 0}
+  - name: JumpOnEnemyHead
+    clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
     volume: 0.474
     loop: 0
     source: {fileID: 0}
