@@ -19,6 +19,7 @@ public class MakeWallBreakable : MonoBehaviour
     {
         if (playerMovement.isDashing == true || playerMovement.isGroundSlamming)
         {
+            AudioManager.instance.Play("Slam/Smash");
             foreach (Rigidbody rb in rigidBodies)
             {
                 rb.isKinematic = false;

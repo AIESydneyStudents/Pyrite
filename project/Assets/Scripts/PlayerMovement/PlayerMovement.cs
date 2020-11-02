@@ -114,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
         if (canGroundSlam == false)
             return;
         Physics.gravity = groundSlamGravity;
+        AudioManager.instance.Play("DashSlamWhoosh");
         isGroundSlamming = true;
     }
 
@@ -227,6 +228,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing)
         {
+            AudioManager.instance.Play("Dash");
             currentDashTime -= Time.deltaTime;
             moveVelocity = transform.forward * dashSpeed;
             if (currentDashTime <= 0)
