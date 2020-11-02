@@ -4860,6 +4860,16 @@ PrefabInstance:
       propertyPath: canDash
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5684628343555269204, guid: 1ff11a227088c704590397c6db85f0d1,
+        type: 3}
+      propertyPath: jumpTime
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684628343555269204, guid: 1ff11a227088c704590397c6db85f0d1,
+        type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ff11a227088c704590397c6db85f0d1, type: 3}
 --- !u!1001 &5956941101452599465

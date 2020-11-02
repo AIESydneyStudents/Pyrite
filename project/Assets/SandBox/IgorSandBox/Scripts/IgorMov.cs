@@ -9,6 +9,10 @@ public class IgorMov : MonoBehaviour
         get { return ControlsManager.instance; }
     }
 
+    private float jumpTimeCounter;
+    public float jumpTime;
+    private bool isJumping;
+
     //RigidBody and positions for movements
     private Rigidbody rb;
     private Vector3 moveVelocity;
@@ -80,6 +84,7 @@ public class IgorMov : MonoBehaviour
     private bool canWallJumpRight = false;
 
     private bool doubleJumpActive;
+    
 
     //acess to input system
     //private Controls controls;
@@ -136,20 +141,30 @@ public class IgorMov : MonoBehaviour
     /// player falling speed is slower while input held down
     private void SlowFall_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!canGlide)
-            return;
-        if (rb != null)
-            rb.drag = slowFallSpeed;
+        //if(jumpTimeCounter > 0)
+        //{
+        //    rb.velocity = Vector2.up * jumpForce;
+        //    jumpTimeCounter -= Time.deltaTime;
+        //}
+        //else
+        //{
+        //    isJumping = false;
+        //}
+        //if (!canGlide)
+        //    return;
+        //if (rb != null)
+        //    rb.drag = slowFallSpeed;
     }
 
     /// <SlowFallReleaseInput>
     /// Players falling speed gets set back to normal
     private void SlowFallRelease_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!canGlide)
-            return;
-        if (rb != null)
-            rb.drag = 0f;
+        //isJumping = false;
+        //if (!canGlide)
+        //    return;
+        //if (rb != null)
+        //    rb.drag = 0f;
     }
 
     /// <PlayerJump/WallJumpInput>
@@ -266,6 +281,8 @@ public class IgorMov : MonoBehaviour
 
     public void Jump(float jumpHeight)
     {
+        isJumping = true;
+        jumpTimeCounter = jumpTime;
         rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
     }
 

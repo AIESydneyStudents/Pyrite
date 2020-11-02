@@ -40,7 +40,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""id"": ""4747e39f-1bf6-417b-bcc1-a55d0a3cb63b"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": ""Hold(duration=0.2,pressPoint=0.1)""
                 },
                 {
                     ""name"": ""SlowFallRelease"",
@@ -325,8 +325,30 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""a0a0b216-c56d-4a45-8bca-eaef4db8fd8b"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""b24f2ff2-5eff-4094-8719-236b6d862ebe"",
                     ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GroundSmash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7796e5b0-67b8-4779-9d1b-1edc800ff93a"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
