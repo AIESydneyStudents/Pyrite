@@ -15,12 +15,16 @@ public class SaveLoadGameData : MonoBehaviour
     private GameObject player;
     public Transform startpos;
 
+    private GameObject playerBody;
+
     private void Awake()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         player = GameObject.FindGameObjectWithTag("Player");
+
+        playerBody = GameObject.FindGameObjectWithTag("PlayerBody");
        
 
         GameEvents.SaveInitiated += Save;
@@ -39,6 +43,8 @@ public class SaveLoadGameData : MonoBehaviour
         if (!SaveLoad.SaveExists("PlayerData"))
         {
             SetPowerUpsFalse();
+
+            playerBody.transform.localScale = new Vector3(15, 15, 15);
 
             gameMaster.lastCheckPointPos = startpos.position;
             player.transform.position = gameMaster.lastCheckPointPos;
@@ -64,6 +70,8 @@ public class SaveLoadGameData : MonoBehaviour
             gameMaster.lastCheckPointPos.x = data.respawnPos[0];
             gameMaster.lastCheckPointPos.y = data.respawnPos[1];
             gameMaster.lastCheckPointPos.z = data.respawnPos[2];
+
+            playerBody.transform.localScale = new Vector3(15, 15, data.playersBodySize);
 
             gameMaster.savedScene = data.savedScene;
 

@@ -11,6 +11,8 @@ public class PlayerData
     public float[] respawnPos;
     public int teaCollected;
 
+    public float playersBodySize;
+
     public bool canDoubleJump;
     public bool canSlide;
     public bool canGlide;
@@ -29,6 +31,8 @@ public class PlayerData
         respawnPos[0] = gameMaster.lastCheckPointPos.x;
         respawnPos[1] = gameMaster.lastCheckPointPos.y;
         respawnPos[2] = gameMaster.lastCheckPointPos.z;
+
+        playersBodySize = gameMaster.playerBodySize;
 
         savedScene = gameMaster.savedScene;
 

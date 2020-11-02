@@ -11,6 +11,7 @@ public class GameMaster : MonoBehaviour
     public PlayerData data;
     public Transform playerStartPos;
     public string savedScene;
+    public float playerBodySize;
 
 
     private void Awake()

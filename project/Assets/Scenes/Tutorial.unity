@@ -3778,7 +3778,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.35682
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -3863,7 +3863,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.35682
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -5187,16 +5187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 234339303212231287, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: startpos
-      value: 
-      objectReference: {fileID: 1186867307}
-    - target: {fileID: 234339303212231287, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: teaTracker
-      value: 
-      objectReference: {fileID: 62689079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1379de643662614b9f0c796002fad40, type: 3}
 --- !u!1 &1044808784

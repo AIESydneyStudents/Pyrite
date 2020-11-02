@@ -45,6 +45,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b671dd01d5a4e14492beefd87513f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data:
+    PlayerLives: 0
+    respawnPos: []
+    teaCollected: 0
+    playersBodySize: 0
+    canDoubleJump: 0
+    canSlide: 0
+    canGlide: 0
+    canDash: 0
+    canSpin: 0
+    canWallJump: 0
+    canGroundSlam: 0
+    canGrapple: 0
+    savedScene: 
+  playerBody: {fileID: 0}
 --- !u!65 &5750607901892659585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97,7 +112,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 86a9209be08aef947adebdc59036fe4a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 86a9209be08aef947adebdc59036fe4a,
         type: 3}

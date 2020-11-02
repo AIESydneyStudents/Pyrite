@@ -727,6 +727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earl_Animation_001
       objectReference: {fileID: 0}
+    - target: {fileID: 7064058386361529686, guid: 1cecdb261dccf124987ae1df35c8a172,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerBody
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cecdb261dccf124987ae1df35c8a172, type: 3}
 --- !u!4 &8427082151576382412 stripped
