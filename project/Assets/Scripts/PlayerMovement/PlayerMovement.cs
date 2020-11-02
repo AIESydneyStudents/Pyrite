@@ -228,7 +228,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing)
         {
-            AudioManager.instance.Play("Dash");
+            AudioManager.instance.Play("DashSlamWhoosh");
             currentDashTime -= Time.deltaTime;
             moveVelocity = transform.forward * dashSpeed;
             if (currentDashTime <= 0)
