@@ -111,7 +111,7 @@ public class IgorMov : MonoBehaviour
         Controls.Player.Dash.performed += Dash_performed;
         Controls.Player.GroundSmash.performed += GroundSmash_performed;
 
-        Controls.Enable();
+        //Controls.Enable();
 
         Physics.gravity = initalGravity;
 
