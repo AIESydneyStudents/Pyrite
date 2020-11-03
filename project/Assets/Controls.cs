@@ -347,7 +347,7 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a0a0b216-c56d-4a45-8bca-eaef4db8fd8b"",
+                    ""id"": ""0587dbb2-7f84-41bd-9a3c-8b9383b47ccd"",
                     ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -369,8 +369,8 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7796e5b0-67b8-4779-9d1b-1edc800ff93a"",
-                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""id"": ""b58cefac-5e28-48e3-96db-5da8dadfe1c5"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
