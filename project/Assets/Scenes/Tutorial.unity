@@ -3800,7 +3800,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.35682
+      value: 62.584583
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -3885,7 +3885,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.35682
+      value: 62.584583
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -4930,9 +4930,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'CUBE: Hello Earl'
-    - 'CUBE: Go do stuff'
-    - 'CUBE: Bye!'
+    - 'Old Man Tea Bag: *mumble mumble* *grumble grumble*'
+    - "Old Man Tea Bag: Oh good, you\u2019re awake"
+    - "Old Man Tea Bag: Well\u2026 you\u2019re looking a little flat there, Earl"
+    - "Old Man Tea Bag: You won\u2019t be able to make a nice cup of tea looking
+      like that"
+    - 'Old Man Tea Bag: Look around and pick up some tea leaves, nobody wants just
+      a hot cup of water, do they?'
+    - 'Old Man Tea Bag: Now go! Get out of my box! '
 --- !u!43 &966846162
 Mesh:
   m_ObjectHideFlags: 0
