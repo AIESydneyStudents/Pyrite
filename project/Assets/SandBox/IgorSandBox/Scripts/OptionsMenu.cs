@@ -21,7 +21,7 @@ public class OptionsMenu : MonoBehaviour
 
     private void Start()
     {
-
+        SetButton();
         int currentResolutionIndex = 0;
         resolutions = Screen.resolutions;
 

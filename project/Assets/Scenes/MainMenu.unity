@@ -1894,6 +1894,11 @@ PrefabInstance:
       propertyPath: playFirstButton
       value: 
       objectReference: {fileID: 550461074}
+    - target: {fileID: 2491373506431519196, guid: 81acff2757a95004eb47d502a4ee1fdc,
+        type: 3}
+      propertyPath: optionsScene
+      value: Options
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81acff2757a95004eb47d502a4ee1fdc, type: 3}
 --- !u!114 &1951625661 stripped
