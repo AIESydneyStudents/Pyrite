@@ -6,7 +6,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    //public Text nameText;
+    public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
 

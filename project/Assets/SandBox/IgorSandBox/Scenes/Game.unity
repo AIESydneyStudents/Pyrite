@@ -1063,6 +1063,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6749596028189480287, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7817135795104175487, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -1530,6 +1535,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913637395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 782804746233221206}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &915645874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5956941101696943387, guid: e408b1e1af087104681e04809f2e5498,
@@ -3315,7 +3332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Earl
+    name: asd
     sentences:
     - 'Hi I''m earl '
     - sdfgdfg
@@ -4183,11 +4200,56 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 782804745683856579, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -14.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 782804745683856579, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 782804745683856579, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 423.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 782804745683856579, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.13
+      objectReference: {fileID: 0}
     - target: {fileID: 782804746101631019, guid: f007f1890bf39f44aad6cb265a83b1d9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1868426752}
+    - target: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f007f1890bf39f44aad6cb265a83b1d9, type: 3}
 --- !u!1001 &4673083248236561110
@@ -4386,6 +4448,11 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1314792634}
+    - target: {fileID: 4688898589726655857, guid: 1e20502f41238b541bd7229ef6881504,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 913637395}
     - target: {fileID: 4688898589726656142, guid: 1e20502f41238b541bd7229ef6881504,
         type: 3}
       propertyPath: m_Name
