@@ -779,12 +779,27 @@ PrefabInstance:
     - target: {fileID: 7219864031195596734, guid: c4c00219b5128c44dbd7b4f15832d369,
         type: 3}
       propertyPath: prewarm
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7219864031195596734, guid: c4c00219b5128c44dbd7b4f15832d369,
         type: 3}
       propertyPath: lengthInSec
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219864031195596734, guid: c4c00219b5128c44dbd7b4f15832d369,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[0].emitProbability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219864031195596734, guid: c4c00219b5128c44dbd7b4f15832d369,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[1].emitProbability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219864031195596734, guid: c4c00219b5128c44dbd7b4f15832d369,
+        type: 3}
+      propertyPath: SubModule.subEmitters.Array.data[2].emitProbability
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8309403247458407182, guid: c4c00219b5128c44dbd7b4f15832d369,
         type: 3}
