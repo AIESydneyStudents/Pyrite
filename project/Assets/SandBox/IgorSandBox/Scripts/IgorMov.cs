@@ -20,6 +20,8 @@ public class IgorMov : MonoBehaviour
     private float defaultMoveSpeed;
     private Vector3 initalGravity;
 
+    public GameObject dustCloud;
+
     [Header("Gravity")]
     [SerializeField] float initialGravityValue = -30f;
 
@@ -304,6 +306,7 @@ public class IgorMov : MonoBehaviour
             if (isGrounded)
             {
                 Physics.gravity = initalGravity;
+                Instantiate(dustCloud, transform.position, dustCloud.transform.rotation);
                 trail.emitting = false;
             }
             if (moveVelocity.y == 0)
