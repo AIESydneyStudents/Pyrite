@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2302985336454284121}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -4852,7 +4852,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3780630941982774314}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 5
   simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
@@ -9664,7 +9664,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7175922305585661894}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -14479,7 +14479,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8309403247458407182}
   serializedVersion: 6
-  lengthInSec: 1
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -18199,17 +18199,17 @@ ParticleSystem:
       emitter: {fileID: 2528082761828204698}
       type: 2
       properties: 0
-      emitProbability: 0.3
+      emitProbability: 1
     - serializedVersion: 3
       emitter: {fileID: 1476955176134202838}
       type: 2
       properties: 0
-      emitProbability: 0.3
+      emitProbability: 1
     - serializedVersion: 3
       emitter: {fileID: 1763572661801943008}
       type: 2
       properties: 0
-      emitProbability: 0.3
+      emitProbability: 1
   LightsModule:
     enabled: 0
     ratio: 0
