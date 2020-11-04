@@ -7,18 +7,24 @@ public class PlayerDeath : MonoBehaviour
 {  
     private GameMaster gameMaster;
     private GameObject player;
+    private PlayerMovement playerMovement;
     private void Start()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         player = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
+        if (other.gameObject == player && playerMovement.isDashing != true)
         {
             gameMaster.playerLives -= 1;
             player.SetActive(false);
             Invoke("LoadCurrentScene", 2f);
+        }
+        else
+        {
+           gameObject.SetActive(false);
         }
     }
     void LoadCurrentScene()
