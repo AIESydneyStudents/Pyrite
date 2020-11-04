@@ -9,9 +9,9 @@ public class IgorMov : MonoBehaviour
         get { return ControlsManager.instance; }
     }
 
-    private float jumpTimeCounter;
-    public float jumpTime;
-    private bool isJumping;
+    //private float jumpTimeCounter;
+    //public float jumpTime;
+    //private bool isJumping;
 
     //RigidBody and positions for movements
     private Rigidbody rb;
@@ -19,6 +19,8 @@ public class IgorMov : MonoBehaviour
     //Starting values
     private float defaultMoveSpeed;
     private Vector3 initalGravity;
+
+    public GameObject dustCloud;
 
     [Header("Gravity")]
     [SerializeField] float initialGravityValue = -30f;
@@ -84,21 +86,23 @@ public class IgorMov : MonoBehaviour
     private bool canWallJumpRight = false;
 
     private bool doubleJumpActive;
-    
 
+    private TrailRenderer trail;
     //acess to input system
     //private Controls controls;
 
 
     void Start()
     {
+        trail = GetComponent<TrailRenderer>();
+        //trail.emitting = false;
         rb = GetComponent<Rigidbody>();
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
 
         //get access to input manager
-       // controls = new Controls(); // ControlsManager.Instance;
+        // controls = new Controls(); // ControlsManager.Instance;
         //set default movespeed to moveSpeed value given in inspector
         defaultMoveSpeed = moveSpeed;
 
@@ -111,7 +115,7 @@ public class IgorMov : MonoBehaviour
         Controls.Player.Dash.performed += Dash_performed;
         Controls.Player.GroundSmash.performed += GroundSmash_performed;
 
-        //Controls.Enable();
+        Controls.Enable();
 
         Physics.gravity = initalGravity;
 
@@ -122,6 +126,7 @@ public class IgorMov : MonoBehaviour
 
         if (canGroundSlam == false)
             return;
+        trail.emitting = true;
         Physics.gravity = groundSlamGravity;
         isGroundSlamming = true;
     }
@@ -132,9 +137,11 @@ public class IgorMov : MonoBehaviour
             return;
         if (dashCurrentCooldown == dashCooldown)
         {
+            trail.emitting = true;
             isDashing = true;
             StartDashCooldown = true;
         }
+
     }
 
     /// < SlowFallInput>
@@ -193,7 +200,7 @@ public class IgorMov : MonoBehaviour
                 }
                 else if (doubleJumpActive && canDoubleJump)
                 {
-                    
+
                     Jump(jumpForce);
                     doubleJumpActive = false;
                 }
@@ -249,6 +256,7 @@ public class IgorMov : MonoBehaviour
             moveVelocity = transform.forward * dashSpeed;
             if (currentDashTime <= 0)
             {
+                trail.emitting = false;
                 isDashing = false;
                 currentDashTime = dashTime;
             }
@@ -281,8 +289,8 @@ public class IgorMov : MonoBehaviour
 
     public void Jump(float jumpHeight)
     {
-        isJumping = true;
-        jumpTimeCounter = jumpTime;
+        //isJumping = true;
+        //jumpTimeCounter = jumpTime;
         rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
     }
 
@@ -298,6 +306,8 @@ public class IgorMov : MonoBehaviour
             if (isGrounded)
             {
                 Physics.gravity = initalGravity;
+                Instantiate(dustCloud, transform.position, dustCloud.transform.rotation);
+                trail.emitting = false;
             }
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;

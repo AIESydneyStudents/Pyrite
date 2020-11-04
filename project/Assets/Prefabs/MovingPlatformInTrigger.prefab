@@ -344,8 +344,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.1, z: 0.06}
-  m_Center: {x: 0, y: 0.06, z: 0}
+  m_Size: {x: 0.15, y: 0.052536268, z: 0.09320218}
+  m_Center: {x: 1.7695193e-17, y: 0.03626814, z: -0.00053401396}
 --- !u!114 &410936643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
   PlatformPoints:
   - {fileID: 7550156468813347859}
   - {fileID: 7550156468501804492}
-  speed: 5
+  speed: 10
   startPos: {fileID: 7550156468813347859}
 --- !u!1 &7550156469559412179
 GameObject:

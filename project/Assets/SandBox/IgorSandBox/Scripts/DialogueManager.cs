@@ -6,7 +6,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    //public Text nameText;
+    public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
 
@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpen", true);
        
-        //nameText.text = dialogue.name;
+        nameText.text = dialogue.name;
 
         sentences.Clear();
 
