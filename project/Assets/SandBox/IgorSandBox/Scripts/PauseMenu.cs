@@ -70,7 +70,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-
+        if (pauseMenuUI.activeSelf == false)
+            return;
         pauseMenuUI.SetActive(false);
 
 
