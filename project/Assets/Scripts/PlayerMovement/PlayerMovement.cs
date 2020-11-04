@@ -271,7 +271,10 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnEnemyHead()
     {
+        if (isDashing == true)
+            return;
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
+
         AudioManager.instance.Play("JumpOnEnemyHead");
     }
     public void Jump(float jumpHeight)
