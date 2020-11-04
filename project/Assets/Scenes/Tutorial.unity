@@ -3819,7 +3819,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.317738
+      value: 62.584583
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -3904,7 +3904,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.317738
+      value: 62.584583
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -5089,16 +5089,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
+    name: Old Man Tea Bag
     sentences:
-    - "Old Man Tea Bag:\n\n *mumble mumble* *grumble grumble*"
-    - "Old Man Tea Bag: Oh good, you\u2019re awake"
-    - "Old Man Tea Bag: Well\u2026 you\u2019re looking a little flat there, Earl"
-    - "Old Man Tea Bag: You won\u2019t be able to make a nice cup of tea looking
-      like that"
-    - 'Old Man Tea Bag: Look around and pick up some tea leaves, nobody wants just
-      a hot cup of water, do they?'
-    - 'Old Man Tea Bag: Now go! Get out of my box! '
+    - '*mumble mumble* *grumble grumble*'
+    - "Oh good, you\u2019re awake"
+    - "Well\u2026 you\u2019re looking a little flat there, Earl"
+    - "You won\u2019t be able to make a nice cup of tea looking like that"
+    - Look around and pick up some tea leaves, nobody wants just a hot cup of water,
+      do they?
+    - 'Now go! Get out of my box! '
 --- !u!43 &966846162
 Mesh:
   m_ObjectHideFlags: 0
@@ -5415,6 +5414,11 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1961303273}
+    - target: {fileID: 4688898589726655857, guid: 1e20502f41238b541bd7229ef6881504,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1122835221}
     - target: {fileID: 4688898589726656142, guid: 1e20502f41238b541bd7229ef6881504,
         type: 3}
       propertyPath: m_Name
@@ -6781,6 +6785,18 @@ Transform:
   m_Father: {fileID: 922491197}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1122835221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8817012302104770136, guid: f007f1890bf39f44aad6cb265a83b1d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1866511109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1123390109
 GameObject:
   m_ObjectHideFlags: 0
