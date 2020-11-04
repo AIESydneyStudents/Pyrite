@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     //Starting values
     private float defaultMoveSpeed;
     private Vector3 initalGravity;
+    private TrailRenderer trail;
+
 
     [Header("Gravity")]
     [SerializeField] float initialGravityValue = -30f;
@@ -89,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        trail = GetComponent<TrailRenderer>();
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
@@ -118,8 +121,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (canGroundSlam == false)
             return;
+        trail.emitting = true;
         Physics.gravity = groundSlamGravity;
         AudioManager.instance.Play("DashSlamWhoosh");
+
         isGroundSlamming = true;
     }
 
@@ -129,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         if (dashCurrentCooldown == dashCooldown)
         {
+            trail.emitting = true;
             isDashing = true;
             StartDashCooldown = true;
         }
@@ -238,6 +244,7 @@ public class PlayerMovement : MonoBehaviour
             moveVelocity = transform.forward * dashSpeed;
             if (currentDashTime <= 0)
             {
+                trail.emitting = false;
                 isDashing = false;
                 currentDashTime = dashTime;
             }
@@ -292,6 +299,7 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded)
             {
                 Physics.gravity = initalGravity;
+                trail.emitting = false;
             }
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;
