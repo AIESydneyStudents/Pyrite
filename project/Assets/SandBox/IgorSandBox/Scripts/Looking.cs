@@ -18,14 +18,14 @@ public class Looking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPupilPosition = pupilPos.transform.position;
+        startPupilPosition = pupilPos.transform.localPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (isLooking == true)
-        //{
+        if (isLooking == true)
+        {
             lookDir = (playerPos.position - eyePos.position);
             lookDir.Normalize();
 
@@ -38,14 +38,15 @@ public class Looking : MonoBehaviour
             tmpPupilPos.z = frontOfEye;
 
             pupilPos.transform.position = tmpPupilPos;
+            Debug.Log(isLooking);
+        }
 
-        //}
+        if (isLooking == false)
+        {
+            pupilPos.transform.localPosition = startPupilPosition;
+            Debug.Log(isLooking);
 
-        //if (isLooking == false)
-        //{
-        //    //pupilPos.transform.position = startPupilPosition;
-
-        //}
+        }
 
 
     }
