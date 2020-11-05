@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.3018868, b: 0.057292365, a: 1}
+      maxColor: {r: 0.29803923, g: 0.18823531, b: 0.043137256, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.12549022, g: 0.36463058, b: 0.98039216, a: 1}
@@ -4949,7 +4949,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 876c04193eea59348944fcbcca131487, type: 2}
+      objectReference: {fileID: 2100000, guid: 1e8863b0342266548a31f1644225ddb0, type: 2}
     - target: {fileID: -927199367670048503, guid: 6c918b8f740535f4f9679323437a133b,
         type: 3}
       propertyPath: m_Name
