@@ -11,34 +11,52 @@ public class Looking : MonoBehaviour
     public GameObject pupilPos;
     public float eyeRadius = 3.0f;
     public float eyeFront = 1.0f;
+    private bool isLooking;
     Vector3 startPupilPosition;
-
     Vector3 lookDir;
 
     // Start is called before the first frame update
     void Start()
     {
-        startPupilPosition = pupilPos.transform.localPosition;
+        startPupilPosition = pupilPos.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        lookDir = (playerPos.position - eyePos.position);
-        lookDir.Normalize();
+        //if (isLooking == true)
+        //{
+            lookDir = (playerPos.position - eyePos.position);
+            lookDir.Normalize();
 
-        lookDir.z = 0f;
-        lookDir.Normalize();
+            lookDir.z = 0f;
+            lookDir.Normalize();
 
-        float frontOfEye = pupilPos.transform.position.z;// + startPupilPosition.z + eyeFront;
-        var tmpPupilPos = pupilPos.transform.position;
-        tmpPupilPos = eyePos.position + (lookDir * eyeRadius);
-        tmpPupilPos.z = frontOfEye;
+            float frontOfEye = pupilPos.transform.position.z;// + startPupilPosition.z + eyeFront;
+            var tmpPupilPos = pupilPos.transform.position;
+            tmpPupilPos = eyePos.position + (lookDir * eyeRadius);
+            tmpPupilPos.z = frontOfEye;
 
-        pupilPos.transform.position = tmpPupilPos;
+            pupilPos.transform.position = tmpPupilPos;
 
-       
+        //}
+
+        //if (isLooking == false)
+        //{
+        //    //pupilPos.transform.position = startPupilPosition;
+
+        //}
+
+
     }
 
-    
+    public void LookAtMeTrue()
+    {
+        isLooking = true;
+    }
+    public void LookAtMeFalse()
+    {
+        isLooking = false;
+    }
+
 }

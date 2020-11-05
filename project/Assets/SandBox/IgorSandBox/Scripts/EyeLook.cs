@@ -40,6 +40,5 @@ public class EyeLook : MonoBehaviour
     public void LookAtMeFalse()
     {
         isLooking = false;
-
     }
 }
