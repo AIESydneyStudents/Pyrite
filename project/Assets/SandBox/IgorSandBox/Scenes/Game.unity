@@ -279,23 +279,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1299447751}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &184303602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184303598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e56f1e7e6b25b494c81f2ec540e18ebc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eyePos: {fileID: 1382854500}
-  playerPos: {fileID: 1784682048}
-  pupilPos: {fileID: 184303598}
-  eyeRadius: 3
-  eyeFront: 1
 --- !u!114 &252709300 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 540504320529168899, guid: e408b1e1af087104681e04809f2e5498,
@@ -449,6 +432,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &523423508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1490344828, guid: 16a9baa759cbde541b8a253a9fff7bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299447751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &524648812
 GameObject:
   m_ObjectHideFlags: 0
@@ -6917,12 +6906,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316381410}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1382854499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1454958600, guid: 16a9baa759cbde541b8a253a9fff7bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299447751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1382854500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1454958601, guid: 16a9baa759cbde541b8a253a9fff7bd1,
     type: 3}
   m_PrefabInstance: {fileID: 1299447751}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1382854503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382854499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56f1e7e6b25b494c81f2ec540e18ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePos: {fileID: 1382854500}
+  playerPos: {fileID: 1784682048}
+  pupilPos: {fileID: 184303598}
+  eyeRadius: 0.6
+  eyeFront: 1
 --- !u!1 &1464383964
 GameObject:
   m_ObjectHideFlags: 0
@@ -9145,6 +9157,35 @@ MonoBehaviour:
   playerPos: {fileID: 1784682048}
   pupilPos: {fileID: 802917111}
   eyeRadius: 3
+  eyeFront: 1
+--- !u!1 &2068366410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 383606497, guid: 16a9baa759cbde541b8a253a9fff7bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299447751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2068366411 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 383606498, guid: 16a9baa759cbde541b8a253a9fff7bd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1299447751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068366414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068366410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56f1e7e6b25b494c81f2ec540e18ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eyePos: {fileID: 2068366411}
+  playerPos: {fileID: 1784682048}
+  pupilPos: {fileID: 523423508}
+  eyeRadius: 0.6
   eyeFront: 1
 --- !u!1 &2115474419
 GameObject:
