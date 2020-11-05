@@ -17,6 +17,7 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (player.isRunning == true)
             anim.Play("Running");
+        
 
         if (player.isIdle == true)
             anim.Play("Idle");
