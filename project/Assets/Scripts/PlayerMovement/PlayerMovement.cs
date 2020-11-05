@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundDistance = 0.4f;
-    private bool isGrounded = false;
+    [SerializeField] bool isGrounded = false;
 
     [Header("GRAPPLES VARIABLES")]
     [SerializeField] float grappleSpeed = 15f;
@@ -82,6 +82,15 @@ public class PlayerMovement : MonoBehaviour
     private bool canWallJumpRight = false;
 
     private bool doubleJumpActive;
+
+
+    [Header("AnimationBools")]
+    public bool isRunning = false;
+    public bool isIdle = true;
+    public bool isGrapple = false;
+    public bool isJump = false;
+    public bool isDoubleJump = false;
+
 
 
     //acess to input system
@@ -118,7 +127,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-
         if (canGroundSlam == false)
             return;
         trail.emitting = true;
@@ -182,9 +190,20 @@ public class PlayerMovement : MonoBehaviour
                 {
                     AudioManager.instance.Play("Jump");
                     Jump(jumpForce);
+                    isJump = true;
+                    isIdle = false;
+                    isRunning = false;
+                    isGrapple = false;
+                    isDoubleJump = false;
                 }
                 else if (doubleJumpActive && canDoubleJump)
                 {
+                    isJump = false;
+                    isIdle = false;
+                    isRunning = false;
+                    isGrapple = false;
+                    isDoubleJump = true;
+
                     AudioManager.instance.Play("Jump");
                     Jump(jumpForce);
                     doubleJumpActive = false;
@@ -218,6 +237,23 @@ public class PlayerMovement : MonoBehaviour
     {
         //get the players direction input
         var dirMove = Controls.Player.Move.ReadValue<Vector2>();
+
+        if (isGrounded == true)
+        {
+            if (dirMove.x != 0 || dirMove.y != 0)
+            {
+                isJump = false;
+                isIdle = false;
+                isRunning = true;
+                isGrapple = false;
+                isDoubleJump = false;
+            }
+            else
+            {
+                isRunning = false;
+            }
+        }
+
         //put players input into a vector 3
         moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
 
@@ -231,6 +267,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = grappleSpeed;
         else
             moveSpeed = defaultMoveSpeed;
+
     }
 
     ///If dashing is true keep dashing till dash time is less then 0
@@ -270,11 +307,21 @@ public class PlayerMovement : MonoBehaviour
         AudioManager.instance.Play("MarshmellowPad");
         Jump(bouncePadHeight); //player bounces if on bounce pad
         Physics.gravity = initalGravity;
+        isJump = false;
+        isIdle = false;
+        isRunning = false;
+        isGrapple = false;
+        isDoubleJump = true;
     }
 
     public void OnFloatPad()
     {
         Jump(OnFloatPadSpeed);
+        isJump = true;
+        isIdle = false;
+        isRunning = false;
+        isGrapple = false;
+        isDoubleJump = false;
     }
     public void OnEnemyHead()
     {
@@ -283,6 +330,11 @@ public class PlayerMovement : MonoBehaviour
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
 
         AudioManager.instance.Play("JumpOnEnemyHead");
+        isJump = false;
+        isIdle = false;
+        isRunning = false;
+        isGrapple = false;
+        isDoubleJump = true;
     }
     public void Jump(float jumpHeight)
     {
@@ -293,6 +345,9 @@ public class PlayerMovement : MonoBehaviour
     {
         //check if player is on ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGrounded && isDoubleJump)
+            isDoubleJump = false;
 
         if (isGroundSlamming)
         {
@@ -308,6 +363,24 @@ public class PlayerMovement : MonoBehaviour
         MoveAndRotatePlayer();
         //if Dashing
         Dash();
+
+        if (isJump == false && isRunning == false && isGrapple == false && isDoubleJump == false)
+        {
+            isJump = false;
+            isIdle = true;
+            isRunning = false;
+            isGrapple = false;
+            isDoubleJump = false;
+        }
+
+        if (OnGrapple)
+        {
+            isJump = false;
+            isIdle = false;
+            isRunning = false;
+            isGrapple = true;
+            isDoubleJump = false;
+        }
     }
 
     private void OnDestroy()
