@@ -30,10 +30,10 @@ public class Looking : MonoBehaviour
         lookDir.z = 0f;
         lookDir.Normalize();
 
-        float frontOfEye = pupilPos.transform.position.z;
+        float frontOfEye = pupilPos.transform.position.z;// + startPupilPosition.z + eyeFront;
         var tmpPupilPos = pupilPos.transform.position;
         tmpPupilPos = eyePos.position + (lookDir * eyeRadius);
-        tmpPupilPos.z = eyeFront;
+        tmpPupilPos.z = frontOfEye;
 
         pupilPos.transform.position = tmpPupilPos;
 
