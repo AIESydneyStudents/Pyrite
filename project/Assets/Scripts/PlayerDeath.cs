@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
-{  
+{
     private GameMaster gameMaster;
     private GameObject player;
     private PlayerMovement playerMovement;
@@ -14,9 +14,10 @@ public class PlayerDeath : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void Death()
     {
-        if (other.gameObject == player && playerMovement.isDashing != true)
+        if (playerMovement.isDashing == false)
         {
             gameMaster.playerLives -= 1;
             player.SetActive(false);
@@ -24,9 +25,22 @@ public class PlayerDeath : MonoBehaviour
         }
         else
         {
-           gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject == player && playerMovement.isDashing == false)
+    //    {
+    //        gameMaster.playerLives -= 1;
+    //        player.SetActive(false);
+    //        Invoke("LoadCurrentScene", 2f);
+    //    }
+    //    else
+    //    {
+    //        gameObject.SetActive(false);
+    //    }
+    //}
     void LoadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
