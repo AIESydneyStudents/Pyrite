@@ -38,13 +38,13 @@ public class Looking : MonoBehaviour
             tmpPupilPos.z = frontOfEye;
 
             pupilPos.transform.position = tmpPupilPos;
-            Debug.Log(isLooking);
+            
         }
 
         if (isLooking == false)
         {
             pupilPos.transform.localPosition = startPupilPosition;
-            Debug.Log(isLooking);
+           
 
         }
 
