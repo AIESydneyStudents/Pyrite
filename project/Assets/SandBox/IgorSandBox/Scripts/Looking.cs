@@ -37,14 +37,7 @@ public class Looking : MonoBehaviour
 
         pupilPos.transform.position = tmpPupilPos;
 
-        if ((transform.position - playerPos.transform.position).magnitude < 10)
-        {
-            // look at yes
-        }
-        else
-        {
-            // look at no
-        }
+       
     }
 
     
