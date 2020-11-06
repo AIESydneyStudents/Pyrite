@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CheckPoint : MonoBehaviour
+public class StartLvlSave : MonoBehaviour
 {
     private GameMaster gameMaster;
     public PlayerData data;
@@ -23,7 +23,6 @@ public class CheckPoint : MonoBehaviour
             gameMaster.playerBodySize = playerBody.transform.localScale.z;
             GameEvents.OnSaveInitiated();
             data = SaveLoad.Load<PlayerData>("PlayerData");
-            AudioManager.instance.Play("CheckPoint");           
         }
     }
 }
