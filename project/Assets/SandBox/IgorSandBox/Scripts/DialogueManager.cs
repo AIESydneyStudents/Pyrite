@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
-
+    public bool dialogueEnded = false;
     public Animator anim;
 
     private Queue<string> sentences; 
@@ -61,7 +61,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        
+        dialogueEnded = true;
         anim.SetBool("isOpen", false);
         ControlsManager.instance.Dialogue.Disable();
         ControlsManager.instance.Player.Enable();

@@ -11,10 +11,12 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-        Controls.Player.Disable();
-        Controls.Dialogue.Enable();
+        if (FindObjectOfType<DialogueManager>().dialogueEnded == false)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            Controls.Player.Disable();
+            Controls.Dialogue.Enable();
+        }
 
 
     }
