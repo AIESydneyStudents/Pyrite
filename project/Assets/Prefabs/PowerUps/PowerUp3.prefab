@@ -4766,6 +4766,10 @@ GameObject:
   - component: {fileID: 2247605022703918002}
   - component: {fileID: 2247605022703918003}
   - component: {fileID: 2247605022703918000}
+  - component: {fileID: 5492278995531733741}
+  - component: {fileID: 8134731365559568823}
+  - component: {fileID: 6632946386306239617}
+  - component: {fileID: 2571653701850548506}
   m_Layer: 0
   m_Name: PowerUp3
   m_TagString: Untagged
@@ -4828,6 +4832,40 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5492278995531733741}
+        m_MethodName: SpawnObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8067658129670855945, guid: 8ef09d7b303c2cb468fb80dd0ff09834,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8134731365559568823}
+        m_MethodName: AddToCollectedItemSet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2571653701850548506}
+        m_MethodName: Destroy
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -4849,6 +4887,54 @@ MonoBehaviour:
   canWallJump: 0
   canGroundSlam: 0
   canGrapple: 1
+--- !u!114 &5492278995531733741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247605022703918001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2469a187357219c4e8775a44c86afca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8134731365559568823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247605022703918001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6632946386306239617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247605022703918001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2571653701850548506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247605022703918001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03037270d28bb1d468b401757abc5781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1911085198
 Animator:
   serializedVersion: 3

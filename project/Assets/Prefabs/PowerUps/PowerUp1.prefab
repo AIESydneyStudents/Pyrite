@@ -4765,7 +4765,11 @@ GameObject:
   - component: {fileID: 3188088435716090345}
   - component: {fileID: 3188088435716090346}
   - component: {fileID: 3188088435716090325}
+  - component: {fileID: 6105558501418613757}
+  - component: {fileID: 1723513896027114944}
   - component: {fileID: 3188088435716090324}
+  - component: {fileID: 1190642472}
+  - component: {fileID: 1190642473}
   m_Layer: 0
   m_Name: PowerUp1
   m_TagString: Untagged
@@ -4828,9 +4832,67 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1723513896027114944}
+        m_MethodName: Destroy
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1190642472}
+        m_MethodName: AddToCollectedItemSet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6105558501418613757}
+        m_MethodName: SpawnObj
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8067658129670855945, guid: 5cf8dd229b7abf745a3d4c436af3cb39,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6105558501418613757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188088435716090327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2469a187357219c4e8775a44c86afca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1723513896027114944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188088435716090327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03037270d28bb1d468b401757abc5781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3188088435716090324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4849,6 +4911,30 @@ MonoBehaviour:
   canWallJump: 1
   canGroundSlam: 0
   canGrapple: 0
+--- !u!114 &1190642472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188088435716090327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1190642473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188088435716090327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1593886663058765639
 Animator:
   serializedVersion: 3
