@@ -7,12 +7,12 @@ public class GrapTrailEffect : MonoBehaviour
     private TrailRenderer trail;
 
 
-    public PlayerMovement playMov;
+    private PlayerMovement playMov;
     // Start is called before the first frame update
     void Start()
     {
         trail = GetComponent<TrailRenderer>();
-
+        playMov = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
 
     }
 
