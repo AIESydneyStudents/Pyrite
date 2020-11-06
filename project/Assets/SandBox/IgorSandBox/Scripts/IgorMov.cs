@@ -9,6 +9,7 @@ public class IgorMov : MonoBehaviour
         get { return ControlsManager.instance; }
     }
 
+    private HitEffect[] hitEffect;
     //private float jumpTimeCounter;
     //public float jumpTime;
     //private bool isJumping;
@@ -94,6 +95,7 @@ public class IgorMov : MonoBehaviour
 
     void Start()
     {
+        hitEffect = GetComponentsInChildren<HitEffect>();
         trail = GetComponent<TrailRenderer>();
         //trail.emitting = false;
         rb = GetComponent<Rigidbody>();
@@ -305,10 +307,15 @@ public class IgorMov : MonoBehaviour
         {
             if (isGrounded)
             {
+                foreach (HitEffect hit in hitEffect)
+                {
+                    hit.HitEffectPlay();
+                }
                 Physics.gravity = initalGravity;
                // Instantiate(dustCloud, transform.position, dustCloud.transform.rotation);
                 trail.emitting = false;
             }
+            
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;
         }
