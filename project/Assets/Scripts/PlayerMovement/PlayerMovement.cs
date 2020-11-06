@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private Animator anim;
+    private HitEffect[] hitEffect;
 
     //RigidBody and positions for movements
     private Rigidbody rb;
@@ -98,6 +99,8 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         trail = GetComponent<TrailRenderer>();
+        hitEffect = GetComponentsInChildren<HitEffect>();
+
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
@@ -317,7 +320,10 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing == true)
             return;
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
-
+        foreach (HitEffect hit in hitEffect)
+        {
+            hit.HitEffectPlay();
+        }
         AudioManager.instance.Play("JumpOnEnemyHead");
         anim.Play("Double Jump");
     }
@@ -341,6 +347,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Physics.gravity = initalGravity;
                 trail.emitting = false;
+            
             }
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;
@@ -358,7 +365,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isIdle", false);
         }
         else
-        {           
+        {
             anim.SetBool("isGrapple", false);
             if (isGrounded == false)
                 anim.SetBool("isIdle", true);
@@ -377,5 +384,10 @@ public class PlayerMovement : MonoBehaviour
     {
         //add velocity to player
         rb.velocity = moveVelocity;
+    }
+
+    public void DisableControls()
+    {
+        Controls.Disable();
     }
 }
