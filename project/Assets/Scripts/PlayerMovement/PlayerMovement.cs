@@ -344,13 +344,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 Physics.gravity = initalGravity;
                 trail.emitting = false;
-            }
+                isGroundSlamming = false;
             foreach (HitEffect hit in hitEffect)
             {
                 hit.HitEffectPlay();
             }
-            if (moveVelocity.y == 0)
-                isGroundSlamming = false;
+            }
+           // if (moveVelocity.y == 0)
         }
         //move and rotate player based on input
         MoveAndRotatePlayer();
