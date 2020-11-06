@@ -29,7 +29,7 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         navAgent = GetComponent<NavMeshAgent>();
         //myMaterial = GetComponent<Renderer>().material;
@@ -86,8 +86,6 @@ public class EnemyPatrol : MonoBehaviour
             anim.SetBool("isWalking", false);
             //navAgent.SetDestination(transform.position);
 
-
-
             var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
 
@@ -99,30 +97,6 @@ public class EnemyPatrol : MonoBehaviour
         var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
     }
-
-    //if (Vector3.Distance(waypoints[endPoint].transform.position, transform.position) > accuracy)
-    //{
-    //    anim.SetBool("isWalking", true);
-    //    navAgent.SetDestination(waypoints[startPoint].transform.position);
-    //    if (Vector3.Distance(waypoints[startPoint].transform.position, transform.position) < accuracy)
-    //    {
-    //        //navAgent.SetDestination(transform.position);
-    //        anim.SetBool("isWalking", false);
-    //        arrived = true;
-    //    }
-    //    if (arrived == true)
-    //    {
-    //        navAgent.SetDestination(waypoints[endPoint].transform.position);
-
-    //    }
-    //}
-    //else
-    //{
-    //    anim.SetBool("isWalking", false);
-    //    //navAgent.SetDestination(transform.position);
-    //    arrived = false;
-    //}
-
 
 
     private void Chase()

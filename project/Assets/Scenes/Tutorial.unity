@@ -1314,6 +1314,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601395470}
     m_Modifications:
+    - target: {fileID: 7878030139858477527, guid: c98f2f407b6787441ac1fad8c581462c,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1550935814}
+    - target: {fileID: 7878030139858477527, guid: c98f2f407b6787441ac1fad8c581462c,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEnemyHead
+      objectReference: {fileID: 0}
     - target: {fileID: 8298619065981233181, guid: c98f2f407b6787441ac1fad8c581462c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1347,7 +1357,7 @@ PrefabInstance:
     - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.95
+      value: 10.09
       objectReference: {fileID: 0}
     - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
         type: 3}
@@ -3986,7 +3996,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.458443
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -4071,7 +4081,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.458443
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
