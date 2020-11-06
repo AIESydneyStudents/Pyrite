@@ -385,4 +385,9 @@ public class PlayerMovement : MonoBehaviour
         //add velocity to player
         rb.velocity = moveVelocity;
     }
+
+    public void DisableControls()
+    {
+        Controls.Disable();
+    }
 }
