@@ -320,7 +320,10 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing == true)
             return;
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
-
+        foreach (HitEffect hit in hitEffect)
+        {
+            hit.HitEffectPlay();
+        }
         AudioManager.instance.Play("JumpOnEnemyHead");
         anim.Play("Double Jump");
     }
@@ -344,13 +347,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 Physics.gravity = initalGravity;
                 trail.emitting = false;
+            
+            }
+            if (moveVelocity.y == 0)
                 isGroundSlamming = false;
-            foreach (HitEffect hit in hitEffect)
-            {
-                hit.HitEffectPlay();
-            }
-            }
-           // if (moveVelocity.y == 0)
         }
         //move and rotate player based on input
         MoveAndRotatePlayer();
