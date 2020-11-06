@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private Animator anim;
+    private HitEffect[] hitEffect;
 
     //RigidBody and positions for movements
     private Rigidbody rb;
@@ -98,6 +99,8 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         trail = GetComponent<TrailRenderer>();
+        hitEffect = GetComponentsInChildren<HitEffect>();
+
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
@@ -342,6 +345,10 @@ public class PlayerMovement : MonoBehaviour
                 Physics.gravity = initalGravity;
                 trail.emitting = false;
             }
+            foreach (HitEffect hit in hitEffect)
+            {
+                hit.HitEffectPlay();
+            }
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;
         }
@@ -358,7 +365,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isIdle", false);
         }
         else
-        {           
+        {
             anim.SetBool("isGrapple", false);
             if (isGrounded == false)
                 anim.SetBool("isIdle", true);
