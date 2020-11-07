@@ -12,6 +12,7 @@ TagManager:
   - TeaCollectable
   - StartPos
   - PlayerBody
+  - TeaAnimSpawn
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1134288494190616527}
   - component: {fileID: 1134288494190616512}
   - component: {fileID: 753852365}
+  - component: {fileID: -4513871679764754154}
   m_Layer: 0
   m_Name: TeaPickup
   m_TagString: TeaCollectable
@@ -85,7 +86,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 9017704129530995168, guid: b2a19dcad9a392240ae3c1714340c833,
+          type: 3}
         m_MethodName: SpawnTeaCollectable
         m_Mode: 1
         m_Arguments:
@@ -161,6 +163,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1000
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-4513871679764754154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134288494190616514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
 --- !u!95 &1870218898
 Animator:
   serializedVersion: 3

@@ -65,6 +65,7 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
+    playersBodySize: 0
     canDoubleJump: 0
     canSlide: 0
     canGlide: 0
@@ -104,6 +105,7 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
+    playersBodySize: 0
     canDoubleJump: 0
     canSlide: 0
     canGlide: 0

@@ -296,12 +296,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &39363827 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-    type: 3}
-  m_PrefabInstance: {fileID: 92271989}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &41341403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 4258611413453029351, guid: dd941ffc66955d54aba44d3c44cfbfd1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4258611413453029351, guid: dd941ffc66955d54aba44d3c44cfbfd1,
         type: 3}
@@ -607,74 +601,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
---- !u!1001 &92271989
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 922491197}
-    m_Modifications:
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 37.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -108.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616513, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1134288494190616514, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: m_Name
-      value: TeaPickup
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -744,6 +679,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -1305,6 +1250,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &167555256
@@ -1319,31 +1274,6 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1550935814}
-    - target: {fileID: 7878030139858477527, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnEnemyHead
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619065981233181, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619065981233181, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619066138865781, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1550935814}
-    - target: {fileID: 8298619066138865781, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnEnemyHead
-      objectReference: {fileID: 0}
     - target: {fileID: 8298619067230000359, guid: c98f2f407b6787441ac1fad8c581462c,
         type: 3}
       propertyPath: m_Name
@@ -1403,11 +1333,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067564358151, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98f2f407b6787441ac1fad8c581462c, type: 3}
@@ -2197,6 +2122,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &322195651 stripped
@@ -2262,7 +2197,7 @@ PrefabInstance:
     - target: {fileID: 5297014348548555731, guid: af83a8be1170d374d827293f97d25623,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5297014348548555731, guid: af83a8be1170d374d827293f97d25623,
         type: 3}
@@ -2455,12 +2390,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1349736116}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &450259887 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-    type: 3}
-  m_PrefabInstance: {fileID: 6450210084592978248}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467617612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2527,6 +2456,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -2668,7 +2607,7 @@ PrefabInstance:
     - target: {fileID: 7905559292526947969, guid: d577563e9656fe64cb2c1c1714c8e3f2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7905559292526947969, guid: d577563e9656fe64cb2c1c1714c8e3f2,
         type: 3}
@@ -3321,6 +3260,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &514603070 stripped
@@ -3374,7 +3323,7 @@ PrefabInstance:
     - target: {fileID: 4158289105726325647, guid: a7cbe4b66b9c20949b79f2ed7271425a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4158289105726325647, guid: a7cbe4b66b9c20949b79f2ed7271425a,
         type: 3}
@@ -3486,6 +3435,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -3763,7 +3722,7 @@ PrefabInstance:
     - target: {fileID: 5750607901892659588, guid: 1241a40a2f4a4654485d4733b1d92536,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5750607901892659588, guid: 1241a40a2f4a4654485d4733b1d92536,
         type: 3}
@@ -3996,7 +3955,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.458443
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -4081,7 +4040,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.458443
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -4273,12 +4232,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &718789384 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-    type: 3}
-  m_PrefabInstance: {fileID: 8298619066820854198}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &719799361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,6 +4852,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &844561992
@@ -5031,7 +4994,7 @@ PrefabInstance:
     - target: {fileID: 8321403877861585360, guid: 6d51c07c96bae58458358634da9940a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8321403877861585360, guid: 6d51c07c96bae58458358634da9940a6,
         type: 3}
@@ -5089,7 +5052,6 @@ Transform:
   - {fileID: 514603070}
   - {fileID: 939718170}
   - {fileID: 543110133}
-  - {fileID: 39363827}
   - {fileID: 1918258138}
   - {fileID: 2143848002}
   - {fileID: 1693005027}
@@ -5176,6 +5138,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -5604,14 +5576,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
---- !u!4 &991158545 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-    type: 3}
-  m_PrefabInstance: {fileID: 6227396815737234575}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1006405397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4158289105726325647, guid: a7cbe4b66b9c20949b79f2ed7271425a,
@@ -5768,6 +5744,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -6155,6 +6141,7 @@ Transform:
   - {fileID: 1148376921}
   - {fileID: 1406051019}
   - {fileID: 1384888109}
+  - {fileID: 1278727079}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6891,10 +6878,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.7199402, y: 17.91, z: -103.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 991158545}
-  - {fileID: 718789384}
-  - {fileID: 450259887}
+  m_Children: []
   m_Father: {fileID: 922491197}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7433,7 +7417,7 @@ PrefabInstance:
     - target: {fileID: 4789849343018702493, guid: 9be137d269a4fa7409b6158b43cba313,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4789849343018702493, guid: 9be137d269a4fa7409b6158b43cba313,
         type: 3}
@@ -7503,7 +7487,7 @@ PrefabInstance:
     - target: {fileID: 4656017586741822944, guid: ff5fdd17ba1558a41a215294adadf31b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4656017586741822944, guid: ff5fdd17ba1558a41a215294adadf31b,
         type: 3}
@@ -7593,6 +7577,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -7701,6 +7695,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94d530ea63b42764c91515c6822ff4fe, type: 3}
+--- !u!4 &1278727079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+    type: 3}
+  m_PrefabInstance: {fileID: 2026543162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278727080 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9017704129530995168, guid: b2a19dcad9a392240ae3c1714340c833,
+    type: 3}
+  m_PrefabInstance: {fileID: 2026543162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1298275382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7767,6 +7779,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -7846,7 +7868,7 @@ PrefabInstance:
     - target: {fileID: 3341916618533685453, guid: 442bc96485ffd1a4d8d2a79223d4a317,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3341916618533685453, guid: 442bc96485ffd1a4d8d2a79223d4a317,
         type: 3}
@@ -7910,7 +7932,7 @@ PrefabInstance:
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
@@ -8311,6 +8333,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1 &1345689390
@@ -8621,7 +8653,7 @@ Transform:
   m_LocalScale: {x: -7, y: 1, z: 5.02}
   m_Children: []
   m_Father: {fileID: 922491197}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1349736116
 PrefabInstance:
@@ -8752,7 +8784,7 @@ PrefabInstance:
     - target: {fileID: 4258611413453029351, guid: dd941ffc66955d54aba44d3c44cfbfd1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4258611413453029351, guid: dd941ffc66955d54aba44d3c44cfbfd1,
         type: 3}
@@ -8916,7 +8948,7 @@ PrefabInstance:
     - target: {fileID: 1907152947601332668, guid: b579706b6d809cf459fec38ddf82b308,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1907152947601332668, guid: b579706b6d809cf459fec38ddf82b308,
         type: 3}
@@ -9229,7 +9261,7 @@ PrefabInstance:
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
@@ -9749,7 +9781,7 @@ PrefabInstance:
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
@@ -10226,6 +10258,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!114 &1700423131 stripped
@@ -10291,7 +10333,7 @@ PrefabInstance:
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
@@ -10565,6 +10607,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -10944,6 +10996,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &1918258138 stripped
@@ -11018,6 +11080,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -11307,6 +11379,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!1001 &2022687502
@@ -11376,6 +11458,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &2024482450 stripped
@@ -11384,6 +11476,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 826735974}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2026543162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1037027041}
+    m_Modifications:
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995169, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017704129530995170, guid: b2a19dcad9a392240ae3c1714340c833,
+        type: 3}
+      propertyPath: m_Name
+      value: TeaManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2a19dcad9a392240ae3c1714340c833, type: 3}
 --- !u!4 &2033718281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8321403877861585360, guid: 6d51c07c96bae58458358634da9940a6,
@@ -11456,6 +11617,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TeaPickup (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
@@ -11532,6 +11703,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeaPickup (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1278727080}
+    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SpawnTeaCollectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!4 &2143848002 stripped
@@ -11585,7 +11766,7 @@ PrefabInstance:
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6094275127816083586, guid: 6f0d45b998f46f349bae667ebaff3e6c,
         type: 3}
@@ -11609,240 +11790,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0d45b998f46f349bae667ebaff3e6c, type: 3}
---- !u!1001 &6227396815737234575
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1102995833}
-    m_Modifications:
-    - target: {fileID: 6227396814340817087, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyGuardAndChase (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -22.873257
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.601179
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -74.05914
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815620752798, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6227396815876561305, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1550935814}
-    - target: {fileID: 6227396815876561305, guid: 73b8f8e5ede25f4439c65aa8c3d97a99,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnEnemyHead
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73b8f8e5ede25f4439c65aa8c3d97a99, type: 3}
---- !u!1001 &6450210084592978248
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1102995833}
-    m_Modifications:
-    - target: {fileID: 6450210083814763546, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1550935814}
-    - target: {fileID: 6450210083814763546, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnEnemyHead
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.792854
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.911179
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -73.95972
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084413301479, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450210084880838355, guid: 8f9fad199d3b7ce4d9feb38c399c75f6,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyPatrolAndChase
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8f9fad199d3b7ce4d9feb38c399c75f6, type: 3}
---- !u!1001 &8298619066820854198
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1102995833}
-    m_Modifications:
-    - target: {fileID: 8298619066138865781, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1550935814}
-    - target: {fileID: 8298619066138865781, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnEnemyHead
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067230000359, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyPatrol (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.3054504
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.611178
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -74.105865
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8298619067539118782, guid: c98f2f407b6787441ac1fad8c581462c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c98f2f407b6787441ac1fad8c581462c, type: 3}
