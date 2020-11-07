@@ -129,9 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {fileID: 0}
   teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
-  canvas: {fileID: 0}
 --- !u!114 &822186548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,4 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97829b40e481265478d3e6e77c13f7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLivesTxt: {fileID: 0}
+  llHeart: {fileID: 0}
+  lHeart: {fileID: 0}
+  mHeart: {fileID: 0}
+  rHeart: {fileID: 0}
