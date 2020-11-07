@@ -14,12 +14,12 @@ public class TeaTracker : MonoBehaviour
     private void Start()
     {
         Load();
-        teaCountTxt.text = "Tea Collected : " + teaCollected.ToString();
+        teaCountTxt.text = "Tea Collected:" + teaCollected.ToString();
         numberOfTeaLeaves = GameObject.FindGameObjectsWithTag("TeaCollectable").Length;
     }
     private void Update()
     {
-        teaCountTxt.text = "Tea : " + teaCollected.ToString() + "/" + numberOfTeaLeaves;
+        teaCountTxt.text =  teaCollected.ToString() + "/" + numberOfTeaLeaves;
     }
     void Load()
     {
