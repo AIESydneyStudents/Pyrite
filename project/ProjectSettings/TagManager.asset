@@ -13,6 +13,7 @@ TagManager:
   - StartPos
   - PlayerBody
   - TeaAnimSpawn
+  - GameOverPanel
   layers:
   - Default
   - TransparentFX

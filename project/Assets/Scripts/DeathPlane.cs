@@ -19,11 +19,18 @@ public class DeathPlane : MonoBehaviour
             AudioManager.instance.Play("DeathFromFall");
             gameMaster.playerLives -= 1;
             player.SetActive(false);
-            Invoke("LoadCurrentScene", 2f);
+            if (gameMaster.playerLives >= 0)
+                Invoke("LoadCurrentScene", 2f);
+            else
+                Invoke("LoadGameOverScene", 2f);
         }
     }
     void LoadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    void LoadGameOverScene()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
