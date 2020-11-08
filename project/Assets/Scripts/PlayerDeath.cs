@@ -19,6 +19,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (playerMovement.isDashing == false)
         {
+            AudioManager.instance.Play("DeathFromEnemy");
             gameMaster.playerLives -= 1;
             player.SetActive(false);
             Invoke("LoadCurrentScene", 2f);
@@ -28,19 +29,7 @@ public class PlayerDeath : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject == player && playerMovement.isDashing == false)
-    //    {
-    //        gameMaster.playerLives -= 1;
-    //        player.SetActive(false);
-    //        Invoke("LoadCurrentScene", 2f);
-    //    }
-    //    else
-    //    {
-    //        gameObject.SetActive(false);
-    //    }
-    //}
+
     void LoadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

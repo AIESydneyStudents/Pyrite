@@ -21,12 +21,4 @@ public class SpawnTeaImg : MonoBehaviour
         //teaClone.transform.position = startPos.transform.position;
         //teaClone.transform.rotation = startPos.transform.rotation;
     }
-    private void Update()
-    {
-        //if (teaImg != null)
-        //{
-        //    Destroy(teaClone, 1);
-        //}
-    }
-
 }

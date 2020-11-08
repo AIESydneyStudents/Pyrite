@@ -16,6 +16,7 @@ public class DeathPlane : MonoBehaviour
     {
         if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
+            AudioManager.instance.Play("DeathFromFall");
             gameMaster.playerLives -= 1;
             player.SetActive(false);
             Invoke("LoadCurrentScene", 2f);

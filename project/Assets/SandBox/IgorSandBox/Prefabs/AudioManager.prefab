@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 8300000, guid: 5dab5555e84ea4a4ea42e7c1e0d03964, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: 466e1e1d929e5fc4fa7265c5947a0ebb, type: 3}
+    volume: 0.3
     loop: 1
     source: {fileID: 0}
   - name: Jump
@@ -95,6 +95,16 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: DashSlamWhoosh
+    clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
+    volume: 0.474
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathFromFall
+    clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
+    volume: 0.474
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathFromEnemy
     clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
     volume: 0.474
     loop: 0
