@@ -225,7 +225,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45449726}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5008,7 +5008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partSys: {fileID: 45449729}
-  but: {fileID: 55078848}
+  button: {fileID: 55078848}
   eventSys: {fileID: 1296550396}
 --- !u!1 &280608058
 GameObject:
@@ -5226,7 +5226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partSys: {fileID: 402416141}
-  but: {fileID: 335709733}
+  button: {fileID: 335709733}
   eventSys: {fileID: 1296550396}
 --- !u!1 &402416138
 GameObject:
@@ -5332,7 +5332,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402416138}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -10324,7 +10324,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872301528}
   serializedVersion: 6
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -15417,7 +15417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partSys: {fileID: 872301531}
-  but: {fileID: 1242594228}
+  button: {fileID: 1242594228}
   eventSys: {fileID: 1296550396}
 --- !u!1 &1296550394
 GameObject:

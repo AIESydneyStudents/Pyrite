@@ -2,25 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-
-public class ButtonSelected : MonoBehaviour, ISelectHandler
+public class ButtonSelected : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
     public ParticleSystem partSys;
-    public GameObject but;
+    public GameObject button;
     public EventSystem eventSys;
+    
 
     public void OnSelect(BaseEventData eventData)
     {
-        if (eventSys.currentSelectedGameObject == but)
+        if (eventSys.currentSelectedGameObject == button)
         {
             partSys.Play();
+        }
+    }
+
+    public void OnDeselect(BaseEventData eventData)
+    {
+        if (eventSys.currentSelectedGameObject == button)
+        {
+            partSys.Stop();
 
         }
-        
-        //if(eventData.selectedObject == this)
-        //Debug.Log(this.gameObject.name + " was selected");
-
     }
 
     // Start is called before the first frame update
@@ -29,11 +34,4 @@ public class ButtonSelected : MonoBehaviour, ISelectHandler
         partSys.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-    }
 }
