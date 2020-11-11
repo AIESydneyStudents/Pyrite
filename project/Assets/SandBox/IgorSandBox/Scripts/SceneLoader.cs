@@ -61,6 +61,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadlevelOneScene()
     {
+        gameMaster.playerLives = 3;
         StartCoroutine(LoadScene(Level_01));
     }
 
@@ -95,21 +96,16 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
-    //public void LoadNextScene()
-    //{
-    //    var sceneIndex = SceneManager.GetSceneByName(scenes[currentScene]).buildIndex;
 
-    //    StartCoroutine(LoadScene(sceneIndex));
-    //    currentScene += 1;
-
-    //    if (currentScene == scenes.Count)
-    //        currentScene = 0;
-    //}
 
     IEnumerator LoadScene(string scene)
     {
         if(SceneManager.GetActiveScene().name == Level_01 || SceneManager.GetActiveScene().name == tutorialScene)
             yield return new WaitForSeconds(4);
+
+        if (SceneManager.GetActiveScene().name == mainMenu)
+            yield return new WaitForSeconds(2.8f);
+
 
         transition.SetTrigger("Start");
 

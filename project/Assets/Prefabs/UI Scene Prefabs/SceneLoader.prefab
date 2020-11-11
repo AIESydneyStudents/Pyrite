@@ -137,6 +137,7 @@ MonoBehaviour:
     PlayerLives: 0
     respawnPos: []
     teaCollected: 0
+    playersBodySize: 0
     canDoubleJump: 0
     canSlide: 0
     canGlide: 0
@@ -151,7 +152,7 @@ MonoBehaviour:
   Level_01: Level_01
   mainMenu: MainMenu
   gameOverScene: GameOver
-  optionsScene: Gallery
+  optionsScene: Options
   creditsScene: Credits
 --- !u!1 &6597106253067056
 GameObject:
