@@ -8,8 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Splash.unity
     guid: 8630ad30f80e3004a93f018730c45649
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+  - enabled: 0
+    path: Assets/Scenes/MainMenuOld.unity
     guid: 7fb5fcd461446fe47a3629d5e093df19
   - enabled: 0
     path: 
@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 4c87e05350b49f644895819d66adb58b
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a33fb4ee91e9b494eb47d44e4f83873a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8db3e300e80e0794097397cef005647d,
       type: 2}
