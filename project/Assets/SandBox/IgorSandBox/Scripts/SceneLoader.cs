@@ -44,7 +44,8 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
-        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+        if (GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>() != null)
+            gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     public void LoadSplashScene()
@@ -100,7 +101,7 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadScene(string scene)
     {
-        if(SceneManager.GetActiveScene().name == Level_01 || SceneManager.GetActiveScene().name == tutorialScene)
+        if (SceneManager.GetActiveScene().name == Level_01 || SceneManager.GetActiveScene().name == tutorialScene)
             yield return new WaitForSeconds(4);
 
         if (SceneManager.GetActiveScene().name == mainMenu)
