@@ -24,7 +24,6 @@ public class ButtonSelected : MonoBehaviour, ISelectHandler, IDeselectHandler
         if (eventSys.currentSelectedGameObject == button)
         {
             partSys.Stop();
-
         }
     }
 

@@ -16,11 +16,6 @@ public class GameMaster : MonoBehaviour
 
     private void Awake()
     {
-        if(GameObject.FindGameObjectWithTag("StartPos") != null)
-        playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
-        if (playerLives < 0)
-            SaveLoad.SeriouslyDeleteAllSaveFiles();
-
 
         if (instance == null)
         {
@@ -29,6 +24,17 @@ public class GameMaster : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        if(GameObject.FindGameObjectWithTag("StartPos") != null)
+        playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
+
+        if (playerLives < 0)
+            SaveLoad.SeriouslyDeleteAllSaveFiles();
+
+
 
         if (playerStartPos != null)
         lastCheckPointPos = playerStartPos.position;
