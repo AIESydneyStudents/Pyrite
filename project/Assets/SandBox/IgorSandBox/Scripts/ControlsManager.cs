@@ -11,10 +11,4 @@ public class ControlsManager : MonoBehaviour
         if(instance == null)
             instance = new Controls();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
