@@ -395,6 +395,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &419006059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6597105537536499, guid: 81acff2757a95004eb47d502a4ee1fdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1512418585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &484792305
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +582,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1512418585}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 419006059}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79afe7eb5b7a98648bfa932605b011d2, type: 3}
@@ -1505,7 +1511,7 @@ PrefabInstance:
     - target: {fileID: 3295368320301612854, guid: 248076f50c5df7b48b63c4a186750d31,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadlevelOneScene
+      value: LoadContinueScene
       objectReference: {fileID: 0}
     - target: {fileID: 3295368320301612854, guid: 248076f50c5df7b48b63c4a186750d31,
         type: 3}
@@ -1542,6 +1548,11 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3295368320301612854, guid: 248076f50c5df7b48b63c4a186750d31,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 419006059}
     - target: {fileID: 3295368320301612855, guid: 248076f50c5df7b48b63c4a186750d31,
         type: 3}
       propertyPath: m_Color.a

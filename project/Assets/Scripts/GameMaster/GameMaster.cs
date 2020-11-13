@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameMaster : MonoBehaviour
@@ -31,15 +32,18 @@ public class GameMaster : MonoBehaviour
         if(GameObject.FindGameObjectWithTag("StartPos") != null)
         playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
 
+
+        savedScene = "Tutorial";
+
         if (playerLives < 0)
+        {
+            savedScene = SceneManager.GetActiveScene().name;
             SaveLoad.SeriouslyDeleteAllSaveFiles();
-
-
+        }
 
         if (playerStartPos != null)
         lastCheckPointPos = playerStartPos.position;
 
-        savedScene = "Tutorial";
         Load();
        
     }

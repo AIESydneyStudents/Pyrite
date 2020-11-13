@@ -111,6 +111,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Patrol()
     {
+        alerted = true;
         // myMaterial.color = Color.green;
         navAgent.speed = data.patrolSpeed;
         if (waypoints.Length == 0) return;
