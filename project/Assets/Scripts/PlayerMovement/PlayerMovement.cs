@@ -88,6 +88,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool doubleJumpActive;
 
+    bool playerAirBound = false;
+
 
 
 
@@ -236,29 +238,32 @@ public class PlayerMovement : MonoBehaviour
     {
         if (pauseMenu.gameIsPaused == true)
             return;
-        
-            //get the players direction input
-            var dirMove = Controls.Player.Move.ReadValue<Vector2>();
 
-            if (isGrounded == true)
+        //get the players direction input
+        var dirMove = Controls.Player.Move.ReadValue<Vector2>();
+
+        if (isGrounded == true)
+        {
+            if (dirMove.x != 0 || dirMove.y != 0)
             {
-                if (dirMove.x != 0 || dirMove.y != 0)
-                {
-                    anim.SetBool("isRunning", true);
-                    anim.SetBool("isIdle", false);
-                    anim.SetBool("isGrapple", false);
+                if (AudioManager.instance.IsPlaying("Walking") == false)
+                    AudioManager.instance.Play("Walking");
 
 
-                }
-                else
-                {
-                    anim.SetBool("isIdle", true);
-                    anim.SetBool("isRunning", false);
-                    anim.SetBool("isGrapple", false);
-
-                }
+                anim.SetBool("isRunning", true);
+                anim.SetBool("isIdle", false);
+                anim.SetBool("isGrapple", false);
             }
-        
+            else
+            {
+                AudioManager.instance.Stop("Walking");
+                anim.SetBool("isIdle", true);
+                anim.SetBool("isRunning", false);
+                anim.SetBool("isGrapple", false);
+
+            }
+        }
+
 
         //put players input into a vector 3
         moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
@@ -326,6 +331,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing == true)
             return;
+
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
         foreach (HitEffect hit in hitEffect)
         {
@@ -345,7 +351,18 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded == false)
+        {
             anim.SetBool("isRunning", false);
+            AudioManager.instance.Stop("Walking");
+            playerAirBound = true;
+        }
+
+        if(isGrounded && playerAirBound == true)
+        {
+            AudioManager.instance.Play("PlayerFallImpact");
+            playerAirBound = false;
+        }
+  
 
 
         if (isGroundSlamming)
@@ -354,7 +371,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 Physics.gravity = initalGravity;
                 trail.emitting = false;
-            
             }
             if (moveVelocity.y == 0)
                 isGroundSlamming = false;
