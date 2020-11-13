@@ -115160,26 +115160,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 234339303212231280, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: wallJumpForce
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 234339303212231280, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: onEnemyBounceHeight
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 234339303212231280, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: OnFloatPadSpeed
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024446552574195890, guid: a1379de643662614b9f0c796002fad40,
-        type: 3}
-      propertyPath: m_TagString
-      value: PlayerTeaString
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1379de643662614b9f0c796002fad40, type: 3}
 --- !u!114 &8547865693567592349
