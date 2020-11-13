@@ -14,6 +14,7 @@ TagManager:
   - PlayerBody
   - TeaAnimSpawn
   - GameOverPanel
+  - PlayerTeaString
   layers:
   - Default
   - TransparentFX
