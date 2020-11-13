@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerTea : MonoBehaviour
 {
     public TeaTracker teaTracker;
-    public int maxLeaves = 100;
+    //public int maxLeaves = 100;
     public int currentLeaves;
 
     public TeaLeafBar teaLeafBar;
@@ -13,7 +13,7 @@ public class PlayerTea : MonoBehaviour
     void Start()
     {
         currentLeaves = 0;
-        teaLeafBar.SetMaxLeaves(maxLeaves);
+        teaLeafBar.SetMaxLeaves(teaTracker.numberOfTeaLeaves);
     }
 
     // Update is called once per frame
