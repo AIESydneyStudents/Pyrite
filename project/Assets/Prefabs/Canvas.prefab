@@ -2906,6 +2906,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0.0050507
       objectReference: {fileID: 0}
+    - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1573575600}
+    - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetQuality
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6982469380e5c2841b0c8985a17b069f, type: 3}
 --- !u!114 &7099625142429345416 stripped

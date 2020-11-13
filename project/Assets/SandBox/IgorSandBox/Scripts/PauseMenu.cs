@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         controls = new Controls();
         controls.Enable();
         controls.Player.Pause.performed += Pause_performed;
-        
+
     }
 
     private void Pause_performed(InputAction.CallbackContext obj)
@@ -64,8 +64,6 @@ public class PauseMenu : MonoBehaviour
 
         Time.timeScale = 0.0f;
         gameIsPaused = true;
-
-
     }
 
     public void Resume()
@@ -97,5 +95,10 @@ public class PauseMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(pauseFirstButton);
+    }
+
+    private void OnDestroy()
+    {
+        controls.Player.Pause.performed -= Pause_performed;
     }
 }
