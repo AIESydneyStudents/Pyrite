@@ -44,7 +44,6 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
-        if (GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>() != null)
             gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
