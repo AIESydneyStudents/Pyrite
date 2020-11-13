@@ -18,7 +18,7 @@ MonoBehaviour:
   health: 1
   patrolSpeed: 3
   chaseSpeed: 7
-  detectRange: 7
+  detectRange: 15
   damage: 1
   canGuard: 1
   canPatrol: 0

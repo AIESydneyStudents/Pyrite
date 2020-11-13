@@ -20,6 +20,7 @@ public class EnemyPatrol : MonoBehaviour
     float distance;
     public float accuracy = 0f;
     bool arrived = false;
+    bool alerted = false;
 
     [SerializeField] EnemyData data;
     //private Material myMaterial;
@@ -46,8 +47,8 @@ public class EnemyPatrol : MonoBehaviour
         if (distance < data.detectRange && data.canChase)
         {
             Alert();
-            Invoke("Chase", 1.15f);
-                //Chase();
+            Invoke("Chase", 1f);
+            // Chase();
         }
         else if (data.canPatrol)
         {
@@ -75,7 +76,9 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Alert()
     {
-        anim.Play("Alert");
+        if (alerted == false)
+            anim.Play("Alert");
+        alerted = true;
     }
 
     private void Guard()
@@ -90,6 +93,7 @@ public class EnemyPatrol : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
+            alerted = false;
             //navAgent.SetDestination(transform.position);
 
             var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
@@ -99,10 +103,10 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Chase()
     {
-        //myMaterial.color = Color.red;
-        anim.SetBool("isWalking", true);
-        navAgent.speed = data.chaseSpeed;
-        navAgent.SetDestination(player.transform.position);
+            //myMaterial.color = Color.red;
+            anim.SetBool("isWalking", true);
+            navAgent.speed = data.chaseSpeed;
+            navAgent.SetDestination(player.transform.position);
     }
 
     private void Patrol()
