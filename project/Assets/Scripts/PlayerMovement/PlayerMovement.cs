@@ -88,6 +88,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool doubleJumpActive;
 
+    bool playerAirBound = false;
+
 
 
 
@@ -329,6 +331,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing == true)
             return;
+
         Jump(onEnemyBounceHeight); //player bounces if on enemies head
         foreach (HitEffect hit in hitEffect)
         {
@@ -351,7 +354,15 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
             AudioManager.instance.Stop("Walking");
+            playerAirBound = true;
         }
+
+        if(isGrounded && playerAirBound == true)
+        {
+            AudioManager.instance.Play("PlayerFallImpact");
+            playerAirBound = false;
+        }
+  
 
 
         if (isGroundSlamming)
