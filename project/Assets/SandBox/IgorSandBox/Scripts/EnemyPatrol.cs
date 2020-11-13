@@ -45,8 +45,9 @@ public class EnemyPatrol : MonoBehaviour
         distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance < data.detectRange && data.canChase)
         {
-            Chase();
-
+            Alert();
+            Invoke("Chase", 1.15f);
+                //Chase();
         }
         else if (data.canPatrol)
         {
@@ -72,6 +73,11 @@ public class EnemyPatrol : MonoBehaviour
 
     }
 
+    private void Alert()
+    {
+        anim.Play("Alert");
+    }
+
     private void Guard()
     {
         //myMaterial.color = Color.blue;
@@ -88,23 +94,13 @@ public class EnemyPatrol : MonoBehaviour
 
             var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
-
         }
     }
-
-    public void GuardAndShoot()
-    {
-        var rotation = Quaternion.LookRotation(player.transform.position - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * damping);
-    }
-
 
     private void Chase()
     {
         //myMaterial.color = Color.red;
         anim.SetBool("isWalking", true);
-
-
         navAgent.speed = data.chaseSpeed;
         navAgent.SetDestination(player.transform.position);
     }
