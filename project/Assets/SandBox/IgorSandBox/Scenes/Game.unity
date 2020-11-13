@@ -10227,7 +10227,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
-      objectReference: {fileID: 660482487}
+      objectReference: {fileID: 0}
     - target: {fileID: 3829200088878802327, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -10797,7 +10797,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
-      objectReference: {fileID: 660482487}
+      objectReference: {fileID: 0}
     - target: {fileID: 8356790718824376739, guid: 6982469380e5c2841b0c8985a17b069f,
         type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
@@ -10915,18 +10915,6 @@ PrefabInstance:
       objectReference: {fileID: 417937113}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6982469380e5c2841b0c8985a17b069f, type: 3}
---- !u!114 &660482487 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8855300958136764479, guid: 6982469380e5c2841b0c8985a17b069f,
-    type: 3}
-  m_PrefabInstance: {fileID: 617808268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &660540323 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5956941100869774465, guid: e408b1e1af087104681e04809f2e5498,
@@ -10951,6 +10939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b71f4f290837f48bb2534a9a98a14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partSys: {fileID: 0}
+  button: {fileID: 0}
+  eventSys: {fileID: 0}
 --- !u!1 &746782229
 GameObject:
   m_ObjectHideFlags: 0
@@ -12122,7 +12113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fullScreenToggleBtn: {fileID: 1775869990}
-  resolutionDropdown: {fileID: 660482487}
+  resolutionDropdown: {fileID: 0}
   qualityDropdown: {fileID: 417937113}
   firstButton: {fileID: 755696072}
 --- !u!114 &1464383972

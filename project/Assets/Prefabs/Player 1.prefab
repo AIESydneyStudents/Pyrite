@@ -167,10 +167,10 @@ MonoBehaviour:
   initialGravityValue: -30
   moveSpeed: 10
   jumpForce: 17
-  onEnemyBounceHeight: 15
+  onEnemyBounceHeight: 17
   bouncePadHeight: 30
-  OnFloatPadSpeed: 15
-  wallJumpForce: 15
+  OnFloatPadSpeed: 17
+  wallJumpForce: 17
   slowFallSpeed: 7
   dashSpeed: 100
   dashCooldown: 1
@@ -960,6 +960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: PlayerBody
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046524361146284135, guid: 531377fd5014fbc41989c3ce6a0b9b32,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerTeaString
       objectReference: {fileID: 0}
     - target: {fileID: 8635447229494391580, guid: 531377fd5014fbc41989c3ce6a0b9b32,
         type: 3}

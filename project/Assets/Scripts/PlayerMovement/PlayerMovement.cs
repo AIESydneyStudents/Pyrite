@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private HitEffect[] hitEffect;
 
+    PauseMenu pauseMenu;
+
     //RigidBody and positions for movements
     private Rigidbody rb;
     private Vector3 moveVelocity;
@@ -101,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
         trail = GetComponent<TrailRenderer>();
         hitEffect = GetComponentsInChildren<HitEffect>();
 
+        pauseMenu = FindObjectOfType<PauseMenu>();
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
@@ -231,27 +234,31 @@ public class PlayerMovement : MonoBehaviour
     //gets players moveInput and rotation and stores in moveVelocity
     public void MoveAndRotatePlayer()
     {
-        //get the players direction input
-        var dirMove = Controls.Player.Move.ReadValue<Vector2>();
+        if (pauseMenu.gameIsPaused == true)
+            return;
+        
+            //get the players direction input
+            var dirMove = Controls.Player.Move.ReadValue<Vector2>();
 
-        if (isGrounded == true)
-        {
-            if (dirMove.x != 0 || dirMove.y != 0)
+            if (isGrounded == true)
             {
-                anim.SetBool("isRunning", true);
-                anim.SetBool("isIdle", false);
-                anim.SetBool("isGrapple", false);
+                if (dirMove.x != 0 || dirMove.y != 0)
+                {
+                    anim.SetBool("isRunning", true);
+                    anim.SetBool("isIdle", false);
+                    anim.SetBool("isGrapple", false);
 
 
+                }
+                else
+                {
+                    anim.SetBool("isIdle", true);
+                    anim.SetBool("isRunning", false);
+                    anim.SetBool("isGrapple", false);
+
+                }
             }
-            else
-            {
-                anim.SetBool("isIdle", true);
-                anim.SetBool("isRunning", false);
-                anim.SetBool("isGrapple", false);
-
-            }
-        }
+        
 
         //put players input into a vector 3
         moveVelocity = new Vector3(dirMove.x * moveSpeed, rb.velocity.y, dirMove.y * moveSpeed);
