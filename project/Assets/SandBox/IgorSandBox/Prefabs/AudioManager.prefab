@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 8300000, guid: 366d4f613a3942440b6dde52df7cad49, type: 3}
-    volume: 0.33
+    clip: {fileID: 8300000, guid: 639dcb9fe7f75534d80e5e6c43da47ca, type: 3}
+    volume: 0.82
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -123,14 +123,14 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Walking
-    clip: {fileID: 8300000, guid: 14ecfffa333f1224b87295c1bc942afd, type: 3}
-    volume: 0.47
-    pitch: 3
+    clip: {fileID: 8300000, guid: b9dcaac1488da064faf9770c92534de7, type: 3}
+    volume: 0.2
+    pitch: 2
     loop: 0
     source: {fileID: 0}
   - name: PlayerFallImpact
     clip: {fileID: 8300000, guid: 27d29bed288cd504fb68df268c85b88b, type: 3}
-    volume: 0.47
+    volume: 0
     pitch: 1.94
     loop: 0
     source: {fileID: 0}
