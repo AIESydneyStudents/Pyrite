@@ -10,9 +10,9 @@ public class WinScreen : MonoBehaviour
     //public IgorTeaCount igorTeaCount;
     public GameObject[] star;
 
-    public int firstStarLimit = 33;
-    public int secondStarLimit = 66;
-    public int thirdStarLimit = 80;
+    public int firstStarLimit;
+    public int secondStarLimit;
+    public int thirdStarLimit;
     
 
     private void Start()
@@ -45,7 +45,7 @@ public class WinScreen : MonoBehaviour
             star[0].SetActive(true);
             star[1].SetActive(true);
         }
-        else
+        else if(percentage == 100)
         {
             star[0].SetActive(true);
             star[1].SetActive(true);
