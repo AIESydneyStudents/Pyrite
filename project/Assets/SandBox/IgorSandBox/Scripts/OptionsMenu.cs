@@ -12,9 +12,7 @@ using UnityEngine.InputSystem;
 public class OptionsMenu : MonoBehaviour
 {
     //public AudioMixer AudioMixer;
-    Resolution[] resolutions;
     public Toggle fullScreenToggleBtn;
-    public TMP_Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
     public GameObject firstButton;
 
@@ -23,7 +21,7 @@ public class OptionsMenu : MonoBehaviour
     {
         SetButton();
 
-        List<string> options = new List<string>();
+        //List<string> options = new List<string>();
 
         fullScreenToggleBtn.isOn = GamePrefs.IsFullscreen;
 

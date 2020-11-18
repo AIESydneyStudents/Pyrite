@@ -5978,7 +5978,7 @@ PrefabInstance:
     - target: {fileID: 1889536876766009872, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.025765268
+      value: 0.002930284
       objectReference: {fileID: 0}
     - target: {fileID: 3198578417984694275, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
@@ -42295,7 +42295,7 @@ PrefabInstance:
     - target: {fileID: 1889536876766009872, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.027682591
+      value: 0.009019819
       objectReference: {fileID: 0}
     - target: {fileID: 3198578417984694275, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
@@ -47299,7 +47299,7 @@ PrefabInstance:
     - target: {fileID: 1889536876766009872, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.049058717
+      value: 0.018127685
       objectReference: {fileID: 0}
     - target: {fileID: 3198578417984694275, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
@@ -47656,7 +47656,7 @@ PrefabInstance:
     - target: {fileID: 1889536876766009872, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.02646792
+      value: 0.008018456
       objectReference: {fileID: 0}
     - target: {fileID: 3198578417984694275, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
@@ -59606,6 +59606,12 @@ PrefabInstance:
       propertyPath: startpos
       value: 
       objectReference: {fileID: 1186867307}
+    - target: {fileID: 107472363162059953, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
+        type: 3}
+      propertyPath: stringMaterial
+      value: 
+      objectReference: {fileID: 6271573414225017425, guid: 531377fd5014fbc41989c3ce6a0b9b32,
+        type: 3}
     - target: {fileID: 107472363162059955, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65308,11 +65314,6 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1464240475}
-    - target: {fileID: 1134288494190616524, guid: 7757228fc7bc06e468bf9029305ebe64,
-        type: 3}
-      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: SpawnTeaCollectable
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7757228fc7bc06e468bf9029305ebe64, type: 3}
 --- !u!43 &1164182442
@@ -104336,7 +104337,7 @@ PrefabInstance:
     - target: {fileID: 1889536876766009872, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.028150283
+      value: 0.008891548
       objectReference: {fileID: 0}
     - target: {fileID: 3198578417984694275, guid: 28a4d3761829c0f46b8e74f857106d8b,
         type: 3}

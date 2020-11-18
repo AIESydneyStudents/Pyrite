@@ -17,12 +17,17 @@ public class SaveLoadGameData : MonoBehaviour
 
     private GameObject playerBody;
 
+    private GameObject playerString;
+
+    [SerializeField] Material stringMaterial;
+
     private void Awake()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         teaTracker = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TeaTracker>();
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         player = GameObject.FindGameObjectWithTag("Player");
+        playerString = GameObject.FindGameObjectWithTag("PlayerTeaString");
 
         playerBody = GameObject.FindGameObjectWithTag("PlayerBody");
        
@@ -48,6 +53,9 @@ public class SaveLoadGameData : MonoBehaviour
 
             gameMaster.lastCheckPointPos = startpos.position;
             player.transform.position = gameMaster.lastCheckPointPos;
+
+            playerString.GetComponent<Renderer>().material = stringMaterial;
+
         }
         else if (gameMaster.playerLives >= 0)
         {
@@ -83,6 +91,8 @@ public class SaveLoadGameData : MonoBehaviour
             playerMovement.canWallJump = data.canWallJump;
             playerMovement.canGroundSlam = data.canGroundSlam;
             playerMovement.canGrapple = data.canGrapple;
+
+            playerString.GetComponent<Renderer>().material = gameMaster.material;
         }
     }
     void SetPowerUpsFalse()

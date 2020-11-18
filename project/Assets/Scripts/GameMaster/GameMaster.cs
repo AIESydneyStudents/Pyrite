@@ -13,6 +13,7 @@ public class GameMaster : MonoBehaviour
     public Transform playerStartPos;
     public string savedScene;
     public float playerBodySize;
+    public Material material;
 
 
     private void Awake()

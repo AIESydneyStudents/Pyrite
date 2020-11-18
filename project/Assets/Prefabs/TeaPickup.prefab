@@ -86,8 +86,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 9017704129530995168, guid: b2a19dcad9a392240ae3c1714340c833,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: SpawnTeaCollectable
         m_Mode: 1
         m_Arguments:
