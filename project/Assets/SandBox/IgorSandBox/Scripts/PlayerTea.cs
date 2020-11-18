@@ -6,15 +6,16 @@ public class PlayerTea : MonoBehaviour
 {
     public TeaTracker teaTracker;
     public int maxLeaves = 100;
+    public int minLeaves = 0;
     public int currentLeaves;
     public TeaLeafBar teaLeafBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentLeaves = 0;
+        currentLeaves = minLeaves;
         teaLeafBar.SetMaxLeaves(maxLeaves);
-        teaLeafBar.SetTeaAmount(0);
+        teaLeafBar.SetTeaAmount(minLeaves);
     }
 
     // Update is called once per frame
