@@ -18,9 +18,4 @@ public class SetFirstButton : MonoBehaviour
         SetButton();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
