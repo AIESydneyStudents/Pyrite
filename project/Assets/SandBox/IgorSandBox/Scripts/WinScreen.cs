@@ -27,11 +27,11 @@ public class WinScreen : MonoBehaviour
 
     public void YouWin()
     {
-        int leavesLeft = GameObject.FindGameObjectsWithTag("TeaCollectable").Length;
+       // int leavesLeft = GameObject.FindGameObjectsWithTag("TeaCollectable").Length;
 
         int leavesCollected = teaTracker.teaCollected;
 
-        float percentage = (float)leavesCollected / (float)leavesLeft * 100f;
+        float percentage = (float)leavesCollected / (float)teaTracker.numberOfTeaLeaves * 100f;
 
         teaScoreTxt.text = "YOU WIN!";
 
