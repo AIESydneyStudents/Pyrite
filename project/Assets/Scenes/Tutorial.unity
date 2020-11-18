@@ -5908,7 +5908,7 @@ PrefabInstance:
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.584488
       objectReference: {fileID: 0}
     - target: {fileID: 1582747416708137453, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -5993,7 +5993,7 @@ PrefabInstance:
     - target: {fileID: 4872897911334049502, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.584583
+      value: 62.584488
       objectReference: {fileID: 0}
     - target: {fileID: 4872897911334049503, guid: 4d7685d4d91a3ca4da6637f2ea0fecae,
         type: 3}
@@ -8203,6 +8203,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374bcc4422a23cf45bc73419f2c2c035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1026732586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3460426745206511168, guid: 56a6b10070451304797eb411feb2ce08,
+    type: 3}
+  m_PrefabInstance: {fileID: 1553588009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074d43f848eb69f4ba964616ecc8fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1037027040
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +8416,10 @@ PrefabInstance:
       propertyPath: rHeart
       value: 
       objectReference: {fileID: 680332438}
+    - target: {fileID: 1131837722, guid: 0b0d9c4afd9f1504981b3ba0a4b21390, type: 3}
+      propertyPath: teaLeafBar
+      value: 
+      objectReference: {fileID: 1026732586}
     - target: {fileID: 107472363162059953, guid: 0b0d9c4afd9f1504981b3ba0a4b21390,
         type: 3}
       propertyPath: startpos
