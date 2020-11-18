@@ -79,6 +79,10 @@ public class PlayerMovement : MonoBehaviour
     public bool canGroundSlam = false;
     public bool canGrapple = false;
 
+    public bool jumpImg = false;
+    public bool swingImg = false;
+    public bool dashImg = false;
+
     //If Player is interacting with objects change values true. triggered on items collided with
     private bool onLeftWallJump = false;
     private bool onRightWallJump = false;
@@ -310,6 +314,15 @@ public class PlayerMovement : MonoBehaviour
     public void SetOnLeftWallFalse() => onLeftWallJump = false;     //sets OnLeftWall bool false
     public void SetOnRightWallTrue() => onRightWallJump = true;     //sets OnRightWall bool true
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
+
+    public void SetJumpImgTrue() => jumpImg = true;
+    public void SetJumpImgFalse() => jumpImg = false;
+    public void SetSwingImgTrue() => swingImg = true;
+    public void SetSwingImgFalse() => swingImg = false;
+    public void SetDashImgTrue() => dashImg = true;
+    public void SetDashImgFalse() => dashImg = false;
+
+
 
 
     public void OnBouncePad()

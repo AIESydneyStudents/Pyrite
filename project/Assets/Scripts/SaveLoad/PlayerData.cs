@@ -23,6 +23,10 @@ public class PlayerData
     public bool canGrapple;
     public string savedScene;
 
+    public bool jumpImg;
+    public bool swingImg;
+    public bool dashImg;
+
 
     public PlayerData(GameMaster gameMaster, TeaTracker teaTracker, PlayerMovement playerMovement)
     {
@@ -46,6 +50,10 @@ public class PlayerData
         canWallJump = playerMovement.canWallJump;
         canGroundSlam = playerMovement.canGroundSlam;
         canGrapple = playerMovement.canGrapple;
+
+        jumpImg = playerMovement.jumpImg;
+        swingImg = playerMovement.swingImg;
+        dashImg = playerMovement.dashImg;
 
 
     }

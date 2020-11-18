@@ -21,6 +21,11 @@ public class SaveLoadGameData : MonoBehaviour
 
     [SerializeField] Material stringMaterial;
 
+    public GameObject jumpImg;
+    public GameObject swingImg;
+    public GameObject dashImg;
+
+
     private void Awake()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
@@ -34,6 +39,7 @@ public class SaveLoadGameData : MonoBehaviour
 
         GameEvents.SaveInitiated += Save;
         Load();
+
 
         if (gameMaster.playerLives < 0)
         {
@@ -61,6 +67,24 @@ public class SaveLoadGameData : MonoBehaviour
         {
             player.transform.position = gameMaster.lastCheckPointPos;
         }
+    }
+
+    private void Update()
+    {
+        if (playerMovement.jumpImg == true)
+            jumpImg.SetActive(true);
+        else
+            jumpImg.SetActive(false);
+
+        if (playerMovement.swingImg == true)
+            swingImg.SetActive(true);
+        else
+            swingImg.SetActive(false);
+
+        if (playerMovement.dashImg == true)
+            dashImg.SetActive(true);
+        else
+            dashImg.SetActive(false);
     }
 
 
@@ -92,6 +116,10 @@ public class SaveLoadGameData : MonoBehaviour
             playerMovement.canGroundSlam = data.canGroundSlam;
             playerMovement.canGrapple = data.canGrapple;
 
+            playerMovement.jumpImg = data.jumpImg;
+            playerMovement.swingImg = data.swingImg;
+            playerMovement.dashImg = data.dashImg;
+
             playerString.GetComponent<Renderer>().material = gameMaster.material;
         }
     }
@@ -105,6 +133,10 @@ public class SaveLoadGameData : MonoBehaviour
         playerMovement.canWallJump = false;
         playerMovement.canGroundSlam = false;
         playerMovement.canGrapple = false;
+
+        playerMovement.jumpImg = false;
+        playerMovement.swingImg = false;
+        playerMovement.dashImg = false;
     }
     public void DeleteFiles()
     {
