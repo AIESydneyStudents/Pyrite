@@ -15,6 +15,11 @@ public class PowerUp : MonoBehaviour
     public bool canGroundSlam;
     public bool canGrapple;
 
+    public bool jumpImg;
+    public bool swingImg;
+    public bool dashImg;
+
+
     void Start()
     {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -29,5 +34,13 @@ public class PowerUp : MonoBehaviour
         playerMovement.canWallJump = canWallJump;
         playerMovement.canGroundSlam = canGroundSlam;
         playerMovement.canGrapple = canGrapple;
+
+        playerMovement.jumpImg = jumpImg;
+        playerMovement.swingImg = jumpImg;
+        playerMovement.dashImg = jumpImg;
+
+
+
+
     }
 }

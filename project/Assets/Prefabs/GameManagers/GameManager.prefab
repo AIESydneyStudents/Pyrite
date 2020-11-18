@@ -76,9 +76,15 @@ MonoBehaviour:
     canGroundSlam: 0
     canGrapple: 0
     savedScene: 
+    jumpImg: 0
+    swingImg: 0
+    dashImg: 0
   startpos: {fileID: 0}
   stringMaterial: {fileID: 6271573414225017425, guid: 531377fd5014fbc41989c3ce6a0b9b32,
     type: 3}
+  jumpImg: {fileID: 0}
+  swingImg: {fileID: 0}
+  dashImg: {fileID: 0}
 --- !u!114 &5145518656214620036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +124,9 @@ MonoBehaviour:
     canGroundSlam: 0
     canGrapple: 0
     savedScene: 
+    jumpImg: 0
+    swingImg: 0
+    dashImg: 0
   teaCountTxt: {fileID: 0}
   numberOfTeaLeaves: 0
 --- !u!114 &822186547
