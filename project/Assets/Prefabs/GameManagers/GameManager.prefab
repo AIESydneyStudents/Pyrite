@@ -76,6 +76,8 @@ MonoBehaviour:
     canGrapple: 0
     savedScene: 
   startpos: {fileID: 0}
+  stringMaterial: {fileID: 6271573414225017425, guid: 531377fd5014fbc41989c3ce6a0b9b32,
+    type: 3}
 --- !u!114 &5145518656214620036
 MonoBehaviour:
   m_ObjectHideFlags: 0
