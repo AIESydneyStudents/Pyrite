@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 220311468}
   - component: {fileID: 822186547}
   - component: {fileID: 822186548}
+  - component: {fileID: 1131837722}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -148,3 +149,18 @@ MonoBehaviour:
   lHeart: {fileID: 0}
   mHeart: {fileID: 0}
   rHeart: {fileID: 0}
+--- !u!114 &1131837722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107472363162059965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b55fe30d7b14d4f85d589f9a07908b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teaTracker: {fileID: 220311468}
+  currentLeaves: 0
+  teaLeafBar: {fileID: 0}
