@@ -46,13 +46,13 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 639dcb9fe7f75534d80e5e6c43da47ca, type: 3}
-    volume: 0.82
+    volume: 0.9
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.1
+    volume: 0.9
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CheckPoint
     clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
-    volume: 0.3
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: JumpOnEnemyHead
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.1
+    volume: 0.9
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: DashSlamWhoosh
     clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.474
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -124,14 +124,14 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Walking
     clip: {fileID: 8300000, guid: b9dcaac1488da064faf9770c92534de7, type: 3}
-    volume: 0.2
+    volume: 0.1
     pitch: 2
     loop: 0
     source: {fileID: 0}
   - name: PlayerFallImpact
-    clip: {fileID: 8300000, guid: 27d29bed288cd504fb68df268c85b88b, type: 3}
-    volume: 0
-    pitch: 1.94
+    clip: {fileID: 8300000, guid: 6711e04750a07b04c8dd2b13768c281a, type: 3}
+    volume: 1
+    pitch: 3
     loop: 0
     source: {fileID: 0}
   mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}
