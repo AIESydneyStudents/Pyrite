@@ -54,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("GROUND SLAM VARIABLES")]
     [SerializeField] float groundSlamGravityValue = -200f;
     private Vector3 groundSlamGravity;
+    private Vector3 wallGrabGravity;
+    [SerializeField] float wallGrabGravityValue = -10f;
     [HideInInspector]
     public bool isGroundSlamming = false;
 
@@ -113,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
+        wallGrabGravity = new Vector3(0, wallGrabGravityValue, 0);
 
         //get access to input manager
         //controls = new Controls();
@@ -362,6 +365,16 @@ public class PlayerMovement : MonoBehaviour
     {
         //check if player is on ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (onLeftWallJump == true || onRightWallJump == true)
+        {
+            Physics.gravity = wallGrabGravity;
+            anim.Play("Wallgrab");
+        }
+        else if(!isGroundSlamming)
+            Physics.gravity = initalGravity;
+
+
 
         if (isGrounded == false)
         {
