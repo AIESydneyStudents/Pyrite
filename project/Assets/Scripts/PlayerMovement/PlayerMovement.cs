@@ -366,11 +366,17 @@ public class PlayerMovement : MonoBehaviour
         //check if player is on ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if (onLeftWallJump == true || onRightWallJump == true)
+        if (onLeftWallJump == true)
         {
             Physics.gravity = wallGrabGravity;
-            anim.Play("Wallgrab");
+            anim.Play("Right_Grab");
         }
+        else if (onRightWallJump == true)
+        {
+            Physics.gravity = wallGrabGravity;
+            anim.Play("Left_Grab");
+        }
+
         else if(!isGroundSlamming)
             Physics.gravity = initalGravity;
 

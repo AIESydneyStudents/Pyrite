@@ -145,7 +145,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234339303212231272}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1445c2d74f168334495e49c74dc767be, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -170,13 +170,14 @@ MonoBehaviour:
   onEnemyBounceHeight: 17
   bouncePadHeight: 30
   OnFloatPadSpeed: 17
-  wallJumpForce: 17
+  wallJumpForce: 15
   slowFallSpeed: 7
   dashSpeed: 100
   dashCooldown: 1
   dashTime: 0.1
   isDashing: 0
   groundSlamGravityValue: -200
+  wallGrabGravityValue: -10
   isGroundSlamming: 0
   groundMask:
     serializedVersion: 2
@@ -194,6 +195,9 @@ MonoBehaviour:
   canWallJump: 0
   canGroundSlam: 0
   canGrapple: 0
+  jumpImg: 0
+  swingImg: 0
+  dashImg: 0
 --- !u!114 &8339336167650096539
 MonoBehaviour:
   m_ObjectHideFlags: 0
