@@ -170,14 +170,13 @@ MonoBehaviour:
   onEnemyBounceHeight: 17
   bouncePadHeight: 30
   OnFloatPadSpeed: 17
-  wallJumpForce: 15
+  wallJumpForce: 17
   slowFallSpeed: 7
   dashSpeed: 100
   dashCooldown: 1
   dashTime: 0.1
   isDashing: 0
   groundSlamGravityValue: -200
-  wallGrabGravityValue: -10
   isGroundSlamming: 0
   groundMask:
     serializedVersion: 2
