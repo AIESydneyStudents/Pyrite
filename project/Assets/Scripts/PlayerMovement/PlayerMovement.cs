@@ -54,8 +54,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("GROUND SLAM VARIABLES")]
     [SerializeField] float groundSlamGravityValue = -200f;
     private Vector3 groundSlamGravity;
-    private Vector3 wallGrabGravity;
-    [SerializeField] float wallGrabGravityValue = -10f;
+    //private Vector3 wallGrabGravity;
+    //[SerializeField] float wallGrabGravityValue = -10f;
     [HideInInspector]
     public bool isGroundSlamming = false;
 
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
-        wallGrabGravity = new Vector3(0, wallGrabGravityValue, 0);
+        //wallGrabGravity = new Vector3(0, wallGrabGravityValue, 0);
 
         //get access to input manager
         //controls = new Controls();
@@ -267,7 +267,6 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("isIdle", true);
                 anim.SetBool("isRunning", false);
                 anim.SetBool("isGrapple", false);
-
             }
         }
 
@@ -368,12 +367,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (onLeftWallJump == true)
         {
-            Physics.gravity = wallGrabGravity;
+           //Physics.gravity = wallGrabGravity;
             anim.Play("Right_Grab");
         }
         else if (onRightWallJump == true)
         {
-            Physics.gravity = wallGrabGravity;
+            //Physics.gravity = wallGrabGravity;
             anim.Play("Left_Grab");
         }
 
@@ -395,8 +394,6 @@ public class PlayerMovement : MonoBehaviour
             playerAirBound = false;
         }
   
-
-
         if (isGroundSlamming)
         {
             if (isGrounded)
