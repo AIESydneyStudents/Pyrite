@@ -6,8 +6,8 @@
 
 using UnityEngine;
 
-[HelpURL("https://nvjob.github.io/unity/nvjob-simple-water-shaders")]
-[AddComponentMenu("#NVJOB/Simple Water Shaders")]
+//[HelpURL("https://nvjob.github.io/unity/nvjob-simple-water-shaders")]
+//[AddComponentMenu("#NVJOB/Simple Water Shaders")]
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
