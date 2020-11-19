@@ -50,14 +50,14 @@ public class SimpleWaterShaders : MonoBehaviour
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    void OnEnable()
-    {
-        //--------------
+    //void OnEnable()
+    //{
+    //    //--------------
 
-        if (depthTextureModeOn) Camera.main.depthTextureMode = DepthTextureMode.Depth;
+    //    if (depthTextureModeOn) Camera.main.depthTextureMode = DepthTextureMode.Depth;
 
-        //--------------
-    }
+    //    //--------------
+    //}
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
