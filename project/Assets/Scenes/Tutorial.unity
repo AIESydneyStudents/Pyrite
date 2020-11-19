@@ -62501,7 +62501,7 @@ MonoBehaviour:
   winScreen: {fileID: 1749316803}
   firstStarLimit: 8
   secondStarLimit: 15
-  thirdStarLimit: 20
+  thirdStarLimit: 24
   slider: {fileID: 491739299}
   gradient:
     serializedVersion: 2
