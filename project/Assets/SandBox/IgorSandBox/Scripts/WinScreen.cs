@@ -23,6 +23,8 @@ public class WinScreen : MonoBehaviour
     private void Start()
     { 
         slider.value = 0;
+        slider.maxValue = teaTracker.numberOfTeaLeaves;
+        fill.color = gradient.Evaluate(1f);
         teaTracker = FindObjectOfType<TeaTracker>();
 
         star[0].SetActive(false);
@@ -34,21 +36,21 @@ public class WinScreen : MonoBehaviour
     {
         int leavesCollected = teaTracker.teaCollected;
 
-        float percentage = (float)leavesCollected / (float)teaTracker.numberOfTeaLeaves * 100f;
+       // float percentage = (float)leavesCollected / (float)teaTracker.numberOfTeaLeaves * 100f;
 
         teaScoreTxt.text = "YOU WIN!";
 
 
-        if (percentage >= firstStarLimit && percentage < secondStarLimit)
+        if (leavesCollected >= firstStarLimit && leavesCollected < secondStarLimit)
         {
             star[0].SetActive(true);
         }
-        else if (percentage >= secondStarLimit && percentage < thirdStarLimit)
+        else if (leavesCollected >= secondStarLimit && leavesCollected < thirdStarLimit)
         {
             star[0].SetActive(true);
             star[1].SetActive(true);
         }
-        else if (percentage == 100)
+        else if (leavesCollected == teaTracker.numberOfTeaLeaves)
         {
             star[0].SetActive(true);
             star[1].SetActive(true);
@@ -57,13 +59,13 @@ public class WinScreen : MonoBehaviour
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (winScreen.activeSelf == true)
         {
             if (slider.value < teaTracker.teaCollected)
             {
-                slider.value = slider.value + (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + 0.5f; // (teaTracker.teaCollected * Time.deltaTime);
                 fill.color = gradient.Evaluate(slider.normalizedValue);
             }
         }
