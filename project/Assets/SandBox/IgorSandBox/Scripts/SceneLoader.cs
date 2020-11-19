@@ -101,7 +101,7 @@ public class SceneLoader : MonoBehaviour
     IEnumerator LoadScene(string scene)
     {
         if (SceneManager.GetActiveScene().name == Level_01 || SceneManager.GetActiveScene().name == tutorialScene)
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(0);
 
         if (SceneManager.GetActiveScene().name == mainMenu)
             yield return new WaitForSeconds(2.8f);
