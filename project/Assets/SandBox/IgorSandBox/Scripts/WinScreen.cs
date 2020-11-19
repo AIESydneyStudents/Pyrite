@@ -45,7 +45,7 @@ public class WinScreen : MonoBehaviour
         {
             star[0].SetActive(true);
         }
-        else if (leavesCollected >= secondStarLimit && leavesCollected < thirdStarLimit)
+        else if (leavesCollected >= secondStarLimit && leavesCollected <= thirdStarLimit)
         {
             star[0].SetActive(true);
             star[1].SetActive(true);
