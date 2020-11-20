@@ -11,7 +11,7 @@ public class WinScreen : MonoBehaviour
     public TeaTracker teaTracker;
     public GameObject[] star;
     public GameObject winScreen;
-    
+    int teaCollected;
 
     public int firstStarLimit;
     public int secondStarLimit;
@@ -25,6 +25,7 @@ public class WinScreen : MonoBehaviour
     { 
         slider.value = 0;
         slider.maxValue = teaTracker.numberOfTeaLeaves;
+        
         fill.color = gradient.Evaluate(1f);
         teaTracker = FindObjectOfType<TeaTracker>();
 
@@ -62,17 +63,23 @@ public class WinScreen : MonoBehaviour
 
     //    }
     //}
-
+    public void GetTeaAmount()
+    {
+        teaCollected = teaTracker.teaCollected;
+    }
 
 
     private void FixedUpdate()
     {
         if (winScreen.activeSelf == true)
         {
-            if (slider.value < teaTracker.teaCollected)
+            if (slider.value < teaCollected)
             {
-                slider.value = slider.value + 0.2f; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + 1; // (teaTracker.teaCollected * Time.deltaTime);
+
+                teaTracker.teaCollected = teaTracker.teaCollected - 1;
                 fill.color = gradient.Evaluate(slider.normalizedValue);
+                
                 int val = (int)slider.value;
                 teaScoreTxt.text = "Leaves collected: " + val.ToString();
 
