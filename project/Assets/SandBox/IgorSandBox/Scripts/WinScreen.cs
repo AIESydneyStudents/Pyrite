@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class WinScreen : MonoBehaviour
 {
@@ -32,26 +33,36 @@ public class WinScreen : MonoBehaviour
         star[2].SetActive(false);
     }
 
-    public void YouWin()
+    IEnumerator ShowStars()
     {
         int leavesCollected = teaTracker.teaCollected;
 
         if (leavesCollected >= firstStarLimit && leavesCollected < secondStarLimit)
         {
-            star[0].SetActive(true);
+           
+                star[0].SetActive(true);
+            
         }
         else if (leavesCollected >= secondStarLimit && leavesCollected <= thirdStarLimit)
         {
             star[0].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
             star[1].SetActive(true);
         }
         else if (leavesCollected == teaTracker.numberOfTeaLeaves)
         {
             star[0].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+
             star[1].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+
             star[2].SetActive(true);
+            yield return new WaitForSeconds(1.0f);
+
         }
     }
+
 
 
     private void FixedUpdate()
@@ -66,7 +77,7 @@ public class WinScreen : MonoBehaviour
 
                 if (slider.value >= teaTracker.teaCollected)
                 {
-                    YouWin();
+                    StartCoroutine(ShowStars());
                 }
             }
             
