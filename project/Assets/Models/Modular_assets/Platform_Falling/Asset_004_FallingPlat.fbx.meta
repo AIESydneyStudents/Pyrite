@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Platform_Falling_MAT
+    second: {fileID: 2100000, guid: ddc8f4c831c41a74597e6fd121ed6b0b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
