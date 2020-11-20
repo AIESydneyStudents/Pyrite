@@ -15,6 +15,7 @@ TagManager:
   - TeaAnimSpawn
   - GameOverPanel
   - PlayerTeaString
+  - VirCam
   layers:
   - Default
   - TransparentFX
