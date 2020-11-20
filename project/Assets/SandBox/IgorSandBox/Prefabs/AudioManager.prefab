@@ -52,73 +52,73 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.9
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: TeaCollected
     clip: {fileID: 8300000, guid: 2c8587b3d20314f4b9e1ef411d660d8f, type: 3}
-    volume: 0.1
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MarshmellowPad
     clip: {fileID: 8300000, guid: 0461163ee7e3fa84693f087a6f111df0, type: 3}
-    volume: 0.474
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PlayerDeath
     clip: {fileID: 8300000, guid: 1dc44e768e7eba0499ae9a2102c3e00f, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PowerUpCollected
     clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
-    volume: 0.3
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CheckPoint
     clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
-    volume: 1
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: FallingPlatform
     clip: {fileID: 8300000, guid: bec309ce7b6e2a4438f660d08d60c088, type: 3}
-    volume: 0.41
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: JumpOnEnemyHead
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.9
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Slam/Smash
     clip: {fileID: 8300000, guid: bec309ce7b6e2a4438f660d08d60c088, type: 3}
-    volume: 0.474
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: DashSlamWhoosh
     clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: DeathFromFall
     clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.474
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: DeathFromEnemy
     clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.474
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
