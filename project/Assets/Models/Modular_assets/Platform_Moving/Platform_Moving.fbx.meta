@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tealeaf_MAT
+    second: {fileID: 2100000, guid: f436c1ac75dfcf948874d008a2547432, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
