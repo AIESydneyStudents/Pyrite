@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class WinScreen : MonoBehaviour
     public TeaTracker teaTracker;
     public GameObject[] star;
     public GameObject winScreen;
-    int teaCollected;
+    float teaCollected;
 
     public int firstStarLimit;
     public int secondStarLimit;
@@ -20,6 +21,8 @@ public class WinScreen : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+
+    float fillRate;
 
     private void Start()
     { 
@@ -32,6 +35,15 @@ public class WinScreen : MonoBehaviour
         star[0].SetActive(false);
         star[1].SetActive(false);
         star[2].SetActive(false);
+
+        if (SceneManager.GetActiveScene().name == "Level_01")
+            fillRate = 1f;
+
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+            fillRate = 0.2f;
+
+
+
     }
 
     //IEnumerator ShowStars()
@@ -75,9 +87,9 @@ public class WinScreen : MonoBehaviour
         {
             if (slider.value < teaCollected)
             {
-                slider.value = slider.value + 1; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + fillRate; // (teaTracker.teaCollected * Time.deltaTime);
 
-                teaTracker.teaCollected = teaTracker.teaCollected - 1;
+                teaTracker.teaCollected = teaTracker.teaCollected - fillRate;
                 fill.color = gradient.Evaluate(slider.normalizedValue);
                 
                 int val = (int)slider.value;

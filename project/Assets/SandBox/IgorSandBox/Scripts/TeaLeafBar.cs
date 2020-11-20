@@ -9,14 +9,14 @@ public class TeaLeafBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
-    public void SetMaxLeaves(int leaves)
+    public void SetMaxLeaves(float leaves)
     {
         slider.maxValue = leaves;
         slider.value = leaves;
         fill.color = gradient.Evaluate(1f);
     }
 
-    public void SetTeaAmount(int leaves)
+    public void SetTeaAmount(float leaves)
     {
         slider.value = leaves;
         fill.color = gradient.Evaluate(slider.normalizedValue);

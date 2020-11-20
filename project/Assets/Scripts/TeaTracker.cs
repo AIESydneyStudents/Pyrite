@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TeaTracker : MonoBehaviour
 {
-    public int teaCollected;
+    public float teaCollected;
     public PlayerData data;
     public TextMeshProUGUI teaCountTxt;
 
@@ -23,7 +23,8 @@ public class TeaTracker : MonoBehaviour
     }
     private void Update()
     {
-        teaCountTxt.text = teaCollected.ToString() + "/" + numberOfTeaLeaves;
+        int teaVal = (int)teaCollected;
+        teaCountTxt.text = teaVal.ToString() + "/" + numberOfTeaLeaves;
     }
     void Load()
     {
