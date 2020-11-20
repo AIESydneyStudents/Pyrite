@@ -3136,7 +3136,7 @@ PrefabInstance:
     - target: {fileID: 171414585651282161, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -349
+      value: -294
       objectReference: {fileID: 0}
     - target: {fileID: 171414585651282161, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 171414585913295378, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 171414585913295379, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
@@ -3435,7 +3435,7 @@ PrefabInstance:
     - target: {fileID: 2202546758992028584, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2202546759135173304, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}

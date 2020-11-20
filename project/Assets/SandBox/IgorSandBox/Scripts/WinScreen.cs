@@ -33,35 +33,35 @@ public class WinScreen : MonoBehaviour
         star[2].SetActive(false);
     }
 
-    IEnumerator ShowStars()
-    {
-        int leavesCollected = teaTracker.teaCollected;
+    //IEnumerator ShowStars()
+    //{
+    //    int leavesCollected = teaTracker.teaCollected;
 
-        if (leavesCollected >= firstStarLimit && leavesCollected < secondStarLimit)
-        {
+    //    if (leavesCollected >= firstStarLimit && leavesCollected < secondStarLimit)
+    //    {
            
-                star[0].SetActive(true);
+    //            star[0].SetActive(true);
             
-        }
-        else if (leavesCollected >= secondStarLimit && leavesCollected <= thirdStarLimit)
-        {
-            star[0].SetActive(true);
-            yield return new WaitForSeconds(1.0f);
-            star[1].SetActive(true);
-        }
-        else if (leavesCollected == teaTracker.numberOfTeaLeaves)
-        {
-            star[0].SetActive(true);
-            yield return new WaitForSeconds(1.0f);
+    //    }
+    //    else if (leavesCollected >= secondStarLimit && leavesCollected <= thirdStarLimit)
+    //    {
+    //        star[0].SetActive(true);
+    //        yield return new WaitForSeconds(1.0f);
+    //        star[1].SetActive(true);
+    //    }
+    //    else if (leavesCollected == teaTracker.numberOfTeaLeaves)
+    //    {
+    //        star[0].SetActive(true);
+    //        yield return new WaitForSeconds(1.0f);
 
-            star[1].SetActive(true);
-            yield return new WaitForSeconds(1.0f);
+    //        star[1].SetActive(true);
+    //        yield return new WaitForSeconds(1.0f);
 
-            star[2].SetActive(true);
-            yield return new WaitForSeconds(1.0f);
+    //        star[2].SetActive(true);
+    //        yield return new WaitForSeconds(1.0f);
 
-        }
-    }
+    //    }
+    //}
 
 
 
@@ -71,14 +71,22 @@ public class WinScreen : MonoBehaviour
         {
             if (slider.value < teaTracker.teaCollected)
             {
-                slider.value = slider.value + 1f; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + 0.2f; // (teaTracker.teaCollected * Time.deltaTime);
                 fill.color = gradient.Evaluate(slider.normalizedValue);
-                teaScoreTxt.text = "Leaves collected: " + slider.value.ToString();
+                int val = (int)slider.value;
+                teaScoreTxt.text = "Leaves collected: " + val.ToString();
 
-                if (slider.value >= teaTracker.teaCollected)
-                {
-                    StartCoroutine(ShowStars());
-                }
+                //if (slider.value >= teaTracker.teaCollected)
+                //{
+                //    StartCoroutine(ShowStars());
+                //}
+
+                if (slider.value >= firstStarLimit)
+                    star[0].SetActive(true);
+                if (slider.value >= secondStarLimit)
+                    star[1].SetActive(true);
+                if (slider.value >= thirdStarLimit)
+                    star[2].SetActive(true);
             }
             
         }
