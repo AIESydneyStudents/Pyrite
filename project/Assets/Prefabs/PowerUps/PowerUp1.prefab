@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 96917197}
   - component: {fileID: 96917196}
   - component: {fileID: 96917195}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4770,7 +4770,7 @@ GameObject:
   - component: {fileID: 3188088435716090324}
   - component: {fileID: 1190642472}
   - component: {fileID: 1190642473}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: PowerUp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5099,6 +5099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tealeaf_Base
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6c918b8f740535f4f9679323437a133b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c918b8f740535f4f9679323437a133b, type: 3}

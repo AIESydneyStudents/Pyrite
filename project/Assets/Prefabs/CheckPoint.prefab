@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5750607901892659588}
   - component: {fileID: 6762366346721687969}
   - component: {fileID: 5750607901892659585}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +59,9 @@ MonoBehaviour:
     canGroundSlam: 0
     canGrapple: 0
     savedScene: 
+    jumpImg: 0
+    swingImg: 0
+    dashImg: 0
 --- !u!65 &5750607901892659585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72,6 +75,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.4585724, y: 3.5233278, z: 5.5566254}
   m_Center: {x: 0.07524872, y: -0.4383359, z: 0.054473877}
+--- !u!65 &815242615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172669272012150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 895.28503, y: 499.92667, z: 1122.4374}
+  m_Center: {x: 5.5770874, y: 0, z: 10.073519}
 --- !u!95 &1990741147
 Animator:
   serializedVersion: 3
@@ -91,19 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &815242615
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172669272012150}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 895.28503, y: 499.92667, z: 1122.4374}
-  m_Center: {x: 5.5770874, y: 0, z: 10.073519}
 --- !u!114 &815242610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Asset_003_Checkpoint1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 86a9209be08aef947adebdc59036fe4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a9209be08aef947adebdc59036fe4a, type: 3}
