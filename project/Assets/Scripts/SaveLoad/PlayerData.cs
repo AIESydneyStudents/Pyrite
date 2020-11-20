@@ -9,7 +9,7 @@ public class PlayerData
 {
     public int PlayerLives;
     public float[] respawnPos;
-    public int teaCollected;
+    public float teaCollected;
 
     public float playersBodySize;
 

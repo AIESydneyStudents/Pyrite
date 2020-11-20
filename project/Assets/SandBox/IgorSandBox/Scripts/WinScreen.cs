@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class WinScreen : MonoBehaviour
     public TeaTracker teaTracker;
     public GameObject[] star;
     public GameObject winScreen;
-    
+    float teaCollected;
 
     public int firstStarLimit;
     public int secondStarLimit;
@@ -21,16 +22,28 @@ public class WinScreen : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    float fillRate;
+
     private void Start()
     { 
         slider.value = 0;
         slider.maxValue = teaTracker.numberOfTeaLeaves;
+        
         fill.color = gradient.Evaluate(1f);
         teaTracker = FindObjectOfType<TeaTracker>();
 
         star[0].SetActive(false);
         star[1].SetActive(false);
         star[2].SetActive(false);
+
+        if (SceneManager.GetActiveScene().name == "Level_01")
+            fillRate = 1f;
+
+        if (SceneManager.GetActiveScene().name == "Tutorial")
+            fillRate = 0.2f;
+
+
+
     }
 
     //IEnumerator ShowStars()
@@ -62,17 +75,23 @@ public class WinScreen : MonoBehaviour
 
     //    }
     //}
-
+    public void GetTeaAmount()
+    {
+        teaCollected = teaTracker.teaCollected;
+    }
 
 
     private void FixedUpdate()
     {
         if (winScreen.activeSelf == true)
         {
-            if (slider.value < teaTracker.teaCollected)
+            if (slider.value < teaCollected)
             {
-                slider.value = slider.value + 0.2f; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + fillRate; // (teaTracker.teaCollected * Time.deltaTime);
+
+                teaTracker.teaCollected = teaTracker.teaCollected - fillRate;
                 fill.color = gradient.Evaluate(slider.normalizedValue);
+                
                 int val = (int)slider.value;
                 teaScoreTxt.text = "Leaves collected: " + val.ToString();
 

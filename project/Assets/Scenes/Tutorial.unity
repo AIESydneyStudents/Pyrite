@@ -64841,7 +64841,7 @@ PrefabInstance:
     - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
         type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: YouWin
+      value: GetTeaAmount
       objectReference: {fileID: 0}
     - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
         type: 3}
