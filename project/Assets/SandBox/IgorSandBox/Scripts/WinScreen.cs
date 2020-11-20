@@ -36,11 +36,6 @@ public class WinScreen : MonoBehaviour
     {
         int leavesCollected = teaTracker.teaCollected;
 
-       // float percentage = (float)leavesCollected / (float)teaTracker.numberOfTeaLeaves * 100f;
-
-        teaScoreTxt.text = "YOU WIN!";
-
-
         if (leavesCollected >= firstStarLimit && leavesCollected < secondStarLimit)
         {
             star[0].SetActive(true);
@@ -65,9 +60,16 @@ public class WinScreen : MonoBehaviour
         {
             if (slider.value < teaTracker.teaCollected)
             {
-                slider.value = slider.value + 0.5f; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + 1f; // (teaTracker.teaCollected * Time.deltaTime);
                 fill.color = gradient.Evaluate(slider.normalizedValue);
+                teaScoreTxt.text = "Leaves collected: " + slider.value.ToString();
+
+                if (slider.value >= teaTracker.teaCollected)
+                {
+                    YouWin();
+                }
             }
+            
         }
     }
 }

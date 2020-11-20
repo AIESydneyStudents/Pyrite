@@ -214,7 +214,6 @@ public class PlayerMovement : MonoBehaviour
                     doubleJumpActive = false;
 
                     anim.Play("Double Jump");
-
                 }
             }
             if (onLeftWallJump && canWallJump)
@@ -367,16 +366,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (onLeftWallJump == true)
         {
-           //Physics.gravity = wallGrabGravity;
-            anim.Play("Right_Grab");
+            if (!isGrounded)
+                anim.Play("Right_Grab");
         }
         else if (onRightWallJump == true)
         {
-            //Physics.gravity = wallGrabGravity;
-            anim.Play("Left_Grab");
+            if (!isGrounded)
+                anim.Play("Left_Grab");
         }
 
-        else if(!isGroundSlamming)
+        else if (!isGroundSlamming)
             Physics.gravity = initalGravity;
 
 
@@ -388,12 +387,12 @@ public class PlayerMovement : MonoBehaviour
             playerAirBound = true;
         }
 
-        if(isGrounded && playerAirBound == true)
+        if (isGrounded && playerAirBound == true)
         {
             AudioManager.instance.Play("PlayerFallImpact");
             playerAirBound = false;
         }
-  
+
         if (isGroundSlamming)
         {
             if (isGrounded)

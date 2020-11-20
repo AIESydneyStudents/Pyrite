@@ -62652,6 +62652,11 @@ PrefabInstance:
       propertyPath: sounds.Array.data[14].pitch
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4673083248745779341, guid: b479cab1985c2ae45a75549646c443d5,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 366d4f613a3942440b6dde52df7cad49, type: 3}
     - target: {fileID: 4673083248745779343, guid: b479cab1985c2ae45a75549646c443d5,
         type: 3}
       propertyPath: m_Name
@@ -62806,7 +62811,7 @@ PrefabInstance:
     - target: {fileID: 5511896438986474658, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5511896439130652080, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
@@ -62841,7 +62846,7 @@ PrefabInstance:
     - target: {fileID: 5511896439130652082, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 43
+      value: 139
       objectReference: {fileID: 0}
     - target: {fileID: 5511896439130652082, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
@@ -62861,7 +62866,7 @@ PrefabInstance:
     - target: {fileID: 5805079070622296059, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -61.00003
+      value: -349
       objectReference: {fileID: 0}
     - target: {fileID: 5805079070622296059, guid: 56a6b10070451304797eb411feb2ce08,
         type: 3}
