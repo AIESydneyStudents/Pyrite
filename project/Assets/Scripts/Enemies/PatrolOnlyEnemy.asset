@@ -20,6 +20,7 @@ MonoBehaviour:
   chaseSpeed: 6
   detectRange: 10
   damage: 1
-  canChase: 0
+  canGuard: 0
   canPatrol: 1
+  canChase: 0
   canShoot: 0
