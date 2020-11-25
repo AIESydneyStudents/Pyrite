@@ -18,4 +18,9 @@ public class SetFirstButton : MonoBehaviour
         SetButton();
     }
 
+    private void Update()
+    {
+       if( EventSystem.current.currentSelectedGameObject == null)
+            EventSystem.current.SetSelectedGameObject(firstButton);
+    }
 }
