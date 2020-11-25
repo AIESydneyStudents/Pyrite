@@ -45,20 +45,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 8300000, guid: 639dcb9fe7f75534d80e5e6c43da47ca, type: 3}
-    volume: 0.9
+    clip: {fileID: 8300000, guid: 366d4f613a3942440b6dde52df7cad49, type: 3}
+    volume: 0.815
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.3
+    volume: 0.88
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: TeaCollected
     clip: {fileID: 8300000, guid: 2c8587b3d20314f4b9e1ef411d660d8f, type: 3}
-    volume: 0.3
+    volume: 0.095
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CheckPoint
     clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
-    volume: 0.3
+    volume: 0.368
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: JumpOnEnemyHead
     clip: {fileID: 8300000, guid: 7aeca9724be1a2440ace3fc01b096c46, type: 3}
-    volume: 0.3
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -111,14 +111,14 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: DeathFromFall
-    clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: b744a30b0ca79264da919c33ef4ebc40, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: DeathFromEnemy
-    clip: {fileID: 8300000, guid: 7f0633ad73b1f5d4abbc637893ed5812, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: b744a30b0ca79264da919c33ef4ebc40, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   - name: PlayerFallImpact
     clip: {fileID: 8300000, guid: 6711e04750a07b04c8dd2b13768c281a, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}
