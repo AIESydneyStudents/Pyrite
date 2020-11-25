@@ -61,7 +61,6 @@ public class SaveLoadGameData : MonoBehaviour
             player.transform.position = gameMaster.lastCheckPointPos;
 
             playerString.GetComponent<Renderer>().material = stringMaterial;
-
         }
         else if (gameMaster.playerLives >= 0)
         {
@@ -100,10 +99,6 @@ public class SaveLoadGameData : MonoBehaviour
         {
             data = SaveLoad.Load<PlayerData>("PlayerData");
             gameMaster.lastCheckPointPos.x = data.respawnPos[0];
-            gameMaster.lastCheckPointPos.y = data.respawnPos[1];
-            gameMaster.lastCheckPointPos.z = data.respawnPos[2];
-
-            playerBody.transform.localScale = new Vector3(15, 15, data.playersBodySize);
 
             gameMaster.savedScene = data.savedScene;
 

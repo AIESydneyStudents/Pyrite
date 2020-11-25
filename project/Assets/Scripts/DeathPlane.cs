@@ -11,6 +11,10 @@ public class DeathPlane : MonoBehaviour
     private Animator anim;
     private Cinemachine.CinemachineVirtualCamera cam;
 
+    public GameObject defaultEyes;
+    public GameObject defaultMouth;
+    public GameObject deathFace;
+
     Controls Controls
     {
         get { return ControlsManager.instance; }
@@ -30,6 +34,9 @@ public class DeathPlane : MonoBehaviour
             AudioManager.instance.Play("DeathFromFall");
             gameMaster.playerLives -= 1;
             Controls.Player.Disable();
+            defaultEyes.SetActive(false);
+            defaultMouth.SetActive(false);
+            deathFace.SetActive(true);
             anim.Play("StarJump");
             player.transform.LookAt(cam.transform);
 
