@@ -99,6 +99,9 @@ public class SaveLoadGameData : MonoBehaviour
         {
             data = SaveLoad.Load<PlayerData>("PlayerData");
             gameMaster.lastCheckPointPos.x = data.respawnPos[0];
+            gameMaster.lastCheckPointPos.y = data.respawnPos[1];
+            gameMaster.lastCheckPointPos.z = data.respawnPos[2];
+
 
             gameMaster.savedScene = data.savedScene;
 
