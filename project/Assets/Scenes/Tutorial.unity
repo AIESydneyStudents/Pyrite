@@ -82313,7 +82313,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 7.26
   m_Range: 8
   m_SpotAngle: 115.48
   m_InnerSpotAngle: 7
@@ -82386,13 +82386,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8054191992361344074}
-  m_LocalRotation: {x: 0.7221084, y: -0.5049323, z: 0.21105193, w: 0.4231549}
+  m_LocalRotation: {x: 0.74389744, y: -0.44358882, z: 0.11225349, w: 0.48707783}
   m_LocalPosition: {x: 2.4, y: 5.97, z: 1.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2251219978652930672}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 124.48599, y: -347.503, z: -283.478}
+  m_LocalEulerAnglesHint: {x: 124.48599, y: -332.081, z: -283.478}
 --- !u!96 &8054191992841960022
 TrailRenderer:
   serializedVersion: 2
