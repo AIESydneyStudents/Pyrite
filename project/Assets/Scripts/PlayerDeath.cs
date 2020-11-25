@@ -8,30 +8,72 @@ public class PlayerDeath : MonoBehaviour
     private GameMaster gameMaster;
     private GameObject player;
     private PlayerMovement playerMovement;
+    private Rigidbody rb;
+
+    private Animator anim;
+    private Cinemachine.CinemachineVirtualCamera cam;
+
+    public GameObject defaultEyes;
+    public GameObject defaultMouth;
+    public GameObject deathFace;
+
+    Controls Controls
+    {
+        get { return ControlsManager.instance; }
+    }
     private void Start()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        rb = player.GetComponent<Rigidbody>();
+
+        anim = player.GetComponentInChildren<Animator>();
+        cam = GameObject.FindGameObjectWithTag("VirCam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
     }
 
-    public void Death()
+    private void OnTriggerEnter(Collider other)
     {
-        if (playerMovement.isDashing == false)
+        if (other.gameObject == GameObject.FindGameObjectWithTag("Player"))
         {
-            AudioManager.instance.Play("DeathFromEnemy");
-            gameMaster.playerLives -= 1;
-            player.SetActive(false);
-            Invoke("LoadCurrentScene", 2f);
+            if (playerMovement.isDashing == false)
+            {
+                AudioManager.instance.Play("DeathFromFall");
+                gameMaster.playerLives -= 1;
+                Controls.Player.Disable();
+                defaultEyes.SetActive(false);
+                defaultMouth.SetActive(false);
+                deathFace.SetActive(true);
+                anim.Play("StarJump");
+                player.transform.LookAt(cam.transform);
+
+                StartCoroutine(WaitForSeconds());
+
+                if (gameMaster.playerLives >= 0)
+                    Invoke("LoadCurrentScene", 3f);
+                else
+                    Invoke("LoadGameOverScene", 3f);
+            }
         }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+    }
+
+    IEnumerator WaitForSeconds()
+    {
+        rb.velocity = new Vector3(0, 10, 0);
+        player.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(1f);
+        cam.m_LookAt = null;
+        cam.m_Follow = null;
+        rb.velocity = new Vector3(0, -15, 0);
     }
 
     void LoadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    void LoadGameOverScene()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
 }

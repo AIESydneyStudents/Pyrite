@@ -57,7 +57,6 @@ public class DeathPlane : MonoBehaviour
         cam.m_LookAt = null;
         cam.m_Follow = null;
         rb.velocity = new Vector3(0, -15, 0);
-
     }
 
 
