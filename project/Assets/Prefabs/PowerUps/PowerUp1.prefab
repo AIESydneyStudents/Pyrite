@@ -4768,8 +4768,6 @@ GameObject:
   - component: {fileID: 6105558501418613757}
   - component: {fileID: 1723513896027114944}
   - component: {fileID: 3188088435716090324}
-  - component: {fileID: 1190642472}
-  - component: {fileID: 1190642473}
   m_Layer: 12
   m_Name: PowerUp1
   m_TagString: Untagged
@@ -4835,17 +4833,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1723513896027114944}
         m_MethodName: Destroy
         m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1190642472}
-        m_MethodName: AddToCollectedItemSet
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4970,30 +4957,6 @@ MonoBehaviour:
   jumpImg: 0
   swingImg: 0
   dashImg: 0
---- !u!114 &1190642472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3188088435716090327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1190642473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3188088435716090327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1593886663058765639
 Animator:
   serializedVersion: 3

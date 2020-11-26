@@ -134,4 +134,10 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: WinSound
+    clip: {fileID: 8300000, guid: d8bc8bc7f4ad73742870997e28de629d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}
