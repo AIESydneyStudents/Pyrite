@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstButton: {fileID: 19274846546292671}
---- !u!114 &1553588018
+--- !u!114 &824821061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstButton: {fileID: 19274846198045044}
---- !u!114 &824821061
+--- !u!114 &1553588018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3539,6 +3539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191475156627303464, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 4098
       objectReference: {fileID: 0}
     - target: {fileID: 1784626959247533524, guid: 7d23d6bcca0a6c54a9edab860fe50e37,
         type: 3}
