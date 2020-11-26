@@ -74,8 +74,12 @@ public class WinScreen : MonoBehaviour
 
                 if (slider.value >= thirdStarLimit)
                     star[2].SetActive(true);
-            }
-            
+            }         
         }
+    }
+
+    public void PlayWinSound()
+    {
+        AudioManager.instance.Play("WinSound");
     }
 }

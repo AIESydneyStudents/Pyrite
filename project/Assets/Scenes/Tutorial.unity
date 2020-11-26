@@ -72731,7 +72731,7 @@ PrefabInstance:
     - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
         type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
         type: 3}
@@ -72818,6 +72818,21 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: PlayWinSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444610994448525814, guid: b52b363f3a191054f8810ed2e9e05292,
+        type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1537486797}
     - target: {fileID: 1444610994448525815, guid: b52b363f3a191054f8810ed2e9e05292,
         type: 3}
       propertyPath: m_Enabled
