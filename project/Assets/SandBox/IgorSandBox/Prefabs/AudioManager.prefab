@@ -140,4 +140,10 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: CoffeeBeanDeath
+    clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   mixer: {fileID: 24300002, guid: 7e90d96030f38644b9b8fc40da60f620, type: 2}

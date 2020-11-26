@@ -352,6 +352,7 @@ public class PlayerMovement : MonoBehaviour
             hit.HitEffectPlay();
         }
         AudioManager.instance.Play("JumpOnEnemyHead");
+        AudioManager.instance.Play("CoffeeBeanDeath");
         anim.Play("Double Jump");
     }
     public void Jump(float jumpHeight)

@@ -131,4 +131,9 @@ public class EnemyPatrol : MonoBehaviour
     {
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(newDirection), Time.deltaTime);
     }
+
+    public void PlayDeathSound()
+    {
+
+    }
 }
