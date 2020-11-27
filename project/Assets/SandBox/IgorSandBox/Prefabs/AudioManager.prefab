@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme
-    clip: {fileID: 8300000, guid: 366d4f613a3942440b6dde52df7cad49, type: 3}
+    clip: {fileID: 8300000, guid: 63813fddf3b321747b54604adc93b8bc, type: 3}
     volume: 0.815
     pitch: 1
     loop: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: CoffeeBeanDeath
-    clip: {fileID: 8300000, guid: b57fa43f79a3f504eaff4636966eebbe, type: 3}
+    clip: {fileID: 8300000, guid: b744a30b0ca79264da919c33ef4ebc40, type: 3}
     volume: 1
     pitch: 1
     loop: 0
