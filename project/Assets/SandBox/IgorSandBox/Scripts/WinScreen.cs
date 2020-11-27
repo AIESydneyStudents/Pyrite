@@ -11,6 +11,7 @@ public class WinScreen : MonoBehaviour
     public TextMeshProUGUI teaScoreTxt;
     public TeaTracker teaTracker;
     public GameObject[] star;
+    public GameObject winTeaCup;
     public GameObject winScreen;
     float teaCollected;
 
@@ -74,7 +75,8 @@ public class WinScreen : MonoBehaviour
 
                 if (slider.value >= thirdStarLimit)
                     star[2].SetActive(true);
-            }         
+            }
+            winTeaCup.SetActive(true);
         }
     }
 
