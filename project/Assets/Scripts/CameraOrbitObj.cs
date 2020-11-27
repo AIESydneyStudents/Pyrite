@@ -7,8 +7,7 @@ public class CameraOrbitObj : MonoBehaviour
     public Transform target;
     public float rotateSpeed;
 
-
-    private void Update()
+    private void FixedUpdate()
     {
         transform.LookAt(target);
         transform.Translate(Vector3.right * rotateSpeed * Time.deltaTime);

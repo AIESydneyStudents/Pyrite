@@ -16,6 +16,7 @@ TagManager:
   - GameOverPanel
   - PlayerTeaString
   - VirCam
+  - Model
   layers:
   - Default
   - TransparentFX
