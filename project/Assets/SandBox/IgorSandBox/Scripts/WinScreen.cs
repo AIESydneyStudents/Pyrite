@@ -11,7 +11,7 @@ public class WinScreen : MonoBehaviour
     public TextMeshProUGUI teaScoreTxt;
     public TeaTracker teaTracker;
     public GameObject[] star;
-    public GameObject winTeaCup;
+    public GameObject[] winTeaCup;
     public GameObject winScreen;
     float teaCollected;
 
@@ -26,16 +26,20 @@ public class WinScreen : MonoBehaviour
     float fillRate;
 
     private void Start()
-    { 
+    {
         slider.value = 0;
         slider.maxValue = teaTracker.numberOfTeaLeaves;
-        
+
         fill.color = gradient.Evaluate(1f);
         teaTracker = FindObjectOfType<TeaTracker>();
 
         star[0].SetActive(false);
         star[1].SetActive(false);
         star[2].SetActive(false);
+
+        winTeaCup[0].SetActive(false);
+        winTeaCup[1].SetActive(false);
+        winTeaCup[2].SetActive(false);
 
         if (SceneManager.GetActiveScene().name == "Level_01")
             fillRate = 1f;
@@ -45,7 +49,7 @@ public class WinScreen : MonoBehaviour
 
     }
 
-    
+
     public void GetTeaAmount()
     {
         teaCollected = teaTracker.teaCollected;
@@ -62,21 +66,30 @@ public class WinScreen : MonoBehaviour
 
                 teaTracker.teaCollected = teaTracker.teaCollected - fillRate;
                 fill.color = gradient.Evaluate(slider.normalizedValue);
-                
+
                 int teaVal = (int)slider.value;
                 teaScoreTxt.text = "Leaves collected: " + teaVal.ToString();
 
 
                 if (slider.value >= firstStarLimit)
+                {
                     star[0].SetActive(true);
+                    winTeaCup[0].SetActive(true);
+                }
 
                 if (slider.value >= secondStarLimit)
+                {
                     star[1].SetActive(true);
+                    winTeaCup[1].SetActive(true);
+                }
 
                 if (slider.value >= thirdStarLimit)
+                {
                     star[2].SetActive(true);
+                    winTeaCup[2].SetActive(true);
+                }
             }
-            winTeaCup.SetActive(true);
+
         }
     }
 
