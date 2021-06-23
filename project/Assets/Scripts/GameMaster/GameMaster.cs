@@ -30,8 +30,8 @@ public class GameMaster : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        if(GameObject.FindGameObjectWithTag("StartPos") != null)
-        playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
+        if (GameObject.FindGameObjectWithTag("StartPos") != null)
+            playerStartPos = GameObject.FindGameObjectWithTag("StartPos").transform;
 
 
         savedScene = "Tutorial";
@@ -43,10 +43,10 @@ public class GameMaster : MonoBehaviour
         }
 
         if (playerStartPos != null)
-        lastCheckPointPos = playerStartPos.position;
+            lastCheckPointPos = playerStartPos.position;
 
         Load();
-       
+
     }
 
     //loads playerData file and passes its value into player lives
@@ -56,7 +56,7 @@ public class GameMaster : MonoBehaviour
         {
             data = SaveLoad.Load<PlayerData>("PlayerData");
             playerLives = data.PlayerLives;
-            savedScene = data.savedScene;           
+            savedScene = data.savedScene;
         }
     }
 

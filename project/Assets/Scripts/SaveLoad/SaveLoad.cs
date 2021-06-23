@@ -46,8 +46,16 @@ public class SaveLoad : MonoBehaviour
     public static void SeriouslyDeleteAllSaveFiles()
     {
         string path = Application.persistentDataPath + "/saves/";
-        DirectoryInfo directory = new DirectoryInfo(path);
-        directory.Delete(true);
-        Directory.CreateDirectory(path);
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+        else
+        {
+            DirectoryInfo directory = new DirectoryInfo(path);
+            directory.Delete(true);
+            Directory.CreateDirectory(path);
+        }
+
     }
 }
