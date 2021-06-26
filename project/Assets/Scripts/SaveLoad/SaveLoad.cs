@@ -45,6 +45,8 @@ public class SaveLoad : MonoBehaviour
     //Deletes all files in saves file
     public static void SeriouslyDeleteAllSaveFiles()
     {
+
+
         string path = Application.persistentDataPath + "/saves/";
         if (!Directory.Exists(path))
         {
@@ -52,9 +54,9 @@ public class SaveLoad : MonoBehaviour
         }
         else
         {
-            DirectoryInfo directory = new DirectoryInfo(path);
-            directory.Delete(true);
-            Directory.CreateDirectory(path);
+            //DirectoryInfo directory = new DirectoryInfo(path);
+            //directory.Delete(true);
+            //Directory.CreateDirectory(path);
         }
 
     }
