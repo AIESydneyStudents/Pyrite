@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   PlayerLives: 3
-  respawnPosX: -100.91077
-  respawnPosY: 42.40702
-  respawnPosZ: -4.7022204
-  teaCollected: 2
+  respawnPosX: 0
+  respawnPosY: 0
+  respawnPosZ: 0
+  teaCollected: 0
   canDoubleJump: 0
   canDash: 0
   canWallJump: 0
   canGroundSlam: 0
   canGrapple: 0
-  savedScene: Level_01
-  hasCheckpoint: 1
+  savedScene: 
+  hasCheckpoint: 0
   jumpImg: 0
   swingImg: 0
   dashImg: 0
