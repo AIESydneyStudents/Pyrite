@@ -8,19 +8,14 @@ public class PlayerSquishedDeath : MonoBehaviour
     public bool touchingWall1;
     public bool touchingWall2;
 
-    private GameMaster gameMaster;
 
-    private void Start()
-    {
-        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
-    }
 
 
     private void Update()
     {
         if (touchingWall1 == true && touchingWall2 == true)
         {
-            gameMaster.playerLives -= 1;
+            //gameMaster.playerLives -= 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

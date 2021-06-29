@@ -18,7 +18,7 @@ public class SceneLoader : MonoBehaviour
 
     public GameObject playFirstButton;
 
-    public PlayerData data;
+    public PlayerData playerData;
 
     public string splashScene;
     public string tutorialScene;
@@ -28,14 +28,13 @@ public class SceneLoader : MonoBehaviour
     public string optionsScene;
     public string creditsScene;
 
-    private GameMaster gameMaster;
+    public GameEvent saveEvent;
+    public GameEvent loadEvent;
+
 
 
     private void Start()
     {
-        if (SaveLoad.SaveExists("PlayerData"))
-            data = SaveLoad.Load<PlayerData>("PlayerData");
-
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(playFirstButton);
@@ -44,7 +43,6 @@ public class SceneLoader : MonoBehaviour
         {
             StartCoroutine(LoadFromSplashScene(mainMenu));
         }
-            gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
     }
 
     public void LoadSplashScene()
@@ -54,21 +52,30 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadTutorialScene()
     {
-        SaveLoad.SeriouslyDeleteAllSaveFiles();
-        gameMaster.playerLives = 3;
+        playerData.PlayerLives = 3;
+        playerData.hasCheckpoint = false;
+        playerData.canDash = false;
+        playerData.canDoubleJump = false;
+        playerData.canGrapple = false;
+        playerData.canGroundSlam = false;
+        playerData.canWallJump = false;
+        playerData.jumpImg = false;
+        playerData.swingImg = false;
+        playerData.dashImg = false;
+        playerData.savedScene = "Tutorial";
+        saveEvent.Raise();
+
         StartCoroutine(LoadScene(tutorialScene));
     }
 
     public void LoadlevelOneScene()
     {
-        gameMaster.playerLives = 3;
         StartCoroutine(LoadScene(Level_01));
     }
 
     public void LoadContinueScene()
     {
-        Debug.Log(gameMaster.savedScene);
-        StartCoroutine(LoadScene(gameMaster.savedScene));
+        StartCoroutine(LoadScene(playerData.savedScene));
     }
 
     public void LoadMainMenu()

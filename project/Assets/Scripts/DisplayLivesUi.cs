@@ -6,53 +6,44 @@ using UnityEngine.UI;
 
 public class DisplayLivesUi : MonoBehaviour
 {
-    private GameMaster gameMaster;
-    // public TextMeshProUGUI playerLivesTxt;
     public Image llHeart;
     public Image lHeart;
     public Image mHeart;
     public Image rHeart;
 
+    public PlayerData playerData;
+
     // Start is called before the first frame update
 
     void Start()
     {
-        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
-
-        if(gameMaster.playerLives == 3)
+        if(playerData.PlayerLives == 3)
         {
             llHeart.enabled = true;
             lHeart.enabled = true;
             mHeart.enabled = true;
             rHeart.enabled = true;
         }
-        if (gameMaster.playerLives == 2)
+        if (playerData.PlayerLives == 2)
         {
             llHeart.enabled = false;
             lHeart.enabled = true;
             mHeart.enabled = true;
             rHeart.enabled = true;
         }
-        if (gameMaster.playerLives == 1)
+        if (playerData.PlayerLives == 1)
         {
             llHeart.enabled = false;
             lHeart.enabled = false;
             mHeart.enabled = true;
             rHeart.enabled = true;
         }
-        if (gameMaster.playerLives == 0)
+        if (playerData.PlayerLives == 0)
         {
             llHeart.enabled = false;
             lHeart.enabled = false;
             mHeart.enabled = false;
             rHeart.enabled = true;
         }
-
-      //  playerLivesTxt.text = gameMaster.playerLives.ToString();
-
     }
-
-
-
-
 }

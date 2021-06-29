@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 5684628343555269207}
   - component: {fileID: 5684628343555269206}
   - component: {fileID: 5684628343555269205}
-  - component: {fileID: 5684628343555269204}
   - component: {fileID: 5684628343555269161}
   m_Layer: 0
   m_Name: Player
@@ -128,47 +127,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5684628343555269204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5684628343555269203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4164e0279737ed44be7020b73b5c953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialGravityValue: -30
-  moveSpeed: 10
-  jumpForce: 20
-  onEnemyBounceHeight: 15
-  bouncePadHeight: 30
-  OnFloatPadSpeed: 15
-  wallJumpForce: 30
-  slowFallSpeed: 7
-  dashSpeed: 100
-  dashCooldown: 3
-  dashTime: 0.1
-  isDashing: 0
-  groundSlamGravityValue: -500
-  isGroundSlamming: 0
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 512
-  groundCheck: {fileID: 5684628342921066191}
-  groundDistance: 0.4
-  grappleSpeed: 15
-  OnGrapple: 0
-  canDoubleJump: 0
-  canSlide: 0
-  canGlide: 0
-  canDash: 0
-  canSpin: 0
-  canWallJump: 0
-  canGroundSlam: 1
-  canGrapple: 0
 --- !u!54 &5684628343555269161
 Rigidbody:
   m_ObjectHideFlags: 0

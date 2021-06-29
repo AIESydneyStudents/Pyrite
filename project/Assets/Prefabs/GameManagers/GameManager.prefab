@@ -9,13 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107472363162059955}
-  - component: {fileID: 107472363162059964}
-  - component: {fileID: 107472363162059953}
-  - component: {fileID: 5145518656214620036}
-  - component: {fileID: 220311468}
-  - component: {fileID: 822186547}
   - component: {fileID: 822186548}
-  - component: {fileID: 1131837722}
+  - component: {fileID: 358775735}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -37,111 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &107472363162059964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107472363162059965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f9edeed971b9fb4498929e86f8da608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &107472363162059953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107472363162059965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d9a91e7308069c458500f7784fe167b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teaTracker: {fileID: 220311468}
-  data:
-    PlayerLives: 0
-    respawnPos: []
-    teaCollected: 0
-    playersBodySize: 0
-    canDoubleJump: 0
-    canSlide: 0
-    canGlide: 0
-    canDash: 0
-    canSpin: 0
-    canWallJump: 0
-    canGroundSlam: 0
-    canGrapple: 0
-    savedScene: 
-    jumpImg: 0
-    swingImg: 0
-    dashImg: 0
-  startpos: {fileID: 0}
-  stringMaterial: {fileID: 6271573414225017425, guid: 531377fd5014fbc41989c3ce6a0b9b32,
-    type: 3}
-  jumpImg: {fileID: 0}
-  swingImg: {fileID: 0}
-  dashImg: {fileID: 0}
---- !u!114 &5145518656214620036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107472363162059965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 157f73b2ec6a2cf4c901de8606d03754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &220311468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107472363162059965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37e1f60096ee4b4d811d2c5b02a29a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teaCollected: 0
-  data:
-    PlayerLives: 0
-    respawnPos: []
-    teaCollected: 0
-    playersBodySize: 0
-    canDoubleJump: 0
-    canSlide: 0
-    canGlide: 0
-    canDash: 0
-    canSpin: 0
-    canWallJump: 0
-    canGroundSlam: 0
-    canGrapple: 0
-    savedScene: 
-    jumpImg: 0
-    swingImg: 0
-    dashImg: 0
-  teaCountTxt: {fileID: 0}
-  numberOfTeaLeaves: 0
---- !u!114 &822186547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107472363162059965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
 --- !u!114 &822186548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +48,8 @@ MonoBehaviour:
   lHeart: {fileID: 0}
   mHeart: {fileID: 0}
   rHeart: {fileID: 0}
---- !u!114 &1131837722
+  playerData: {fileID: 11400000, guid: ec938c09d626a2d42a1ce40460b1d869, type: 2}
+--- !u!114 &358775735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,9 +58,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 107472363162059965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b55fe30d7b14d4f85d589f9a07908b, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bd66fc0cdabfb4fb791114071c01a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teaTracker: {fileID: 220311468}
-  currentLeaves: 0
-  teaLeafBar: {fileID: 0}
+  teaScoreTxt: {fileID: 0}
+  star:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  winTeaCup:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  winScreen: {fileID: 0}
+  firstStarLimit: 50
+  secondStarLimit: 100
+  thirdStarLimit: 149
+  slider: {fileID: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0, g: 0.3018868, b: 0.018867925, a: 1}
+    key1: {r: 0, g: 1, b: 0.203542, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  fill: {fileID: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8408272a91617cc4e9847f623eac5d9a, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  PlayerLives: 3
+  respawnPosX: -100.91077
+  respawnPosY: 42.40702
+  respawnPosZ: -4.7022204
+  teaCollected: 2
+  canDoubleJump: 0
+  canDash: 0
+  canWallJump: 0
+  canGroundSlam: 0
+  canGrapple: 0
+  savedScene: Level_01
+  hasCheckpoint: 1
+  jumpImg: 0
+  swingImg: 0
+  dashImg: 0

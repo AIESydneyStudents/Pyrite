@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 initalGravity;
     private TrailRenderer trail;
 
+    public Transform defaultStartPos;
+
 
     [Header("Gravity")]
     [SerializeField] float initialGravityValue = -30f;
@@ -37,10 +39,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float OnFloatPadSpeed = 15f;
     [SerializeField] float wallJumpForce = 30f;
 
-    [Header("SLOW FALL SPEED")]
-    [SerializeField] float slowFallSpeed = 7f;
-
-
     [Header("DASH VARIABLES")]
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashCooldown = 3f;
@@ -54,14 +52,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("GROUND SLAM VARIABLES")]
     [SerializeField] float groundSlamGravityValue = -200f;
     private Vector3 groundSlamGravity;
-    //private Vector3 wallGrabGravity;
-    //[SerializeField] float wallGrabGravityValue = -10f;
     [HideInInspector]
     public bool isGroundSlamming = false;
 
     //GroundChecks
     [Header("GROUND CHECKS")]
-    [SerializeField] LayerMask groundMask;
+    [SerializeField] LayerMask groundMask = 0;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundDistance = 0.4f;
     [SerializeField] bool isGrounded = false;
@@ -71,19 +67,6 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public bool OnGrapple = false;
 
-    [Header("POWER UP BOOLS")]
-    public bool canDoubleJump = false;
-    public bool canSlide = false;
-    public bool canGlide = false;
-    public bool canDash = false;
-    public bool canSpin = false;
-    public bool canWallJump = false;
-    public bool canGroundSlam = false;
-    public bool canGrapple = false;
-
-    public bool jumpImg = false;
-    public bool swingImg = false;
-    public bool dashImg = false;
 
     //If Player is interacting with objects change values true. triggered on items collided with
     private bool onLeftWallJump = false;
@@ -96,13 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool playerAirBound = false;
 
-
-
-
-
-    //acess to input system
-    //private Controls controls;
-
+    public PlayerData playerData;
 
     void Start()
     {
@@ -115,10 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
         initalGravity = new Vector3(0, initialGravityValue, 0);
         groundSlamGravity = new Vector3(0, groundSlamGravityValue, 0);
-        //wallGrabGravity = new Vector3(0, wallGrabGravityValue, 0);
 
-        //get access to input manager
-        //controls = new Controls();
         //set default movespeed to moveSpeed value given in inspector
         defaultMoveSpeed = moveSpeed;
 
@@ -126,19 +100,25 @@ public class PlayerMovement : MonoBehaviour
 
         // call back methods that are called when playerInput is used.
         Controls.Player.Jump.performed += Jump_performed;
-        Controls.Player.SlowFall.performed += SlowFall_performed;
-        Controls.Player.SlowFallRelease.performed += SlowFallRelease_performed;
         Controls.Player.Dash.performed += Dash_performed;
         Controls.Player.GroundSmash.performed += GroundSmash_performed;
 
         Controls.Enable();
 
         Physics.gravity = initalGravity;
+
+        if (playerData.hasCheckpoint)
+        {
+            transform.position = new Vector3(playerData.respawnPosX, playerData.respawnPosY, playerData.respawnPosZ);
+        }
+        else
+            transform.position = defaultStartPos.position;
+
     }
 
     private void GroundSmash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (canGroundSlam == false)
+        if (playerData.canGroundSlam == false)
             return;
         trail.emitting = true;
         Physics.gravity = groundSlamGravity;
@@ -149,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Dash_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (!canDash)
+        if (!playerData.canDash)
             return;
         if (dashCurrentCooldown == dashCooldown)
         {
@@ -159,25 +139,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /// < SlowFallInput>
-    /// player falling speed is slower while input held down
-    private void SlowFall_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        if (!canGlide)
-            return;
-        if (rb != null)
-            rb.drag = slowFallSpeed;
-    }
-
-    /// <SlowFallReleaseInput>
-    /// Players falling speed gets set back to normal
-    private void SlowFallRelease_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        if (!canGlide)
-            return;
-        if (rb != null)
-            rb.drag = 0f;
-    }
 
     /// <PlayerJump/WallJumpInput>
     /// Player Jumps, if player is in the wallJumpTrigger area PlayerJumps higher up the wall
@@ -185,13 +146,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb != null)
         {
-            if (isGrounded && canWallJump)
+            if (isGrounded && playerData.canWallJump)
             {
                 canWallJumpLeft = true;
                 canWallJumpRight = true;
             }
 
-            if (isGrounded && canDoubleJump)
+            if (isGrounded && playerData.canWallJump)
             {
                 doubleJumpActive = true;
             }
@@ -207,7 +168,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("isRunning", false);
 
                 }
-                else if (doubleJumpActive && canDoubleJump)
+                else if (doubleJumpActive && playerData.canDoubleJump)
                 {
                     AudioManager.instance.Play("Jump");
                     Jump(jumpForce);
@@ -216,7 +177,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.Play("Double Jump");
                 }
             }
-            if (onLeftWallJump && canWallJump)
+            if (onLeftWallJump && playerData.canWallJump)
             {
                 if (canWallJumpLeft)
                 {
@@ -226,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
                     canWallJumpRight = true;
                 }
             }
-            if (onRightWallJump && canWallJump)
+            if (onRightWallJump && playerData.canWallJump)
             {
                 if (canWallJumpRight)
                 {
@@ -279,7 +240,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerDirection.sqrMagnitude > 0.0f)
             transform.rotation = Quaternion.LookRotation(playerDirection);
 
-        if (OnGrapple && canGrapple)
+        if (OnGrapple && playerData.canGrapple)
             moveSpeed = grappleSpeed;
         else
             moveSpeed = defaultMoveSpeed;
@@ -315,14 +276,6 @@ public class PlayerMovement : MonoBehaviour
     public void SetOnLeftWallFalse() => onLeftWallJump = false;     //sets OnLeftWall bool false
     public void SetOnRightWallTrue() => onRightWallJump = true;     //sets OnRightWall bool true
     public void SetOnRightWallfalse() => onRightWallJump = false;   //sets OnRightWall bool true
-
-    public void SetJumpImgTrue() => jumpImg = true;
-    public void SetJumpImgFalse() => jumpImg = false;
-    public void SetSwingImgTrue() => swingImg = true;
-    public void SetSwingImgFalse() => swingImg = false;
-    public void SetDashImgTrue() => dashImg = true;
-    public void SetDashImgFalse() => dashImg = false;
-
 
 
 
@@ -427,8 +380,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDestroy()
     {
         Controls.Player.Jump.performed -= Jump_performed;
-        Controls.Player.SlowFall.performed -= SlowFall_performed;
-        Controls.Player.SlowFallRelease.performed -= SlowFallRelease_performed;
         Controls.Player.Dash.performed -= Dash_performed;
         Controls.Player.GroundSmash.performed -= GroundSmash_performed;
     }

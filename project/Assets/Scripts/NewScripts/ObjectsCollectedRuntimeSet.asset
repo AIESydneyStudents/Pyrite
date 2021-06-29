@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab5d623483e02249b44207018148412, type: 3}
+  m_Name: ObjectsCollectedRuntimeSet
+  m_EditorClassIdentifier: 
+  items:
+  - 4215.057-TeaPickup (23)-3
+  - 4655.901-TeaPickup (42)-22
+  - 5634.781-TeaPickup (32)-9
+  - 6459.908-TeaPickup (45)-23
+  - 7378.713-TeaPickup (33)-10
+  - 8517.022-TeaPickup (34)-11
+  - 9699.696-TeaPickup (43)-19
+  - 10049.22-TeaPickup (46)-24
+  - 10991.39-TeaPickup (24)-4
+  - 10991.39-TeaPickup (44)-20
+  - 14493.12-TeaPickup (25)-5
+  - 16853.37-TeaPickup (35)-12
+  - 19409.8-TeaPickup (36)-13
+  - 22090.01-TeaPickup (37)-14
+  - 24155.42-TeaPickup (26)-6
+  - 27750.76-Logic-0
+  - 31155.54-TeaPickup (28)-8
+  - 36356.28-TeaPickup (27)-7
+  - 40918.17-TeaPickup (38)-15
+  - 45278.64-TeaPickup (39)-16
+  - 50429.73-TeaPickup (40)-17
+  - 55043.5-TeaPickup (29)-0
+  - 57721.49-TeaPickup (31)-2
+  - 64561.39-TeaPickup (30)-1
+  - 65797.56-TeaPickup (41)-18

@@ -60,6 +60,9 @@ MonoBehaviour:
   defaultEyes: {fileID: 0}
   defaultMouth: {fileID: 0}
   deathFace: {fileID: 0}
+  playerData: {fileID: 11400000, guid: ec938c09d626a2d42a1ce40460b1d869, type: 2}
+  saveEvent: {fileID: 11400000, guid: 418fc9815cc1a37478a8ad89616c0313, type: 2}
+  loadEvent: {fileID: 11400000, guid: 1c2c74a983ec91a44b54df0e24b4db6f, type: 2}
 --- !u!1 &6450210084176738530
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +87,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6450210084176738530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.18}
+  m_LocalPosition: {x: -0, y: 0, z: -2.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6450210084982749655}
@@ -99,8 +102,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6450210084413301479}
-  - component: {fileID: 5385658344036324510}
-  - component: {fileID: 2260772833721280138}
   m_Layer: 12
   m_Name: EnemyPatrolAndChase
   m_TagString: TeaCollectable
@@ -124,30 +125,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5385658344036324510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6450210084880838355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2260772833721280138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6450210084880838355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6450210084960444382
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6450210084960444382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 23.97}
+  m_LocalPosition: {x: 3.67, y: 0, z: 1.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6450210084982749655}
@@ -243,6 +220,8 @@ GameObject:
   - component: {fileID: 2887438960537653518}
   - component: {fileID: 4983008524134447556}
   - component: {fileID: 628732754}
+  - component: {fileID: 2583742906407001881}
+  - component: {fileID: 2425803507532478035}
   m_Layer: 12
   m_Name: Logic
   m_TagString: Untagged
@@ -347,17 +326,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5385658344036324510}
-        m_MethodName: AddToCollectedItemSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 628732754}
         m_MethodName: SpawnObj
         m_Mode: 2
@@ -395,6 +363,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2469a187357219c4e8775a44c86afca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2583742906407001881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8878099423931914852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2425803507532478035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8878099423931914852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718198a06e4b653449a8a82f867f2c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectRuntimeSet: {fileID: 11400000, guid: 376ea632a568d594da8fdf0287ca5a2e,
+    type: 2}
+  id: {fileID: 2583742906407001881}
 --- !u!1001 &457486353
 PrefabInstance:
   m_ObjectHideFlags: 0

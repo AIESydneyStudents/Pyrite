@@ -6,7 +6,7 @@ public class Grapple : MonoBehaviour
 {
     private LineRenderer lr;
 
-    [SerializeField] Transform ropeStartPoint; // attached to player
+    [SerializeField] Transform ropeStartPoint = null; // attached to player
     private Transform ropeEndPoint;
 
     private Vector3 grapplePoint;
@@ -23,7 +23,9 @@ public class Grapple : MonoBehaviour
     [SerializeField] float damper = 1.27f;
     [SerializeField] float massScale = 10f;
 
-    private PlayerMovement playerMovement;
+    public PlayerMovement playerMovement;
+
+    public PlayerData playerData;
 
     void Awake()
     {
@@ -31,8 +33,6 @@ public class Grapple : MonoBehaviour
     }
     private void Start()
     {
-        playerMovement = player.GetComponent<PlayerMovement>();
-
         controls = new Controls();
         controls.Player.GrappleButtonDown.performed += GrappleButtonDown_performed;
         controls.Player.GrappleButtonUp.performed += GrappleButtonUp_performed;
@@ -44,14 +44,14 @@ public class Grapple : MonoBehaviour
     /// Call StartGrapple function if GrappleInput is held down 
     private void GrappleButtonDown_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (lr != null && playerMovement.canGrapple == true)
+        if (lr != null && playerMovement.playerData.canGrapple == true)
             StartGrapple();
     }
     /// <GrappleInputRelease>
     /// Call StopGrapple function if GrappleHold input is released
     private void GrappleButtonUp_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (lr != null && playerMovement.canGrapple == true)
+        if (lr != null && playerData.canGrapple == true)
             StopGrapple();
     }
 
@@ -100,7 +100,6 @@ public class Grapple : MonoBehaviour
         lr.positionCount = 0;
         Destroy(joint);
         playerMovement.OnGrapple = false;
-
     }
 
     /// <DrawRope()>
@@ -131,8 +130,11 @@ public class Grapple : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Grapple"))
         {
-            ropeEndPoint = null;
-            StopGrapple();
+            if (playerData.canGrapple)
+            {
+                ropeEndPoint = null;
+                StopGrapple();
+            }
         }
     }
 }

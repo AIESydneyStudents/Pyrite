@@ -79,6 +79,9 @@ MonoBehaviour:
   defaultEyes: {fileID: 0}
   defaultMouth: {fileID: 0}
   deathFace: {fileID: 0}
+  playerData: {fileID: 11400000, guid: ec938c09d626a2d42a1ce40460b1d869, type: 2}
+  saveEvent: {fileID: 11400000, guid: 418fc9815cc1a37478a8ad89616c0313, type: 2}
+  loadEvent: {fileID: 11400000, guid: 1c2c74a983ec91a44b54df0e24b4db6f, type: 2}
 --- !u!1 &8298619065981233180
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8298619065981233180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.59, y: -0.7, z: 0.95}
+  m_LocalPosition: {x: 0.29, y: -0.7, z: 17.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8298619067735879883}
@@ -118,8 +121,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8298619067539118782}
-  - component: {fileID: 4718200007588544600}
-  - component: {fileID: 8672889419282378877}
   m_Layer: 12
   m_Name: EnemyPatrol (3)
   m_TagString: TeaCollectable
@@ -143,30 +144,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4718200007588544600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8298619067230000359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8672889419282378877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8298619067230000359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8298619067564358150
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8298619067564358150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.07, y: -1.08, z: 0.84}
+  m_LocalPosition: {x: 0.44, y: -1.08, z: -11.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8298619067735879883}
@@ -243,6 +220,8 @@ GameObject:
   - component: {fileID: 7878030139858477527}
   - component: {fileID: 6607308101012401103}
   - component: {fileID: 5205172034063560612}
+  - component: {fileID: 557081744}
+  - component: {fileID: 557081745}
   m_Layer: 12
   m_Name: Logic
   m_TagString: Untagged
@@ -347,17 +326,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8672889419282378877}
-        m_MethodName: AddToCollectedItemSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5205172034063560612}
         m_MethodName: SpawnObj
         m_Mode: 2
@@ -395,6 +363,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2469a187357219c4e8775a44c86afca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &557081744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864389917512410803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &557081745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864389917512410803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718198a06e4b653449a8a82f867f2c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectRuntimeSet: {fileID: 11400000, guid: 376ea632a568d594da8fdf0287ca5a2e,
+    type: 2}
+  id: {fileID: 557081744}
 --- !u!1001 &204904083
 PrefabInstance:
   m_ObjectHideFlags: 0

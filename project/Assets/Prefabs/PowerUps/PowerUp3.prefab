@@ -4765,9 +4765,8 @@ GameObject:
   - component: {fileID: 2247605022703917647}
   - component: {fileID: 2247605022703918002}
   - component: {fileID: 2247605022703918003}
-  - component: {fileID: 2247605022703918000}
   - component: {fileID: 5492278995531733741}
-  - component: {fileID: 2571653701850548506}
+  - component: {fileID: 5683087022194426335}
   m_Layer: 0
   m_Name: PowerUp3
   m_TagString: Untagged
@@ -4819,17 +4818,6 @@ MonoBehaviour:
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2247605022703918000}
-        m_MethodName: PowerUpPickUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5492278995531733741}
         m_MethodName: SpawnObj
         m_Mode: 2
@@ -4842,9 +4830,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2571653701850548506}
-        m_MethodName: Destroy
-        m_Mode: 4
+      - m_Target: {fileID: 11400000, guid: 48b6455544334744a8b85412cfa78795, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4865,63 +4853,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetSwingImgTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetJumpImgFalse
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetDashImgFalse
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2247605022703918000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247605022703918001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329b30b4887b2e84db871d5f10012ff5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canDoubleJump: 0
-  canDash: 0
-  canSpin: 1
-  canWallJump: 0
-  canGroundSlam: 0
-  canGrapple: 1
-  jumpImg: 0
-  swingImg: 0
-  dashImg: 0
 --- !u!114 &5492278995531733741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,7 +4868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2469a187357219c4e8775a44c86afca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2571653701850548506
+--- !u!114 &5683087022194426335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4943,9 +4877,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2247605022703918001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03037270d28bb1d468b401757abc5781, type: 3}
+  m_Script: {fileID: 11500000, guid: 05d11943894007641b0187d863575fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 48b6455544334744a8b85412cfa78795, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetGrappleTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &1911085198
 Animator:
   serializedVersion: 3

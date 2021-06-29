@@ -9,11 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1134288494190616513}
-  - component: {fileID: 1134288494190616524}
   - component: {fileID: 1134288494190616525}
   - component: {fileID: 2210069023543999889}
-  - component: {fileID: 1134288494190616527}
-  - component: {fileID: 1134288494190616512}
   - component: {fileID: 753852365}
   - component: {fileID: -4513871679764754154}
   m_Layer: 0
@@ -38,68 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1134288494190616524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288494190616514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 276bda268f1638541bd68aa918974a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onTriggerEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134288494190616512}
-        m_MethodName: AddToCollectedItemSet
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1134288494190616525}
-        m_MethodName: Destroy
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2210069023543999889}
-        m_MethodName: IncreaseTeaScoreOnPickup
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: -4513871679764754154}
-        m_MethodName: SpawnTeaCollectable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTriggerExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1134288494190616525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,31 +59,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ed13de8c5a73441ad5b0fb23eb9258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerScaleValue: 0
---- !u!114 &1134288494190616527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288494190616514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42bf3b60d7792d41a2a25396e1ebb98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1134288494190616512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288494190616514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34faafc2c1f5a5c458675a91afff518d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: ec938c09d626a2d42a1ce40460b1d869, type: 2}
+  teaLeafCollectedEvent: {fileID: 11400000, guid: 82e7c52f6d5886a4ca3d34520541d72f,
+    type: 2}
+  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
 --- !u!135 &753852365
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -174,7 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68beb115cafbbe4088e2e845e32763d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teaImg: {fileID: 5404457295365535711, guid: 49aa4dd590496f74fae02ae00a2dbca5, type: 3}
 --- !u!95 &1870218898
 Animator:
   serializedVersion: 3

@@ -9,11 +9,9 @@ using UnityEngine.SceneManagement;
 public class WinScreen : MonoBehaviour
 {
     public TextMeshProUGUI teaScoreTxt;
-    public TeaTracker teaTracker;
     public GameObject[] star;
     public GameObject[] winTeaCup;
     public GameObject winScreen;
-    float teaCollected;
 
     public int firstStarLimit;
     public int secondStarLimit;
@@ -24,14 +22,15 @@ public class WinScreen : MonoBehaviour
     public Image fill;
 
     float fillRate;
+    public IntSO numberOfTeaLeaves;
+    public PlayerData playerData;
 
     private void Start()
     {
         slider.value = 0;
-        slider.maxValue = teaTracker.numberOfTeaLeaves;
+        slider.maxValue = numberOfTeaLeaves.value;
 
         fill.color = gradient.Evaluate(1f);
-        teaTracker = FindObjectOfType<TeaTracker>();
 
         star[0].SetActive(false);
         star[1].SetActive(false);
@@ -47,24 +46,20 @@ public class WinScreen : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Tutorial")
             fillRate = 0.2f;
 
+        
     }
 
 
-    public void GetTeaAmount()
-    {
-        teaCollected = teaTracker.teaCollected;
-    }
 
 
     private void FixedUpdate()
     {
         if (winScreen.activeSelf == true)
         {
-            if (slider.value < teaCollected)
+            if (slider.value < playerData.teaCollected)
             {
-                slider.value = slider.value + fillRate; // (teaTracker.teaCollected * Time.deltaTime);
+                slider.value = slider.value + fillRate; 
 
-                teaTracker.teaCollected = teaTracker.teaCollected - fillRate;
                 fill.color = gradient.Evaluate(slider.normalizedValue);
 
                 int teaVal = (int)slider.value;
@@ -96,5 +91,6 @@ public class WinScreen : MonoBehaviour
     public void PlayWinSound()
     {
         AudioManager.instance.Play("WinSound");
+        playerData.hasCheckpoint = false;
     }
 }

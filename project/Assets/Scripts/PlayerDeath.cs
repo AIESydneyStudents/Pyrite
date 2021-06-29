@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    private GameMaster gameMaster;
     private GameObject player;
     private PlayerMovement playerMovement;
     private Rigidbody rb;
@@ -17,16 +16,20 @@ public class PlayerDeath : MonoBehaviour
     public GameObject defaultMouth;
     public GameObject deathFace;
 
+    public PlayerData playerData;
+
+    public GameEvent saveEvent;
+    public GameEvent loadEvent;
+
     Controls Controls
     {
         get { return ControlsManager.instance; }
     }
     private void Start()
     {
-        gameMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
         player = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         rb = player.GetComponent<Rigidbody>();
+        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
 
         anim = player.GetComponentInChildren<Animator>();
         cam = GameObject.FindGameObjectWithTag("VirCam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
@@ -39,7 +42,6 @@ public class PlayerDeath : MonoBehaviour
             if (playerMovement.isDashing == false)
             {
                 AudioManager.instance.Play("DeathFromFall");
-                gameMaster.playerLives -= 1;
                 Controls.Player.Disable();
                 defaultEyes.SetActive(false);
                 defaultMouth.SetActive(false);
@@ -49,10 +51,18 @@ public class PlayerDeath : MonoBehaviour
 
                 StartCoroutine(WaitForSeconds());
 
-                if (gameMaster.playerLives >= 0)
+
+                if (playerData.PlayerLives > 0)
+                {
                     Invoke("LoadCurrentScene", 3f);
+                    loadEvent.Raise();
+                    playerData.PlayerLives -= 1;
+                    saveEvent.Raise();
+                }
                 else
+                {
                     Invoke("LoadGameOverScene", 3f);
+                }
             }
         }
     }
@@ -73,6 +83,17 @@ public class PlayerDeath : MonoBehaviour
     }
     void LoadGameOverScene()
     {
+        playerData.PlayerLives = 3;
+        playerData.hasCheckpoint = false;
+        playerData.canDash = false;
+        playerData.canDoubleJump = false;
+        playerData.canGrapple = false;
+        playerData.canGroundSlam = false;
+        playerData.canWallJump = false;
+        playerData.jumpImg = false;
+        playerData.swingImg = false;
+        playerData.dashImg = false;
+        saveEvent.Raise();
         SceneManager.LoadScene("GameOver");
     }
 
